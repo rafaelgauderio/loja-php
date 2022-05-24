@@ -3,6 +3,10 @@ Class Routes {
 
     public static $pagina;
 
+    static function get_SiteHOME () {
+        return Config::SITE_URL . '/' .Config::SITE_PASTA;
+    }
+
     static function get_pagina() {
         if(isset($_GET['pagina'])) {
 
