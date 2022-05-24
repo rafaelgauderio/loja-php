@@ -3,11 +3,10 @@
 
     $email = new PHPMailer();
 
-    $smarty = new Template();   
-
+    $smarty = new Template();
+    Routes::get_pagina();
     //valores de template assign(name,value)
     $smarty->assign('Nome','Rafael de Luca');
-
     $smarty->display('index.tpl');
 
 

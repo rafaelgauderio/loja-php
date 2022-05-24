@@ -1,5 +1,5 @@
 <?php
-class Template extends Smarty
+Class Template extends Smarty
 {
 
     function __construct()
@@ -12,3 +12,5 @@ class Template extends Smarty
         $this->setCompileDir('view/compile/');
     }
 }
+
+?>
