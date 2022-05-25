@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-25 07:17:56
+/* Smarty version 3.1.45, created on 2022-05-25 23:21:09
   from 'C:\xampp\htdocs\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_628dbc04d31d53_53621011',
+  'unifunc' => 'content_628e9dc5105299_72710909',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '88a1285121fb32d2e24d6766738b0f2210382789' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.tpl',
-      1 => 1653455874,
+      1 => 1653513667,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_628dbc04d31d53_53621011 (Smarty_Internal_Template $_smarty_tpl) {
+function content_628e9dc5105299_72710909 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -56,9 +56,17 @@ function content_628dbc04d31d53_53621011 (Smarty_Internal_Template $_smarty_tpl)
     </head>
     <body>
         
-        <!-- começa  o container geral -->
+        <inicia container geral>
         <div class="container-fluid">
             
+            <div class="row" id="topo-superior">
+                        <div class="container">
+                        
+                    <h4>Soluções em desenvolvimento web</h4>
+                </div>
+                </div>
+                
+             </div>
             <!-- começa a div topo -->
             <div class="row" id="topo">
                  
@@ -98,35 +106,20 @@ function content_628dbc04d31d53_53621011 (Smarty_Internal_Template $_smarty_tpl)
                             <ul class="nav navbar-nav">
                                 <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a> </li>
                                
-                                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Minha Conta </a> </li>
+                                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Conta </a> </li>
                                 <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
                                 <li><a href="#" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
                                 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categorias <i class="glyphicon glyphicon-menu-down"></i></a> 
-                                
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> categoria 1 </a> </li>
-                                     <li class="divider"></li>
-                                     <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> categoria 2 </a> </li>
-                                      <li class="divider"></li>
-                                      <li><a href="#"><i class="glyphicon glyphicon-bookmark"></i> categoria 3 </a> </li>
-                                      <li class="divider"></li>
-                                     <li><a href="#"> categoria 4 </a> </li>
-                                    
-                                    </ul>
-                                
-                                </li>
-                               
+                                                           
                                 
                             </ul>
                             
 
                             <form class="navbar-form navbar-left" role="search">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Buscar Produtos..." required>
+                                    <input type="text" class="form-control" placeholder="Pesquisar Produtos e Serviços..." required>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Buscar</button>
+                                <button type="submit" class="btn btn-primary">Pesquisar</button>
                             </form>
                             
                          </div><!-- fim navbar collapse-->   
@@ -153,14 +146,10 @@ function content_628dbc04d31d53_53621011 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="list-group">
                     <span class="list-group-item active"> Categorias</span>
                     
-                    <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Presentes</a> 
-                    <a href="#" class="list-group-item"><i class="glyphicon glyphicon-menu-right"></i> Brinquedos</a> 
+                    <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Dev</a> 
+                    <a href="#" class="list-group-item"><i class="glyphicon glyphicon-menu-right"></i> Database</a> 
+                    <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Infraestrutura</a> 
                     
-                    <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Presentes</a> 
-                    <a href="#" class="list-group-item"><i class="glyphicon glyphicon-menu-right"></i> Brinquedos</a> 
-                    
-                    <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Presentes</a> 
-                    <a href="#" class="list-group-item"><i class="glyphicon glyphicon-menu-right"></i> Brinquedos</a> 
                     
                     
                 </div><!--fim da list group-->              

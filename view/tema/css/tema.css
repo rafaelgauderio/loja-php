@@ -3,35 +3,53 @@
   background-color: white;
 }
 
+
+#topo-superior{
+
+  min-height: 30px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+       
+  }
+
+
 #topo{
 
 min-height: 100px;
-background-color: #204d74;
+background-color: black;
 color: #fff;
     
 }
 
+#topo img{
+
+  
+  border-radius:10px;
+  border: 2px solid black;
+  }
+
 #rodape{
      
- min-height: 150px;
- background-color: #204d74;  
+min-height: 150px;
+background-color: silver;  
 color: #fff; 
     
 }
 
 #conteudo{
     
-   min-height: 450px; 
+   min-height: 500px; 
 }
 
 #lateral{
     
-   border-right: 1px solid #adadad;
+   border-right: 2px solid black;
    height: 100%;
   }
 
   .transparente{
-   opacity: 0.9;   
+   opacity: 0.5;   
       
   }
 
@@ -41,6 +59,7 @@ color: #fff;
 /* navbar e menu navbar */
 .navbar-inverse{
     border-radius: 0;
+    background-color: black;
     
 }
 
@@ -53,7 +72,7 @@ color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a:hover{
     
- background-color: #000;
+ background-color: black;
  border-radius: 10px;
  color: aqua;
     
@@ -67,10 +86,14 @@ color: #fff;
     
 }
 
+input.form-control {
+  min-width: 300px;
+}
+
 a.list-group-item:hover{
     
-    background-color: #262626;;
-     color: #FFF;
+    background-color: aqua;;
+     color: black;
      
     
 }
