@@ -2,10 +2,11 @@
 
 <html>
     <head>
-        <title>Loja virtual deluca tecnologogia</title>
+        <title>Loja virtual deluca tecnologia</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+         <link href="{$GET_TEMA}/tema/css/contato.css" rel="stylesheet" type="text/css"/>
         <link href="{$GET_TEMA}/tema/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="{$GET_TEMA}/tema/js/jquery-2.2.1.min.js" type="text/javascript"></script>
         <script src="{$GET_TEMA}/tema/js/bootstrap.min.js" type="text/javascript"></script>
@@ -37,9 +38,9 @@
                  
                 
                 <div class="container">
-                <img src="{$GET_TEMA}/imagens/logo.jpg" alt="" align="left" height="150">
+                <img src="{$GET_TEMA}/imagens/logo.jpg" alt="" align="left" height="120">
                 
-                <img src="{$GET_TEMA}/imagens/logo2.jpg" alt="" align="right" height="150">
+                <img src="{$GET_TEMA}/imagens/logo2.jpg" alt="" align="right" height="120">
                                     
                 </div>    
             
@@ -66,17 +67,8 @@
                         </div><!--fim header navbar-->  
                         
                         <div class="collapse navbar-collapse" id="navbar">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a> </li>
-                               
-                                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Conta </a> </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
-                                <li><a href="#" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
-                                
-                                                           
-                                
-                            </ul>
-                            
+                          
+                                                    
 
                             <form class="navbar-form navbar-left" role="search">
                                 <div class="form-group">
@@ -84,7 +76,18 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary">Pesquisar</button>
                             </form>
-                            
+
+                              <ul class="nav navbar-nav">
+                                <li><a href="{$GET_HOME}"><i class="glyphicon glyphicon-home"></i> Home </a> </li>
+                               
+                                <li><a href="{$PAG_CONTA}"><i class="glyphicon glyphicon-user"></i> Conta </a> </li>
+                                <li><a href="{$PAG_CARRINHO}"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
+                                <li><a href="{$PAG_CONTATO}" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
+                                
+                                                           
+                                
+                            </ul>
+                       
                          </div><!-- fim navbar collapse-->   
 
 
@@ -124,9 +127,9 @@
                     
                     
                     <ul class="breadcrumb">
-                        <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a></li>
+                        <li><a href=""><i class="glyphicon glyphicon-home"></i> Home </a></li>
                         <li><a href="#"> Produtos </a></li>
-                        <li><a href="#"> Info </a></li>
+                        <li><a href="#"> Descrição </a></li>
                     </ul>   
                     <!-- fim do menu breadcrumb-->             
                 

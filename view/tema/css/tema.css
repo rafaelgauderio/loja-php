@@ -3,6 +3,18 @@
   background-color: white;
 }
 
+#topo.row img{
+  transition: transform .9s ease-in-out;  
+}
+
+
+#topo.row:hover img{
+  -moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180dg);
+  
+}
+
 
 #topo-superior{
 
@@ -28,6 +40,18 @@ color: #fff;
   border-radius:10px;
   border: 2px solid black;
   }
+
+#externo-buscar {
+  display:grid;
+  align-items: center;
+  align-content: center;
+} 
+
+#buscar {
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
 
 #rodape{
      
@@ -72,9 +96,11 @@ color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a:hover{
     
- background-color: black;
- border-radius: 10px;
- color: aqua;
+ background-color: #2e6da4;
+ border-radius: 5px;
+ color: aquamarinemarine;
+ transform: scale(1.15); 
+
     
 }
 
@@ -82,7 +108,9 @@ color: #fff;
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
     
-   background-color: #101010; 
+   background-color: #101010;
+ 
+  
     
 }
 
@@ -92,8 +120,10 @@ input.form-control {
 
 a.list-group-item:hover{
     
-    background-color: aqua;;
+    background-color: aquamarine;
      color: black;
+    
+    
      
     
 }
