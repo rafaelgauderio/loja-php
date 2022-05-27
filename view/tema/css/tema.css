@@ -54,12 +54,22 @@ color: #fff;
 }
 
 #rodape{
-     
-min-height: 150px;
+max-height: 50px;
+min-height: 20px;
 background-color: silver;  
-color: #fff; 
-    
+color: #fff;
+   
 }
+
+#rodape h4{
+  padding: auto;
+  text-align: center;
+  align-items: center;
+  color:black;
+  font-weight: bolder;
+  
+}
+
 
 #conteudo{
     
@@ -78,9 +88,8 @@ color: #fff;
   }
 
 
-/* CLASSES OVERRIDE DO BOOTSTRAP para personalização*/
+/* sobrescrever classes do bootstrap */
 
-/* navbar e menu navbar */
 .navbar-inverse{
     border-radius: 0;
     background-color: black;
@@ -104,7 +113,7 @@ color: #fff;
     
 }
 
-/* menu lateral com list group*/
+
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
     
@@ -121,18 +130,16 @@ input.form-control {
 a.list-group-item:hover{
     
     background-color: aquamarine;
-     color: black;
-    
-    
-     
+    color: black;
+      
     
 }
 
-a.list-group-item{
+a.list-group-item {
   
     border: 0;
-    font-size: 16px;
-    
+    font-size: 16px;       
+    transform: translateY(1px);   
     
 }
 

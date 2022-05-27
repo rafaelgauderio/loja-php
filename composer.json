@@ -4,7 +4,7 @@
         "phpmailer/phpmailer": "~5.2"
     },
     "config": {
-        "vendor-dir": "lib/"
+        "vendor-dir": "biblioteca/"
     },
     
     "autoload": {

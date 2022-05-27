@@ -4,7 +4,7 @@
         <form class="form-horizontal" id="formulario" action="enviar">
         <fieldset>        
         
-        <legend>Entre em contato</legend>        
+        <legend>Formulário de contato</legend>        
         
         <div class="grupo">
           <label class="col-md-5 control-label" for="inputnome">Nome</label>  
@@ -23,16 +23,16 @@
         <div class="grupo">
           <label class="col-md-5 control-label" for="inputemail">Email</label>  
           <div class="col-md-7">
-          <input id="inputemail" name="inputemail" placeholder="Email (obrigatarório)" class="form-control input-md" required="required" type="email" />
+          <input id="inputemail" name="inputemail" placeholder="Email (obrigatório)" class="form-control input-md" required="required" type="email" />
           
           </div>
         </div>         
         
       
         <div class="grupo">
-          <label class="col-md-5 control-label" for="inputarea">Assunto</label>
+          <label class="col-md-5 control-label" for="inputarea">Mensagem</label>
           <div class="col-md-7">                     
-            <textarea class="form-control" id="inputarea" rows="8" name="inputarea" placeholder="Informe aqui sua dúvida , crítica ou sugestão que entratemos em contato. (obrigatório)" required="required"></textarea>
+            <textarea class="form-control" id="inputarea" rows="8" name="inputarea" placeholder="Informe aqui sua dúvida, crítica ou sugestão que entratemos em contato. (obrigatório)" required="required"></textarea>
           </div>
         </div>
         
