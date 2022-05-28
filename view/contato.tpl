@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         
-        <form class="form-horizontal" id="formulario" action="enviar">
+        <form class="form-horizontal" id="formulario" action="email">
         <fieldset>        
         
         <legend>Formulário de contato</legend>        
@@ -9,7 +9,7 @@
         <div class="grupo">
           <label class="col-md-5 control-label" for="inputnome">Nome</label>  
           <div class="col-md-7">
-          <input id="txtinputnome" name="inputnome" placeholder="Nome Completo (obrigatório)" class="form-control input-md" required="required" type="text" />
+          <input id="inputnome" name="inputnome" placeholder="Nome Completo (obrigatório)" class="form-control input-md" required="required" type="text" />
           </div>
         </div>
          <div class="grupo">

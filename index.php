@@ -16,9 +16,25 @@
     $smarty->assign('PAG_EMPRESA',Routes::pag_Empresa());
     $smarty->assign('PAG_CONOSCO',Routes::pag_Conosco());
 
-    $data = new Conection();
+    /*
+    Testando a conexao
 
-    var_dump($data);
+    $data = new Conection();
+    $sql = "SELECT * FROM categorias";
+    $data->ExecuteQuery($sql);
+
+    $list = $data->PrintData();
+
+
+    //listando as categorias
+    //var_dump($data);
+    echo '<pre>';
+    var_dump($list);
+    echo '</pre>';
+
+    echo 'total de categorias: ' . $data->TotalData();
+    echo 'itens: ' . $data->GetItens();
+   */
     
     $smarty->display('index.tpl');
 

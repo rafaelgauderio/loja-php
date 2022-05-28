@@ -38,5 +38,21 @@ class Conection extends Config
         return $link;
     }
 
+    public function ExecuteQuery($query, array $params = NULL) {
+        $this->object = $this->Conect()->prepare($query);
+        return $this->object->execute();                      
+    }
+    public function PrintData () {
+        return $this->object->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function TotalData () {
+        return $this->object->rowCount();
+    }
+
+    public function GetItens () {
+        return $this->object->itens;
+    }
+
   
 }

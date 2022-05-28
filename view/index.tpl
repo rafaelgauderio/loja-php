@@ -8,7 +8,7 @@
         
         <link href="{$GET_TEMA}/tema/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="{$GET_TEMA}/tema/css/contato.css" rel="stylesheet" type="text/css"/>
-        <link href="{$GET_TEMA}/tema/css/tema.css" rel="stylesheet" type="text/css"/>
+        <link href="{$GET_TEMA}/tema/css/personalizado.css" rel="stylesheet" type="text/css"/>
 
       <script src="{$GET_TEMA}/tema/js/jquery-2.2.1.min.js" type="text/javascript"></script>
       <script src="{$GET_TEMA}/tema/js/bootstrap.min.js" type="text/javascript"></script>  
@@ -106,8 +106,7 @@
                 <div class="col-md-2" id="lateral">
                     
                 <div class="list-group">
-                    <span class="list-group-item active"> Produtos</span>
-                    
+                    <span class="list-group-item active"> Produtos</span>                    
                     <a href="#" class="list-group-item"> Dev</a> 
                     <a href="#" class="list-group-item"> Database</a> 
                     <a href="#" class="list-group-item"> Infraestrutura</a> 

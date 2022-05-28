@@ -56,7 +56,7 @@ color: #fff;
 #rodape{
 max-height: 50px;
 min-height: 20px;
-background-color: silver;  
+background-color: black;  
 color: #fff;
    
 }
@@ -64,8 +64,7 @@ color: #fff;
 #rodape h4{
   padding: auto;
   text-align: center;
-  align-items: center;
-  color:black;
+  align-items: center;  
   font-weight: bolder;
   
 }
@@ -79,7 +78,12 @@ color: #fff;
 #lateral{
     
    border-right: 2px solid black;
-   height: 100%;
+   border-left: 2px solid black;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   border-radius: 14px;
+   height: 100%;  
+   padding: 0px; 
   }
 
   .transparente{
@@ -92,8 +96,15 @@ color: #fff;
 
 .navbar-inverse{
     border-radius: 0;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D);
+    border:0px;
     
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: aquamarine;
+  border-color: #25335D;
 }
 
 
@@ -105,10 +116,10 @@ color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a:hover{
     
- background-color: #2e6da4;
+ background-color: #25335D;
  border-radius: 5px;
  color: aquamarinemarine;
- transform: scale(1.15); 
+ transform: scale(1.25); 
 
     
 }
@@ -117,14 +128,25 @@ color: #fff;
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
     
-   background-color: #101010;
+   background-color: #25335D;
+   border: 0px;
+   margin: 0px;
  
   
     
 }
 
+.list-group-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 input.form-control {
   min-width: 300px;
+}
+
+a {
+  color:white;
 }
 
 a.list-group-item:hover{
@@ -139,7 +161,8 @@ a.list-group-item {
   
     border: 0;
     font-size: 16px;       
-    transform: translateY(1px);   
+    transform: translateY(1px); 
+    color:black  
     
 }
 

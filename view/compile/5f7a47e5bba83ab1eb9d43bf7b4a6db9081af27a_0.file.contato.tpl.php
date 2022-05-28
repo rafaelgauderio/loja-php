@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-28 00:17:44
+/* Smarty version 3.1.45, created on 2022-05-28 23:06:51
   from 'C:\xampp\htdocs\loja\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62914e08db0966_68174639',
+  'unifunc' => 'content_62928eeb2fde14_64784158',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f7a47e5bba83ab1eb9d43bf7b4a6db9081af27a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\contato.tpl',
-      1 => 1653689862,
+      1 => 1653772004,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62914e08db0966_68174639 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62928eeb2fde14_64784158 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
     <div class="row">
         
-        <form class="form-horizontal" id="formulario" action="enviar">
+        <form class="form-horizontal" id="formulario" action="email">
         <fieldset>        
         
         <legend>Formulário de contato</legend>        
@@ -32,7 +32,7 @@ function content_62914e08db0966_68174639 (Smarty_Internal_Template $_smarty_tpl)
         <div class="grupo">
           <label class="col-md-5 control-label" for="inputnome">Nome</label>  
           <div class="col-md-7">
-          <input id="txtinputnome" name="inputnome" placeholder="Nome Completo (obrigatório)" class="form-control input-md" required="required" type="text" />
+          <input id="inputnome" name="inputnome" placeholder="Nome Completo (obrigatório)" class="form-control input-md" required="required" type="text" />
           </div>
         </div>
          <div class="grupo">

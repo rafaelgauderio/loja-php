@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-28 00:39:59
+/* Smarty version 3.1.45, created on 2022-05-28 21:32:43
   from 'C:\xampp\htdocs\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_6291533f57d185_75946354',
+  'unifunc' => 'content_629278db1b4866_30368702',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '88a1285121fb32d2e24d6766738b0f2210382789' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.tpl',
-      1 => 1653691194,
+      1 => 1653766360,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6291533f57d185_75946354 (Smarty_Internal_Template $_smarty_tpl) {
+function content_629278db1b4866_30368702 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -35,7 +35,7 @@ function content_6291533f57d185_75946354 (Smarty_Internal_Template $_smarty_tpl)
         <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/css/contato.css" rel="stylesheet" type="text/css"/>
         <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/css/tema.css" rel="stylesheet" type="text/css"/>
+/tema/css/personalizado.css" rel="stylesheet" type="text/css"/>
 
       <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
@@ -151,8 +151,7 @@ function content_6291533f57d185_75946354 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="col-md-2" id="lateral">
                     
                 <div class="list-group">
-                    <span class="list-group-item active"> Produtos</span>
-                    
+                    <span class="list-group-item active"> Produtos</span>                    
                     <a href="#" class="list-group-item"> Dev</a> 
                     <a href="#" class="list-group-item"> Database</a> 
                     <a href="#" class="list-group-item"> Infraestrutura</a> 
