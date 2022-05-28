@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-28 00:17:44
+/* Smarty version 3.1.45, created on 2022-05-28 00:39:59
   from 'C:\xampp\htdocs\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62914e08cc2a44_62661044',
+  'unifunc' => 'content_6291533f57d185_75946354',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '88a1285121fb32d2e24d6766738b0f2210382789' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.tpl',
-      1 => 1653689750,
+      1 => 1653691194,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62914e08cc2a44_62661044 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6291533f57d185_75946354 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -119,12 +119,14 @@ function content_62914e08cc2a44_62661044 (Smarty_Internal_Template $_smarty_tpl)
                                
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTA']->value;?>
 "> Login </a> </li>
+                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_EMPRESA']->value;?>
+"> Empresa</a> </li>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
 "> Carrinho </a> </li>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONOSCO']->value;?>
+"> Tabalhe Conosco </a> </li>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
-" > Contato </a> </li>
-                                
-                                                           
+" > Contato </a> </li>                                                    
                                 
                             </ul>
                        

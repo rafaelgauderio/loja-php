@@ -13,6 +13,12 @@
     $smarty->assign('PAG_CONTA',Routes::pag_Conta());
     $smarty->assign('PAG_CARRINHO',Routes::pag_Carrinho());
     $smarty->assign('PAG_CONTATO',Routes::pag_Contato());
+    $smarty->assign('PAG_EMPRESA',Routes::pag_Empresa());
+    $smarty->assign('PAG_CONOSCO',Routes::pag_Conosco());
+
+    $data = new Conection();
+
+    var_dump($data);
     
     $smarty->display('index.tpl');
 

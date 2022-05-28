@@ -29,6 +29,13 @@ Class Routes {
         return self::get_SiteHOME() . '/contato' ;
     }
     
+    static function pag_Conosco () {
+        return self::get_SiteHOME() . '/conosco' ;
+    }
+
+    static function pag_Empresa () {
+        return self::get_SiteHOME() . '/empresa' ;
+    }
     
 
 
