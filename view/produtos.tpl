@@ -15,7 +15,7 @@
 
 		                <a href="">
 
-		                    <img src="{$PRODUCT_ITEM.prod_img}" width="250" height="250" alt="{$PRODUCT_ITEM.prod_nome}" > 
+		                    <img src="imagens/{$PRODUCT_ITEM.prod_img}" width="220" height="220" alt="" > 
 
 		                    <div class="caption">
 		                        <h4 class="text-center"> {$PRODUCT_ITEM.prod_nome}</h4>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-29 03:06:48
+/* Smarty version 3.1.45, created on 2022-05-29 03:48:09
   from 'C:\xampp\htdocs\loja\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_6292c728bbed85_08025358',
+  'unifunc' => 'content_6292d0d924cb79_61274461',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '70e43319338037d61ae19a0944e2375360bbb269' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\produtos.tpl',
-      1 => 1653786405,
+      1 => 1653788887,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6292c728bbed85_08025358 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6292d0d924cb79_61274461 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h2>Conheça nossos produtos e serviços</h2>
  
  
@@ -43,9 +43,8 @@ $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->do_else = false;
 
 		                <a href="">
 
-		                    <img src="<?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_img'];?>
-" width="250" height="250" alt="<?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_nome'];?>
-" > 
+		                    <img src="imagens/<?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_img'];?>
+" width="220" height="220" alt="" > 
 
 		                    <div class="caption">
 		                        <h4 class="text-center"> <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_nome'];?>
