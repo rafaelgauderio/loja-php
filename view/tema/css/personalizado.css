@@ -166,3 +166,37 @@ a.list-group-item {
     
 }
 
+pre {
+  background-color: silver;
+}
+
+/*estilando o card dos produtos*/
+
+.thumbnail {
+  border: 1px solid black;  
+}
+
+.thumbnail:hover {
+  transform: scale(1.15);
+  background-color: whitesmoke;
+  text-decoration: none;
+}
+
+.thumbnail a {
+  text-decoration: none;
+}
+
+
+.thumbnail .caption h4 {
+  color: #25335D;
+}
+
+.text-danger {
+  color: #5CA47A;
+  font-weight: bolder;
+
+  
+}
+
+
+

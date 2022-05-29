@@ -5,6 +5,8 @@ class Conection extends Config
 
     private $user, $password, $host, $database;
 
+    protected $object, $itens=array(),$prefix;
+
     function __construct()
     {
         $this->host = self::BD_HOST;
@@ -51,7 +53,8 @@ class Conection extends Config
     }
 
     public function GetItens () {
-        return $this->object->itens;
+        //itens vai ser uma lista de vetores
+        return $this->itens;
     }
 
   

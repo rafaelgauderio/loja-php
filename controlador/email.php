@@ -1,5 +1,5 @@
 <?php
-$to      = Config::EMAIL_USER;
+$to = Config::EMAIL_USER;
 
 $subject = "Email via formulária deluca tecnologia";
 $message = "Email de " . $_GET['inputnome'] . "\r\n". 

@@ -1,7 +1,7 @@
 <?php
     require './biblioteca/autoload.php';
 
-    $email = new PHPMailer();
+    //$email = new PHPMailer();
 
     $smarty = new Template();
     //Routes::get_pagina();  
