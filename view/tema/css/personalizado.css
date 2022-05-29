@@ -186,6 +186,12 @@ pre {
   text-decoration: none;
 }
 
+.thumbnail a>img {
+  object-fit: fill;
+  width: 180px;
+  height: 140px;
+}
+
 
 .thumbnail .caption h4 {
   color: #25335D;

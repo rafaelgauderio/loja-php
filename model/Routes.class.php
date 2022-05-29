@@ -6,7 +6,7 @@ Class Routes {
     private static $pasta_view = 'view';
 
     static function get_SiteHOME () {
-        return Config::SITE_URL . '/' .Config::SITE_PASTA;
+        return Config::SITE_HOST . '/' .Config::SITE_PASTA;
     }
 
     static function get_SiteROOT () {
@@ -36,6 +36,20 @@ Class Routes {
     static function pag_Empresa () {
         return self::get_SiteHOME() . '/empresa' ;
     }
+
+    static function get_ImagesFolder() {
+        return 'imagens/';
+    }
+
+    static function get_ImageURL () {
+        return self::get_SiteHOME() . '/' . self::get_ImagesFolder();
+    }
+
+
+    static function ImageResize($img, $width, $height) {
+        $image = self::get_ImageURL() . "thumb.php?src={$img}&w={$width}&h={$height}&zc=1";
+        return $image;
+    }   
     
 
 

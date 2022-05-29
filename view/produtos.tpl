@@ -1,4 +1,6 @@
 <h2>Conheça nossos produtos e serviços</h2>
+
+<hr>
  
  
   <section id="produtos" class="row">  
@@ -9,17 +11,16 @@
 		        <div class="row" id="pularlinha">
 		        {foreach from=$PRODUCT item=PRODUCT_ITEM} 
 		           
-		        <li class="col-md-5">
+		        <li class="col-md-6">
 
 		            <div class="thumbnail">
 
 		                <a href="">
 
-		                    <img src="imagens/{$PRODUCT_ITEM.prod_img}" width="220" height="220" alt="" > 
+		                    <img src="{$PRODUCT_ITEM.prod_img}" alt="" width="175" height="175"> 
 
 		                    <div class="caption">
-		                        <h4 class="text-center"> {$PRODUCT_ITEM.prod_nome}</h4>
-                            <h5 class="text-center"><b>Descrição: </b> {$PRODUCT_ITEM.prod_descri}</h5>                            
+		                        <h4 class="text-center"> {$PRODUCT_ITEM.prod_nome}</h4>                                                        
                             <h4 class="text-center"> {$PRODUCT_ITEM.prod_destaque}</h4>
 		                        <h4 class="text-center text-danger">R$ {$PRODUCT_ITEM.prod_preco}</h4>
 

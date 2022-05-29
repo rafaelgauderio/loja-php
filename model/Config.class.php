@@ -3,7 +3,7 @@
 class Config
 {
 
-    const SITE_URL = "https://localhost";
+    const SITE_HOST = "https://localhost";
     const TITULO_SITE = "Loja virtual deluca tecnologia";
     const SITE_PASTA = "loja";    
     const SITE_EMAIL_ADM = "delucaloja@gmail";

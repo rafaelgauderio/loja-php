@@ -54,6 +54,7 @@ class Conection extends Config
 
     public function GetItens () {
         //itens vai ser uma lista de vetores
+        //return $this->object->itens;
         return $this->itens;
     }
 
