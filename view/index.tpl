@@ -77,10 +77,11 @@
                               <ul class="nav navbar-nav">
                                 <li><a href="{$GET_HOME}"> Home </a> </li>
                                
-                                <li><a href="{$PAG_CONTA}"> Login </a> </li>
-                                 <li><a href="{$PAG_EMPRESA}"> Empresa</a> </li>
-                                <li><a href="{$PAG_CARRINHO}"> Carrinho </a> </li>                                
-                                <li><a href="{$PAG_CONTATO}" > Contato </a> </li>                                                    
+                                <li><a href="{$PAG_CONTA}">Login</a> </li>
+                                <li><a href="{$PAG_EMPRESA}">Quem Somos</a> </li>
+                                 <li><a href="{$PAG_PRODUTOS}">Produtos</a> </li>
+                                <li><a href="{$PAG_CARRINHO}">Carrinho</a> </li>                                
+                                <li><a href="{$PAG_CONTATO}" >Contato</a> </li>                                                    
                                 
                             </ul>
                        
@@ -121,9 +122,7 @@
                     
                     
                     <ul class="breadcrumb">
-                        <li><a href="#"> Home </a></li>
-                        <li><a href="#"> Produtos </a></li>
-                        <li><a href="#"> Descrição </a></li>
+                        <h4>Contrate serviços de programação online!</h4>
                     </ul>   
                            
                 

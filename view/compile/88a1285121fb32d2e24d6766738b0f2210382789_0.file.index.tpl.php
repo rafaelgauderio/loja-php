@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-30 00:59:24
+/* Smarty version 3.1.45, created on 2022-05-31 00:24:59
   from 'C:\xampp\htdocs\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_6293faccda0bd5_08292468',
+  'unifunc' => 'content_6295443b868773_41993202',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '88a1285121fb32d2e24d6766738b0f2210382789' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.tpl',
-      1 => 1653865163,
+      1 => 1653949498,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6293faccda0bd5_08292468 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6295443b868773_41993202 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -118,13 +118,15 @@ function content_6293faccda0bd5_08292468 (Smarty_Internal_Template $_smarty_tpl)
 "> Home </a> </li>
                                
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTA']->value;?>
-"> Login </a> </li>
-                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_EMPRESA']->value;?>
-"> Empresa</a> </li>
+">Login</a> </li>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_EMPRESA']->value;?>
+">Quem Somos</a> </li>
+                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
+">Produtos</a> </li>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
-"> Carrinho </a> </li>                                
+">Carrinho</a> </li>                                
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
-" > Contato </a> </li>                                                    
+" >Contato</a> </li>                                                    
                                 
                             </ul>
                        
@@ -165,9 +167,7 @@ function content_6293faccda0bd5_08292468 (Smarty_Internal_Template $_smarty_tpl)
                     
                     
                     <ul class="breadcrumb">
-                        <li><a href="#"> Home </a></li>
-                        <li><a href="#"> Produtos </a></li>
-                        <li><a href="#"> Descrição </a></li>
+                        <h4>Contrate serviços de programação online!</h4>
                     </ul>   
                            
                 

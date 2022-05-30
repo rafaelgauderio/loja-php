@@ -1,9 +1,10 @@
 <?php
 Class Routes {
 
+    private static $pasta_view = 'view';
     public static $pagina;
     private static $pasta_controlller = 'controlador';
-    private static $pasta_view = 'view';
+   
 
     static function get_SiteHOME () {
         return Config::SITE_HOST . '/' .Config::SITE_PASTA;

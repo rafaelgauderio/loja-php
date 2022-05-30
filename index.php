@@ -15,6 +15,7 @@
     $smarty->assign('PAG_CONTATO',Routes::pag_Contato());
     $smarty->assign('PAG_EMPRESA',Routes::pag_Empresa());
     $smarty->assign('PAG_CONOSCO',Routes::pag_Conosco());
+    $smarty->assign('PAG_PRODUTOS',Routes::pag_produtos());
 
     /*
     Testando a conexao

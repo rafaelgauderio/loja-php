@@ -111,6 +111,12 @@ color: #fff;
   background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D);
 }
 
+.breadcrumb h4 {
+ text-align: center;
+ font-style: italic;
+ color: #25335D;
+}
+
 .navbar-inverse{
     border-radius: 0;
     background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D);
