@@ -25,6 +25,14 @@ Class Routes {
         return self::get_SiteHOME() . '/carrinho' ;
     }
 
+    static function pag_ProdutosDescricao () {
+        return self::get_SiteHOME() . '/produtos_desc' ;
+    }
+
+    static function pag_Produtos () {
+        return self::get_SiteHOME() . '/produtos' ;
+    }
+
     static function pag_Contato () {
         return self::get_SiteHOME() . '/contato' ;
     }

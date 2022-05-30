@@ -1,5 +1,6 @@
 <?php
 
+// aqui ficam só as constantes do projeto
 class Config
 {
 

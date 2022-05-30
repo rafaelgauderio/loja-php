@@ -91,8 +91,25 @@ color: #fff;
       
   }
 
+  #produto_detalhes {
+    margin: 5px;
+  }
+
+  #botoes_produto { 
+    margin: 0px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-gap:10px;
+
+  }
+
 
 /* sobrescrever classes do bootstrap */
+
+.breadcrumb {
+  background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D);
+}
 
 .navbar-inverse{
     border-radius: 0;
@@ -120,8 +137,7 @@ color: #fff;
  border-radius: 5px;
  color: aquamarinemarine;
  transform: scale(1.25); 
-
-    
+     
 }
 
 
@@ -173,13 +189,20 @@ pre {
 /*estilando o card dos produtos*/
 
 .thumbnail {
-  border: 1px solid black;  
+  border: 1px solid silver;
+    
+}
+
+#detalhes .thumbnail {
+  object-fit: fill;
+  width: 320px;
 }
 
 .thumbnail:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   background-color: whitesmoke;
   text-decoration: none;
+  border: 1px solid black;
 }
 
 .thumbnail a {
@@ -202,6 +225,15 @@ pre {
   font-weight: bolder;
 
   
+}
+
+tn-group-lg>.btn, .btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  align-items: center;
+  text-align: center;
 }
 
 

@@ -79,8 +79,7 @@
                                
                                 <li><a href="{$PAG_CONTA}"> Login </a> </li>
                                  <li><a href="{$PAG_EMPRESA}"> Empresa</a> </li>
-                                <li><a href="{$PAG_CARRINHO}"> Carrinho </a> </li>
-                                <li><a href="{$PAG_CONOSCO}"> Tabalhe Conosco </a> </li>
+                                <li><a href="{$PAG_CARRINHO}"> Carrinho </a> </li>                                
                                 <li><a href="{$PAG_CONTATO}" > Contato </a> </li>                                                    
                                 
                             </ul>

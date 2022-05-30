@@ -7,6 +7,7 @@ $produtos = new Produtos();
 $produtos->GetProdutos();
 
 $smarty->assign('PRODUCT',$produtos->GetItens());
+$smarty->assign('PRODUCT_DESCRIPTION', Routes::pag_ProdutosDescricao());
 $smarty->display('produtos.tpl');
 
 /*
