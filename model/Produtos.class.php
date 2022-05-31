@@ -41,7 +41,17 @@ Class Produtos extends Conection {
             $i++;
         }               
            
-        }            
+        } 
+        
+        public function GetProdutosCategoriaId($id) {
+            $sql = "SELECT *
+             FROM produtos 
+             INNER JOIN categorias
+             ON produtos.prod_categoria = categorias.categ_id";
+             $sql .= " AND prod_categoria= {$id}";
+             $this->ExecuteQuery($sql);
+             $this->GetList();
+        }
      
 
     }

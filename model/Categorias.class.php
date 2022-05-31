@@ -9,18 +9,18 @@ Class Categorias extends Conection {
     }
 
     function GetCategorias () {
-        $sql = "SELECT * FROM categorias";
+        $sql = "SELECT categ_nome, categ_id FROM categorias";
         $this->ExecuteQuery($sql);
-        $this->GetList();
+        $this->GetListCategorias();
     }
 
-    public function GetList () {
+    public function GetListCategorias () {
         $i = 1;
         while($list = $this->PrintData()) {
             $this->itens[$i] = array(
                 'categ_id' =>$list['categ_id'],
                 'categ_nome' =>$list['categ_nome'],
-                'categ_href' => Routes::pag_Produtos() . '/' . $list['categ_nome']                           
+                'categ_href' => Routes::pag_Produtos() . '/' . $list['categ_id']                           
                 );
             $i++;
         }              

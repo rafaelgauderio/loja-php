@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-30 00:38:08
+/* Smarty version 3.1.45, created on 2022-05-31 23:06:01
   from 'C:\xampp\htdocs\loja\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_6293f5d0b8f845_64860709',
+  'unifunc' => 'content_62968339ddf426_64874478',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '70e43319338037d61ae19a0944e2375360bbb269' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\produtos.tpl',
-      1 => 1653863881,
+      1 => 1654031156,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6293f5d0b8f845_64860709 (Smarty_Internal_Template $_smarty_tpl) {
-?><h2>Conheça nossos produtos e serviços</h2>
+function content_62968339ddf426_64874478 (Smarty_Internal_Template $_smarty_tpl) {
+?><hr>
 
-<hr>
- 
+<?php if (($_smarty_tpl->tpl_vars['PRODUCT_CONTAGEM']->value <= 0)) {?>
+<h3 class="alert alert-warning">Não foram encontrados produtos com a especificação desejada.</h3>
+<?php }?> 
  
   <section id="produtos" class="row">  
  

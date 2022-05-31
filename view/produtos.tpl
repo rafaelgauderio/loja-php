@@ -1,7 +1,8 @@
-<h2>Conheça nossos produtos e serviços</h2>
-
 <hr>
- 
+
+{if ($PRODUCT_CONTAGEM <=0)}
+<h3 class="alert alert-warning">Não foram encontrados produtos com a especificação desejada.</h3>
+{/if} 
  
   <section id="produtos" class="row">  
  

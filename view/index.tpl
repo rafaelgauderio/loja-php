@@ -105,7 +105,8 @@
                 <div class="col-md-2" id="lateral">
                     
                 <div class="list-group">
-                    <span class="list-group-item active"> Produtos</span>                     
+                    <span class="list-group-item active"> Produtos</span>
+                    <a href="{$PAG_PRODUTOS}" class="list-group-item"> Todos</a>                      
                     {foreach from=$CATEGORIAS item=CATEGORIA_ITEM}
                     
                     <a href="{$CATEGORIA_ITEM.categ_href}" class="list-group-item"> {$CATEGORIA_ITEM.categ_nome}</a> 
