@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Categorias' => $baseDir . '/model/Categorias.class.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Conection' => $baseDir . '/model/Conection.class.php',
     'Config' => $baseDir . '/model/Config.class.php',

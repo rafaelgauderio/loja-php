@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInita40e2f5168dcf88b259dfc32df1f4a3c
 {
     public static $classMap = array (
+        'Categorias' => __DIR__ . '/../..' . '/model/Categorias.class.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Conection' => __DIR__ . '/../..' . '/model/Conection.class.php',
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',

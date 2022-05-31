@@ -44,6 +44,7 @@ class Conection extends Config
         $this->object = $this->Conect()->prepare($query);
         return $this->object->execute();                      
     }
+    //faz um for e percorre todos os dados do objeto
     public function PrintData () {
         return $this->object->fetch(PDO::FETCH_ASSOC);
     }

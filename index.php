@@ -1,8 +1,12 @@
 <?php
     require './biblioteca/autoload.php';
 
-    //$email = new PHPMailer();
-
+    //não usar phpMailer, usar a função mail() nativa do php
+    //$email = new PHPMailer(); 
+    $produtos = new Produtos();
+    $categorias = new Categorias();
+    //método para buscar as categorias no menu
+    $categorias->GetCategorias();
     $smarty = new Template();
     //Routes::get_pagina();  
 
@@ -15,28 +19,29 @@
     $smarty->assign('PAG_CONTATO',Routes::pag_Contato());
     $smarty->assign('PAG_EMPRESA',Routes::pag_Empresa());
     $smarty->assign('PAG_CONOSCO',Routes::pag_Conosco());
+    $smarty->assign('CATEGORIAS',$categorias->GetItens());
     $smarty->assign('PAG_PRODUTOS',Routes::pag_produtos());
 
+    
+   
     /*
-    Testando a conexao
-
     $data = new Conection();
     $sql = "SELECT * FROM categorias";
     $data->ExecuteQuery($sql);
 
     $list = $data->PrintData();
 
-
+    
     //listando as categorias
-    //var_dump($data);
+    var_dump($data);
     echo '<pre>';
     var_dump($list);
     echo '</pre>';
 
     echo 'total de categorias: ' . $data->TotalData();
     echo 'itens: ' . $data->GetItens();
-   */
     
+    */
     $smarty->display('index.tpl');
 
 

@@ -63,8 +63,7 @@
                         
                         </div>
                         
-                        <div class="collapse navbar-collapse" id="navbar">
-                          
+                        <div class="collapse navbar-collapse" id="navbar">                          
                                                     
 
                             <form class="navbar-form navbar-left" role="search">
@@ -106,12 +105,12 @@
                 <div class="col-md-2" id="lateral">
                     
                 <div class="list-group">
-                    <span class="list-group-item active"> Produtos</span>                    
-                    <a href="#" class="list-group-item"> Dev</a> 
-                    <a href="#" class="list-group-item"> Database</a> 
-                    <a href="#" class="list-group-item"> Infraestrutura</a> 
+                    <span class="list-group-item active"> Produtos</span>                     
+                    {foreach from=$CATEGORIAS item=CATEGORIA_ITEM}
                     
-                    
+                    <a href="{$CATEGORIA_ITEM.categ_href}" class="list-group-item"> {$CATEGORIA_ITEM.categ_nome}</a> 
+                 
+                    {/foreach}
                     
                 </div>            
                               

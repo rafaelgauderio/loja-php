@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-31 00:24:59
+/* Smarty version 3.1.45, created on 2022-05-31 19:29:54
   from 'C:\xampp\htdocs\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_6295443b868773_41993202',
+  'unifunc' => 'content_62965092705667_90432986',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '88a1285121fb32d2e24d6766738b0f2210382789' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.tpl',
-      1 => 1653949498,
+      1 => 1654018175,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6295443b868773_41993202 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62965092705667_90432986 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -102,8 +102,7 @@ function content_6295443b868773_41993202 (Smarty_Internal_Template $_smarty_tpl)
                         
                         </div>
                         
-                        <div class="collapse navbar-collapse" id="navbar">
-                          
+                        <div class="collapse navbar-collapse" id="navbar">                          
                                                     
 
                             <form class="navbar-form navbar-left" role="search">
@@ -151,12 +150,21 @@ function content_6295443b868773_41993202 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="col-md-2" id="lateral">
                     
                 <div class="list-group">
-                    <span class="list-group-item active"> Produtos</span>                    
-                    <a href="#" class="list-group-item"> Dev</a> 
-                    <a href="#" class="list-group-item"> Database</a> 
-                    <a href="#" class="list-group-item"> Infraestrutura</a> 
+                    <span class="list-group-item active"> Produtos</span>                     
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIAS']->value, 'CATEGORIA_ITEM');
+$_smarty_tpl->tpl_vars['CATEGORIA_ITEM']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['CATEGORIA_ITEM']->value) {
+$_smarty_tpl->tpl_vars['CATEGORIA_ITEM']->do_else = false;
+?>
                     
-                    
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['CATEGORIA_ITEM']->value['categ_href'];?>
+" class="list-group-item"> <?php echo $_smarty_tpl->tpl_vars['CATEGORIA_ITEM']->value['categ_nome'];?>
+</a> 
+                 
+                    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     
                 </div>            
                               
