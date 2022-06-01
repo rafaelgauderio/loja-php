@@ -1,6 +1,6 @@
 <?php
 
-class Conection extends Config
+class Conection extends Constants
 {
 
     private $user, $password, $host, $database;
@@ -11,8 +11,8 @@ class Conection extends Config
     {
         $this->host = self::BD_HOST;
         $this->user = self::BD_USER;
-        $this->password =self::BD_SENHA;        
-        $this->database = self::BD_BANCO;
+        $this->password =self::BD_PASSWORD;        
+        $this->database = self::BD_DATABASE;
         $this->prefix = self::BD_PREFIX;
 
         try {

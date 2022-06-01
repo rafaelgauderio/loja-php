@@ -1,7 +1,7 @@
 <?php
 $to = Config::EMAIL_USER;
 
-$subject = "Email via formulária deluca tecnologia";
+$subject = "Email via formulário deluca tecnologia";
 $message = "Email de " . $_GET['inputnome'] . "\r\n". 
 "Mensagem: " . $_GET['inputarea'];
 $headers = "From: " . $_GET['inputemail'] . "\r\n" .

@@ -9,7 +9,7 @@ return array(
     'Categorias' => $baseDir . '/model/Categorias.class.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Conection' => $baseDir . '/model/Conection.class.php',
-    'Config' => $baseDir . '/model/Config.class.php',
+    'Constants' => $baseDir . '/model/Constants.class.php',
     'Produtos' => $baseDir . '/model/Produtos.class.php',
     'Routes' => $baseDir . '/model/Routes.class.php',
     'Smarty' => $vendorDir . '/smarty/smarty/libs/Smarty.class.php',

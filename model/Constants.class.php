@@ -1,7 +1,7 @@
 <?php
 
 // aqui ficam só as constantes do projeto
-class Config
+class Constants
 {
 
     const SITE_HOST = "https://localhost";
@@ -19,9 +19,9 @@ class Config
 
     const BD_HOST = "localhost",
     BD_USER = "root",
-    BD_SENHA = "",
-    BD_BANCO = "lojadeluca",
-    BD_PREFIX = "as_";
+    BD_PASSWORD = "",
+    BD_DATABASE = "lojadeluca",
+    BD_PREFIX = "security_";
 
     
 }

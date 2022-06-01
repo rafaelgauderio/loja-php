@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-05-31 22:36:00
+/* Smarty version 3.1.45, created on 2022-06-01 21:00:21
   from 'C:\xampp\htdocs\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62967c30392e65_59880681',
+  'unifunc' => 'content_6297b745e1e861_35055692',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '88a1285121fb32d2e24d6766738b0f2210382789' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.tpl',
-      1 => 1654029354,
+      1 => 1654110019,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62967c30392e65_59880681 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6297b745e1e861_35055692 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -113,7 +113,7 @@ function content_62967c30392e65_59880681 (Smarty_Internal_Template $_smarty_tpl)
                             </form>
 
                               <ul class="nav navbar-nav">
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_PAGINA_INICIAL']->value;?>
 "> Home </a> </li>
                                
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTA']->value;?>

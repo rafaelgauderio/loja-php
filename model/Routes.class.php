@@ -3,15 +3,16 @@ Class Routes {
 
     private static $pasta_view = 'view';
     public static $pagina;
-    private static $pasta_controlller = 'controlador';
+    private static $pasta_controlador = 'controlador';
+    private static $pasta_produtos ='produtos';
    
 
     static function get_SiteHOME () {
-        return Config::SITE_HOST . '/' .Config::SITE_PASTA;
+        return Constants::SITE_HOST . '/' .Constants::SITE_PASTA;
     }
 
     static function get_SiteROOT () {
-        return $_SERVER['DOCUMENT_ROOT'] . '/' .Config::SITE_PASTA;
+        return $_SERVER['DOCUMENT_ROOT'] . '/' .Constants::SITE_PASTA;
     }
 
     static function get_SiteTEMA () {
@@ -58,7 +59,11 @@ Class Routes {
     static function ImageResize($img, $width, $height) {
         $image = self::get_ImageURL() . "thumb.php?src={$img}&w={$width}&h={$height}&zc=1";
         return $image;
-    }   
+    } 
+    
+    static function get_controlador() {
+        return self::$pasta_controlador;
+    }
     
 
 
@@ -71,13 +76,18 @@ Class Routes {
             //var_dump(self::$pagina);
             //echo '<pre>';
             $pagina = 'controlador/' . self::$pagina[0] . '.php';
-            //$pagina = 'controlador/' . $_GET['pagina'] . '.php';
+            $pagina1 = 'produtos/' . self::$pagina[0] . '.php';
             if (file_exists($pagina)) {
                 include $pagina;
+            } else if(file_exists($pagina1)) {
+                include $pagina1;
             } else {
                 include 'erro.php';
         } 
-        }
+
+       } else {
+           include 'home.php';
+       }
     }
 
 }
