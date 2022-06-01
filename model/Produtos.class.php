@@ -29,6 +29,10 @@ Class Produtos extends Conection {
          $this->GetList();
     }
 
+    public static function MoedaBrazil($valor) {
+        return number_format($valor,2,",",".");
+    }
+
     public function GetList () {
         $i = 1;
         while($list = $this->PrintData()) {
@@ -36,7 +40,7 @@ Class Produtos extends Conection {
                 'prod_id' =>$list['prod_id'],
                 'prod_nome' =>$list['prod_nome'],
                 'prod_descri' => $list['prod_descri'],
-                'prod_preco' => $list['prod_preco'],
+                'prod_preco' => Produtos::MoedaBrazil($list['prod_preco']),
                 'prod_img'=>Routes::get_ImageURL() . $list['prod_img'],
                 'prod_categoria' => $list['prod_categoria'],
                 'prod_destaque' => $list['prod_destaque'] 
