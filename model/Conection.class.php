@@ -40,8 +40,17 @@ class Conection extends Config
         return $link;
     }
 
-    public function ExecuteQuery($query, array $params = NULL) {
-        $this->object = $this->Conect()->prepare($query);
+    //progeter essa função de sql injection
+    public function ExecuteQuery($query, array $parametros=NULL) {
+        $this->object = $this->Conect()->prepare($query);        
+        $parametros=filter_var($parametros,FILTER_SANITIZE_NUMBER_INT);                
+        /*        
+        if(count($parametros)>0) {
+            foreach($parametros as $key=>$value) {
+                $this->object->bindvalue($key,$value);                
+            }
+        } 
+       */                      
         return $this->object->execute();                      
     }
     //faz um for e percorre todos os dados do objeto

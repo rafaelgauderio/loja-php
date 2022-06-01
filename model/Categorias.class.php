@@ -9,7 +9,7 @@ Class Categorias extends Conection {
     }
 
     function GetCategorias () {
-        $sql = "SELECT categ_nome, categ_id FROM categorias";
+        $sql = "SELECT categ_id, categ_nome FROM categorias";
         $this->ExecuteQuery($sql);
         $this->GetListCategorias();
     }

@@ -70,6 +70,7 @@ color: #fff;
 }
 
 
+
 #conteudo{
     
    min-height: 500px; 
@@ -115,6 +116,7 @@ color: #fff;
  text-align: center;
  font-style: italic;
  color: #25335D;
+ margin: 1px;
 }
 
 .navbar-inverse{

@@ -17,12 +17,15 @@ Class Produtos extends Conection {
     }
 
     public function GetProdutosId($id) {
+        $id_sanitizado = filter_var($id,FILTER_SANITIZE_STRING);
         $sql = "SELECT *
          FROM produtos 
          INNER JOIN categorias
          ON produtos.prod_categoria = categorias.categ_id";
-         $sql .= " AND prod_id= {$id}";
-         $this->ExecuteQuery($sql);
+         $sql .= " AND prod_id={$id_sanitizado}";
+         $parametros = array(':id_sanitizado'=>(int)$id_sanitizado);         
+         //somente vai aceitar inteiros para id, não tem como o usuário fazer sql injection         
+         $this->ExecuteQuery($sql,$parametros);
          $this->GetList();
     }
 
@@ -43,13 +46,15 @@ Class Produtos extends Conection {
            
         } 
         
-        public function GetProdutosCategoriaId($id) {
+        public function GetProdutosCategoriaId($id) {            
+            $id_sanitizado = filter_var($id,FILTER_SANITIZE_STRING);
             $sql = "SELECT *
              FROM produtos 
              INNER JOIN categorias
              ON produtos.prod_categoria = categorias.categ_id";
-             $sql .= " AND prod_categoria= {$id}";
-             $this->ExecuteQuery($sql);
+             $sql .= " AND prod_categoria= {$id_sanitizado}";
+             $parametros = array(':id_sanitizado'=>(int)$id_sanitizado);
+             $this->ExecuteQuery($sql,$parametros);
              $this->GetList();
         }
      
