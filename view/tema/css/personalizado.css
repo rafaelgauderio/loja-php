@@ -35,17 +35,26 @@ color: #fff;
 }
 
 #topo img{
-
   
   border-radius:10px;
   border: 2px solid black;
   }
 
-#externo-buscar {
-  display:grid;
+#logo-externa{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.img-rounded {
+  width:500px;
   align-items: center;
   align-content: center;
-} 
+
+}
+
 
 #buscar {
   align-self: center;
@@ -54,7 +63,7 @@ color: #fff;
 }
 
 #rodape{
-max-height: 50px;
+
 min-height: 20px;
 background-color: black;  
 color: #fff;
@@ -69,6 +78,10 @@ color: #fff;
   
 }
 
+#rodape h5 {  
+  align-items: center;
+  text-align: center;
+}
 
 
 #conteudo{
@@ -191,7 +204,8 @@ a.list-group-item {
     border: 0;
     font-size: 16px;       
     /*transform: translateY(-1px); */
-    color:black  
+    color:black;
+    margin-bottom:5px;
     
 }
 

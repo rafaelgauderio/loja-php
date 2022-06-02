@@ -145,7 +145,8 @@
           
             <div class="row" id="rodape">
             <h4>Desenvolvido por Rafael de Luca</h4>
-            
+            <h5>Política de privacidade</br>Todos os direitos reservados.</h5>
+                      
             
             </div>
             
