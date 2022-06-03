@@ -1,3 +1,5 @@
-<h1>Erro. A página não foi encontrada.</h1>
-<a href="./index.php">Voltar para a página inicial</a>
+
+<h1>Error 404: Not Found. A página não foi encontrada.</h1>
+<div id="link_erro">
+
 <br>

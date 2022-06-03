@@ -96,7 +96,9 @@ color: #fff;
    border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin-right:5px;    
-   padding: 0px; 
+   padding: 0px;
+   border-radius: 8px; 
+  
   }
 
   .transparente{
@@ -115,6 +117,19 @@ color: #fff;
     align-content: center;
     grid-gap:10px;
 
+  }
+
+  #link_erro a{
+    border: 2px solid silver;
+    padding: 5px;
+    color:#5CA47A;
+    border-radius: 5px;
+  }
+
+  #link_erro:hover a{  
+   -moz-transform: scale(1.2);
+	 -webkit-transform: scale(1.2);
+	 transform: scale(1.2);   
   }
 
 
@@ -170,7 +185,8 @@ color: #fff;
    background-color: #25335D;
    border: 0px;
    margin: 0px;
-   border-radius: 0px;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
  
   
     
