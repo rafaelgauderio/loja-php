@@ -49,10 +49,9 @@ color: #fff;
 }
 
 .img-rounded {
-  width:500px;
+  width:100%;
   align-items: center;
   align-content: center;
-
 }
 
 
@@ -64,6 +63,7 @@ color: #fff;
 
 #rodape{
 
+height: 100%;
 min-height: 20px;
 background-color: black;  
 color: #fff;

@@ -1,4 +1,8 @@
 <?php
+
+    if(isset($_SESSION)==false) {
+        session_start();
+    }
     require './biblioteca/autoload.php';
 
     //não usar phpMailer, usar a função mail() nativa do php

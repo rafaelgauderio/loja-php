@@ -17,7 +17,7 @@ Class Produtos extends Conection {
     }
 
     public function GetProdutosId($id) {
-        $id_sanitizado = filter_var($id,FILTER_SANITIZE_STRING);
+        $id_sanitizado = filter_var($id,FILTER_SANITIZE_NUMBER_INT);
         $sql = "SELECT *
          FROM produtos 
          INNER JOIN categorias
@@ -51,7 +51,7 @@ Class Produtos extends Conection {
         } 
         
         public function GetProdutosCategoriaId($id) {            
-            $id_sanitizado = filter_var($id,FILTER_SANITIZE_STRING);
+            $id_sanitizado = filter_var($id,FILTER_SANITIZE_NUMBER_INT);
             $sql = "SELECT *
              FROM produtos 
              INNER JOIN categorias
