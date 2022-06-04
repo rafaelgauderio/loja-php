@@ -4,7 +4,7 @@
 class Carrinho {
     private $total_preco, $quant_itens = array();
 
-    function GetCarrinho ($session=NULL) {
+    public function GetCarrinho ($session=NULL) {
         $contador =1;
         
         foreach($_SESSION['PRODUTOS'] as $lista ) {  
@@ -37,6 +37,40 @@ class Carrinho {
 
     public function GetTotalCarrinho() {
         return $this->total_preco;
+    }
+
+    public function AdicionarAoCarrinho($id) {
+        $produtos = new Produtos();
+        $produtos->GetProdutosId($id);
+        foreach ($produtos->GetItens() as $objProdutos) {
+            $ID = $objProdutos['prod_id'];
+            $NOME = $objProdutos['prod_nome'];
+            $PRECO_BANCO = $objProdutos['prod_preco_banco'];
+            $PRECO = $objProdutos['prod_preco'];
+            $QUANTI= 1;
+            $IMG = $objProdutos['prod_img'];
+            $ACTION= $_POST['action'];
+        }
+        if($ACTION=='adicionar') {
+            //primeiro verificar se já tem um sessão com esse prod_id
+            if(isset($_SESSION['PRODUTOS'][$ID]['ID'])==false) {
+                $_SESSION['PRODUTOS'][$id]['ID'] = $ID;
+                $_SESSION['PRODUTOS'][$id]['NOME'] = $NOME;                
+                $_SESSION['PRODUTOS'][$id]['QUANTI'] = $QUANTI;
+                $_SESSION['PRODUTOS'][$id]['IMG'] = $IMG;
+                $_SESSION['PRODUTOS'][$id]['PRECO_BANCO'] = $PRECO_BANCO;
+                $_SESSION['PRODUTOS'][$id]['PRECO'] = $PRECO;
+            } else {
+                //caso o produto já existe na sessao, apenas incrementa
+                $_SESSION['PRODUTOS'][$id]['QUANTI'] = $_SESSION['PRODUTOS'][$id]['QUANTI'] + $QUANTI;
+            }            
+            echo '<h3 class="alert alert-success">Produto adicionado ao carrinho com sucesso.</h3>';
+
+        } else if ($ACTION='deletar') {
+
+        } else if ($ACTION='limpar') {
+
+        }
     }
 
 }

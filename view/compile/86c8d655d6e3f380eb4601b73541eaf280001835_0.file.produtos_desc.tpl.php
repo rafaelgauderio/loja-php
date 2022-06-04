@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-02 20:11:11
+/* Smarty version 3.1.45, created on 2022-06-04 21:00:07
   from 'C:\xampp\htdocs\loja\view\produtos_desc.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_6298fd3fca6e51_21846733',
+  'unifunc' => 'content_629babb7410045_11173813',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '86c8d655d6e3f380eb4601b73541eaf280001835' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\produtos_desc.tpl',
-      1 => 1654001860,
+      1 => 1654369203,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6298fd3fca6e51_21846733 (Smarty_Internal_Template $_smarty_tpl) {
+function content_629babb7410045_11173813 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
      <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRODUCT']->value, 'PRODUCT_ITEM');
@@ -54,15 +54,16 @@ $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->do_else = false;
         </div>   
 
         <div class="col-md-4" >
-            <form name="carrinho" method="post" action="">
+            <form name="carrinho" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGINA_COMPRAR']->value;?>
+">
                 <input type="hidden" name="prod_id" value="<?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_id'];?>
 ">
-                <input type="hidden" name="acao" value="add">
+                <input type="hidden" name="action" value="adicionar">
             <div id=botoes_produto>   
             <button  class="btn btn-success">Adicionar ao Carrinho</button>
-            <button  class="btn btn-info">Adicionar a lista de desejos</button>
              </form>
-             </div>             
+             </div>
+                      
         </div> 
     
 

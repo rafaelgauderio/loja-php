@@ -20,14 +20,14 @@
         </div>   
 
         <div class="col-md-4" >
-            <form name="carrinho" method="post" action="">
+            <form name="carrinho" method="post" action="{$PAGINA_COMPRAR}">
                 <input type="hidden" name="prod_id" value="{$PRODUCT_ITEM.prod_id}">
-                <input type="hidden" name="acao" value="add">
+                <input type="hidden" name="action" value="adicionar">
             <div id=botoes_produto>   
             <button  class="btn btn-success">Adicionar ao Carrinho</button>
-            <button  class="btn btn-info">Adicionar a lista de desejos</button>
              </form>
-             </div>             
+             </div>
+                      
         </div> 
     
 

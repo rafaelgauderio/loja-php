@@ -27,6 +27,10 @@ Class Routes {
         return self::get_SiteHOME() . '/carrinho' ;
     }
 
+    static function pag_Alterar_Carrinho () {
+        return self::get_SiteHOME()  . '/alterar_carrinho';
+    }
+
     static function pag_ProdutosDescricao () {
         return self::get_SiteHOME() . '/produtos_desc' ;
     }

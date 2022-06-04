@@ -1,11 +1,14 @@
 <?php
 
 $smarty = new Template();
+
 $produtos = new Produtos();
 $produtos->GetProdutosId(Routes::$pagina[1]);
+
 $smarty->assign('PRODUCT',$produtos->GetItens());
+$smarty->assign('PAGINA_COMPRAR',Routes::pag_Alterar_Carrinho());
 
-
+/*
 $id=Routes::$pagina[1];
 foreach ($produtos->getItens() as $pro) {
     $_SESSION['PRODUTOS'][$id]['ID'] = $pro['prod_id'];
@@ -16,6 +19,7 @@ foreach ($produtos->getItens() as $pro) {
     $_SESSION['PRODUTOS'][$id]['PRECO_BANCO'] = $pro['prod_preco_banco'];
     $id++;
 }
+*/
 
 $smarty->display('produtos_desc.tpl');
 
