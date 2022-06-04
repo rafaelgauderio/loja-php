@@ -6,11 +6,16 @@ class Carrinho {
 
     function GetCarrinho ($session=NULL) {
         $contador =1;
-        $sub_total =1.00;
-        foreach($_SESSION['PRODUTOS'] as $lista ) {   
+        
+        foreach($_SESSION['PRODUTOS'] as $lista ) {  
+            $sub_total =($lista['PRECO_BANCO'] * $lista['QUANTI']); 
+            $this->total_preco = $this->total_preco + $sub_total; 
              $this->quant_itens[$contador] = array(
                 'prod_id' => $lista['ID'],
                 'prod_nome' => $lista['NOME'],
+                //salvar no banco de dados como padrão US e depois converte para
+                //o padrão brasil na hora de mostrar pro usuário
+                'prod_preco_banco'=>$lista['PRECO_BANCO'],
                 'prod_preco' => $lista['PRECO'],
                 'prod_quanti'=> $lista['QUANTI'],
                 'prod_img'  => $lista['IMG'],
@@ -28,6 +33,10 @@ class Carrinho {
 
     public static function MoedaBrazil($valor) {
         return number_format($valor,2,",",".");
+    }
+
+    public function GetTotalCarrinho() {
+        return $this->total_preco;
     }
 
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-03 21:47:24
+/* Smarty version 3.1.45, created on 2022-06-04 20:03:00
   from 'C:\xampp\htdocs\loja\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_629a654c655ba5_44544469',
+  'unifunc' => 'content_629b9e54bc6374_06241550',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ad4aca169a1025971aeec1f166e642be7e628458' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\carrinho.tpl',
-      1 => 1654285641,
+      1 => 1654365751,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629a654c655ba5_44544469 (Smarty_Internal_Template $_smarty_tpl) {
+function content_629b9e54bc6374_06241550 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h2>Carrinho</h2>
 <hr>
 
@@ -36,19 +36,18 @@ function content_629a654c655ba5_44544469 (Smarty_Internal_Template $_smarty_tpl)
     
 </section>
     <br>
-
 <section class="row ">   
     <center>
-    <table class="table table-bordered" style="width: 95%">
+    <table class="table table-bordered" style="width: 100%">
         <tr>            
-            <td colspan="6" align="right"><a href="" class="btn btn-success" title="">Continuar Comprando</a></td> 
+            <td colspan="6" align="center"><a href="" class="btn btn-success" title="">Continuar Comprando</a></td> 
         </tr>        
         <tr class="text-danger bg-info">
             <td>Imagem</td> 
-            <td>Produto</td> 
+            <td>Produto</td>             
+            <td>Quantidade</td>
             <td>Valor R$</td> 
-            <td>Excluir</td> 
-            <td>Sub Total R$</td> 
+            <td>SubTotal R$</td> 
             <td></td>          
         </tr>    
         
@@ -61,14 +60,15 @@ $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->do_else = false;
         
         <tr>
             
-            <td> <img src="" alt="<?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_nome'];?>
+            <td> <img src="<?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_img'];?>
+" widht="60" height="60" alt="<?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_nome'];?>
 "> </td>
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_nome'];?>
  </td>
+            <td><?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_quanti'];?>
+</td>
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_preco'];?>
- </td>
-            <td> <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_quanti'];?>
-  </td>
+ </td>           
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_subTotal'];?>
  </td>
             <td> 
@@ -81,17 +81,13 @@ $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->do_else = false;
                     <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
                     <button class="btn btn-success btn-sm"> <i class="glyphicon glyphicon-plus"></i> </button>
                 </form>
-            </td>
-            
-            
-        </tr>
-        
+            </td>  
+        </tr>        
        <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
-    </table>
-  
+    </table>  
     </center>   
            
 </section>    
@@ -102,7 +98,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </div>            
             <div class="col-md-4 text-right text-danger bg-info">
             <h4>
-               Total : R$ 
+               Total : R$ <?php echo $_smarty_tpl->tpl_vars['TOTALCARRINHO']->value;?>
+
             </h4>
             </div>
             

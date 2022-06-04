@@ -41,6 +41,7 @@ Class Produtos extends Conection {
                 'prod_nome' =>$list['prod_nome'],
                 'prod_descri' => $list['prod_descri'],
                 'prod_preco' => Produtos::MoedaBrazil($list['prod_preco']),
+                'prod_preco_banco' => ($list['prod_preco']),
                 'prod_img'=>Routes::get_ImageURL() . $list['prod_img'],
                 'prod_categoria' => $list['prod_categoria'],
                 'prod_destaque' => $list['prod_destaque'] 

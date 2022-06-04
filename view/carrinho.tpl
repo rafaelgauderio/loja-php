@@ -13,19 +13,18 @@
     
 </section>
     <br>
-
 <section class="row ">   
     <center>
-    <table class="table table-bordered" style="width: 95%">
+    <table class="table table-bordered" style="width: 100%">
         <tr>            
-            <td colspan="6" align="right"><a href="" class="btn btn-success" title="">Continuar Comprando</a></td> 
+            <td colspan="6" align="center"><a href="" class="btn btn-success" title="">Continuar Comprando</a></td> 
         </tr>        
         <tr class="text-danger bg-info">
             <td>Imagem</td> 
-            <td>Produto</td> 
+            <td>Produto</td>             
+            <td>Quantidade</td>
             <td>Valor R$</td> 
-            <td>Excluir</td> 
-            <td>Sub Total R$</td> 
+            <td>SubTotal R$</td> 
             <td></td>          
         </tr>    
         
@@ -33,10 +32,10 @@
         
         <tr>
             
-            <td> <img src="" alt="{$PRODUTOS_ITEM.prod_nome}"> </td>
+            <td> <img src="{$PRODUTOS_ITEM.prod_img}" widht="60" height="60" alt="{$PRODUTOS_ITEM.prod_nome}"> </td>
             <td>  {$PRODUTOS_ITEM.prod_nome} </td>
-            <td>  {$PRODUTOS_ITEM.prod_preco} </td>
-            <td> {$PRODUTOS_ITEM.prod_quanti}  </td>
+            <td>{$PRODUTOS_ITEM.prod_quanti}</td>
+            <td>  {$PRODUTOS_ITEM.prod_preco} </td>           
             <td>  {$PRODUTOS_ITEM.prod_subTotal} </td>
             <td> 
                 <form name="carrinho_dell" method="post" action="">
@@ -47,15 +46,11 @@
                     <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
                     <button class="btn btn-success btn-sm"> <i class="glyphicon glyphicon-plus"></i> </button>
                 </form>
-            </td>
-            
-            
-        </tr>
-        
+            </td>  
+        </tr>        
        {/foreach}
         
-    </table>
-  
+    </table>  
     </center>   
            
 </section>    
@@ -66,7 +61,7 @@
             </div>            
             <div class="col-md-4 text-right text-danger bg-info">
             <h4>
-               Total : R$ 
+               Total : R$ {$TOTALCARRINHO}
             </h4>
             </div>
             
