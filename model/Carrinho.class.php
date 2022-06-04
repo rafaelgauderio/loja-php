@@ -66,11 +66,24 @@ class Carrinho {
             }            
             echo '<h3 class="alert alert-success">Produto adicionado ao carrinho com sucesso.</h3>';
 
-        } else if ($ACTION='deletar') {
+        } else if ($ACTION=='deletar') {
+            $this->DeleterCarrinhoId($id);
+            echo '<h3 class="alert alert-success">Produtos removidos do carrinho.</h3>';
 
-        } else if ($ACTION='limpar') {
+        } else if ($ACTION=='limpar') {
+            $this->LimparCarrinho();
+            echo '<h3 class="alert alert-success">Todos os itens foram excluídos do carrinho.</h3>';
 
         }
+    }
+
+    protected function DeleterCarrinhoId($id) {
+        unset($_SESSION['PRODUTOS'][$id]);
+    }
+
+    protected function LimparCarrinho () {
+        //destroi todo as sessoes idependetes do id
+        unset($_SESSION['PRODUTOS']);
     }
 
 }

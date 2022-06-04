@@ -1,10 +1,7 @@
- <h2>Carrinho</h2>
-<hr>
+ <h2>Carrinho de Compras</h2>
+
 
 <section class="row">    
-    <div class="col-md-12 " align="right">
-        <a href="" class="btn btn-info" title="">Comprar Mais</a>
-    </div>
     <div class="col-md-4">
         
     </div>
@@ -38,10 +35,10 @@
             <td>  {$PRODUTOS_ITEM.prod_preco} </td>           
             <td>  {$PRODUTOS_ITEM.prod_subTotal} </td>
             <td> 
-                <form name="carrinho_dell" method="post" action="">
+                <form name="carrinho_deletar" method="post" action="{$PAGINA_ALTERAR_CARRINHO}">
                   
                     <input type="hidden" name="prod_id" value="{$PRODUTOS_ITEM.prod_id}">    
-                    <input type="hidden" name="acao" value="del">    
+                    <input type="hidden" name="action" value="deletar">    
                     
                     <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
                     <button class="btn btn-success btn-sm"> <i class="glyphicon glyphicon-plus"></i> </button>
@@ -62,9 +59,9 @@
             </div>            
             
             <div class="col-md-4 ">
-                <form name="limpar" method="post" action="">
+                <form name="limpar" method="post" action="{$PAGINA_ALTERAR_CARRINHO}">
                     <input type="hidden" name="action" value="limpar">
-                    <input type="hidden" name="prod_id" value="1">
+                    <input type="hidden" name="prod_id" value="1">                    
                     <button class="btn btn-danger btn-block"> <i class="glyphicon glyphicon-trash"></i> Limpar Carrinho</button>
                     <br>
                 </form>
