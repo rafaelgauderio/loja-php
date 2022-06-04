@@ -73,6 +73,11 @@ Class Routes {
     static function get_controlador() {
         return self::$pasta_controlador;
     }
+
+    static function redirecionarPagina($time, $pagina) {
+        $link = '<meta http-equiv="refresh" content="' .$time.';url='.$pagina. '">';
+        echo $link;
+    }
     
 
 
