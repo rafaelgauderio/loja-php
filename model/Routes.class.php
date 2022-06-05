@@ -30,6 +30,15 @@ Class Routes {
     static function pag_Alterar_Carrinho () {
         return self::get_SiteHOME()  . '/alterar_carrinho';
     }
+  
+    static function pag_Finalizar_Pedido () {
+        return self::get_SiteHOME()  . '/finalizar_pedido';
+    }
+
+    static function pag_Pedido_Finalizado () {
+        return self::get_SiteHOME()  . '/pedido_finalizado';
+    }
+   
 
     static function pag_ProdutosDescricao () {
         return self::get_SiteHOME() . '/produtos_desc' ;

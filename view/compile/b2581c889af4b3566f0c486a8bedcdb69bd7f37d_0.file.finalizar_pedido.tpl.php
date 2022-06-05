@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-05 08:32:40
-  from 'C:\xampp\htdocs\loja\view\carrinho.tpl' */
+/* Smarty version 3.1.45, created on 2022-06-05 09:04:29
+  from 'C:\xampp\htdocs\loja\view\finalizar_pedido.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_629c4e08859420_60053137',
+  'unifunc' => 'content_629c557dd23280_99286226',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'ad4aca169a1025971aeec1f166e642be7e628458' => 
+    'b2581c889af4b3566f0c486a8bedcdb69bd7f37d' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\loja\\view\\carrinho.tpl',
-      1 => 1654410758,
+      0 => 'C:\\xampp\\htdocs\\loja\\view\\finalizar_pedido.tpl',
+      1 => 1654412645,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629c4e08859420_60053137 (Smarty_Internal_Template $_smarty_tpl) {
-?> <h2>Carrinho de Compras</h2>
+function content_629c557dd23280_99286226 (Smarty_Internal_Template $_smarty_tpl) {
+?> <h2>Checkout do Pedido</h2>
+ <h4>Confira os dados do pedido abaixo</h4>
 
 
 <section class="row">    
@@ -37,16 +38,15 @@ function content_629c4e08859420_60053137 (Smarty_Internal_Template $_smarty_tpl)
     <center>
     <table class="table table-bordered" style="width: 105%">
         <tr>            
-            <td colspan="6"><a href="<?php echo $_smarty_tpl->tpl_vars['PAGINA_PRODUTOS']->value;?>
-" class="btn btn-success" title="">Continuar Comprando</a></td> 
+            <td colspan="6"><a href="<?php echo $_smarty_tpl->tpl_vars['PAGINA_CARRINHO']->value;?>
+" class="btn btn-danger" title="">Voltar ao Carrinho de Compras</a></td> 
         </tr>        
         <tr class="text-danger align=center bg-info">
             <td>Produto</td> 
             <td>Descrição</td>             
             <td>Quantidade</td>
             <td>Valor R$</td> 
-            <td>SubTotal R$</td> 
-            <td>Excluir Item</td>          
+            <td>SubTotal R$</td>                     
         </tr>    
         
        <?php
@@ -62,24 +62,13 @@ $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->do_else = false;
 " widht="60" height="60" alt="<?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_nome'];?>
 "> </td>
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_nome'];?>
- </td>
-            <td><button class="btn btn-info btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
-            <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_quanti'];?>
-<button class="btn btn-info btn-sm"> <i class="glyphicon glyphicon-plus"></i> </button></td>
+ </td>            
+            <td><?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_quanti'];?>
+</td>
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_preco'];?>
  </td>           
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_subTotal'];?>
- </td>
-            <td> 
-                <form name="carrinho_deletar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGINA_ALTERAR_CARRINHO']->value;?>
-">
-                  
-                    <input type="hidden" name="prod_id" value="<?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_id'];?>
-">    
-                    <input type="hidden" name="action" value="deletar">    
-                    <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-remove"></i> </button>
-                 </form>
-            </td>  
+ </td>            
         </tr>        
        <?php
 }
@@ -97,17 +86,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </h4>
             </div>            
             
-            <div class="col-md-4">
-                <form name="limpar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGINA_ALTERAR_CARRINHO']->value;?>
+            <div class="col-md-4">              
+                    <form name="finalizar_pedido" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGINA_PEDIDO_FINALIZADO']->value;?>
 ">
-                    <input type="hidden" name="action" value="limpar">
-                    <input type="hidden" name="prod_id" value="1">                    
-                    <button class="btn btn-danger btn-block"> <i class="glyphicon glyphicon-remove-circle"></i> Limpar Carrinho</button>
-                    <br>
-                </form>
-                    <form name="finalizar_pedido" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGINA_CONFERIR_PEDIDO']->value;?>
-">
-                     <button class="btn btn-success btn-block" type="submit">  <i class="glyphicon glyphicon-thumbs-up"></i> Ir para página de checkout</button>
+                     <button class="btn btn-success btn-block" type="submit">  <i class="glyphicon glyphicon-thumbs-up"></i> Finalizar Pedido </button>
                  </form>
             </div>         
 
@@ -118,5 +100,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
        </div>            
   </section>
        <br>
-       <br> <?php }
+       <br> 
+
+
+<?php }
 }

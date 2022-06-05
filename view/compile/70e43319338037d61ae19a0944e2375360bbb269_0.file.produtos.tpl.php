@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-02 20:10:22
+/* Smarty version 3.1.45, created on 2022-06-05 08:09:33
   from 'C:\xampp\htdocs\loja\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_6298fd0ea7b7d5_91596632',
+  'unifunc' => 'content_629c489d977614_29815988',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '70e43319338037d61ae19a0944e2375360bbb269' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\produtos.tpl',
-      1 => 1654088569,
+      1 => 1654031156,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6298fd0ea7b7d5_91596632 (Smarty_Internal_Template $_smarty_tpl) {
+function content_629c489d977614_29815988 (Smarty_Internal_Template $_smarty_tpl) {
 ?><hr>
 
 <?php if (($_smarty_tpl->tpl_vars['PRODUCT_CONTAGEM']->value <= 0)) {?>

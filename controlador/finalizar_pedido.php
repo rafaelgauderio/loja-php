@@ -8,15 +8,13 @@ $smarty->assign('PRODUTOS',$carrinho->GetCarrinho());
 $smarty->assign('TOTALCARRINHO',Carrinho::MoedaBrazil($carrinho->GetTotalCarrinho()));
 $smarty->assign('PAGINA_ALTERAR_CARRINHO', Routes::pag_Alterar_Carrinho());
 $smarty->assign('PAGINA_PRODUTOS',Routes::pag_Produtos());
-$smarty->assign('PAGINA_CONFERIR_PEDIDO', Routes::pag_Finalizar_Pedido());
+$smarty->assign('PAGINA_CARRINHO',Routes::pag_Carrinho());
+$smarty->assign('PAGINA_FINALIZAR_PEDIDO', Routes::pag_Finalizar_Pedido());
+$smarty->assign('PAGINA_PEDIDO_FINALIZADO', Routes::pag_Pedido_Finalizado());
 
-/*
-echo '<pre>';
-var_dump($carrinho->GetCarrinho());
-echo '<pre>';
-*/
 
-$smarty->display('carrinho.tpl');
+
+$smarty->display('finalizar_pedido.tpl');
 } else {
     echo '<h3 class="alert alert-danger"> O seu carrinho de compras está VAZIO!</h3>';  
 }

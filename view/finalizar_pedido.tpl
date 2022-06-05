@@ -1,0 +1,66 @@
+ <h2>Checkout do Pedido</h2>
+ <h4>Confira os dados do pedido abaixo</h4>
+
+
+<section class="row">    
+    <div class="col-md-4">
+        
+    </div>
+    <div class="col-md-4 text-right">         
+    </div>
+    
+</section>
+    <br>
+<section class="row ">   
+    <center>
+    <table class="table table-bordered" style="width: 105%">
+        <tr>            
+            <td colspan="6"><a href="{$PAGINA_CARRINHO}" class="btn btn-danger" title="">Voltar ao Carrinho de Compras</a></td> 
+        </tr>        
+        <tr class="text-danger align=center bg-info">
+            <td>Produto</td> 
+            <td>Descrição</td>             
+            <td>Quantidade</td>
+            <td>Valor R$</td> 
+            <td>SubTotal R$</td>                     
+        </tr>    
+        
+       {foreach from=$PRODUTOS item=PRODUTOS_ITEM}
+        
+        <tr>
+            
+            <td> <img src="{$PRODUTOS_ITEM.prod_img}" widht="60" height="60" alt="{$PRODUTOS_ITEM.prod_nome}"> </td>
+            <td>  {$PRODUTOS_ITEM.prod_nome} </td>            
+            <td>{$PRODUTOS_ITEM.prod_quanti}</td>
+            <td>  {$PRODUTOS_ITEM.prod_preco} </td>           
+            <td>  {$PRODUTOS_ITEM.prod_subTotal} </td>            
+        </tr>        
+       {/foreach}        
+    </table>  
+    </center>            
+</section>           
+        <section class="row" id="total">                      
+            <div class="col-md-4 text-right">           
+            </div>            
+            <div class="col-md-4 text-right text-danger bg-info">
+            <h4>
+               Total do Pedido: R$ {$TOTALCARRINHO}
+            </h4>
+            </div>            
+            
+            <div class="col-md-4">              
+                    <form name="finalizar_pedido" method="post" action="{$PAGINA_PEDIDO_FINALIZADO}">
+                     <button class="btn btn-success btn-block" type="submit">  <i class="glyphicon glyphicon-thumbs-up"></i> Finalizar Pedido </button>
+                 </form>
+            </div>         
+
+        </section>
+                    <br>  
+          
+       </form>
+       </div>            
+  </section>
+       <br>
+       <br> 
+
+

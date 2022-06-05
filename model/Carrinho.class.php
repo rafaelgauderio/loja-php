@@ -68,7 +68,7 @@ class Carrinho {
 
         } else if ($ACTION=='deletar') {
             $this->DeleterCarrinhoId($id);
-            echo '<h3 class="alert alert-success">Produtos removidos do carrinho.</h3>';
+            echo '<h3 class="alert alert-success">Produto(s) removido(s) do carrinho.</h3>';
 
         } else if ($ACTION=='limpar') {
             $this->LimparCarrinho();
