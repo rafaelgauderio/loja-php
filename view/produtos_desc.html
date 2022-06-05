@@ -13,18 +13,18 @@
     </div>  
         
         <div class="col-md-5">
-           <h4 class="text-center preco"><b>Referência: </b> {$PRODUCT_ITEM.prod_id}</h4> 
-           <h4 class="text-center preco"><b>Preço: </b>R$ {$PRODUCT_ITEM.prod_preco}</h4>
-           <h4 class="text-center preco"><b>Produto em Destaque: </b> {$PRODUCT_ITEM.prod_destaque}</h4>  
-           <h4 class="text-center preco"><b>Código da Categoria: </b> {$PRODUCT_ITEM.prod_categoria}</h4>               
+           <h4 class="text-left preco"><b>Referência: </b> {$PRODUCT_ITEM.prod_id}</h4> 
+           <h4 class="text-left preco"><b>Preço: </b>R$ {$PRODUCT_ITEM.prod_preco}</h4>
+           <h4 class="text-left preco"><b>Produto em Destaque: </b> {$PRODUCT_ITEM.prod_destaque}</h4>  
+           <h4 class="text-left preco"><b>Código da Categoria: </b> {$PRODUCT_ITEM.prod_categoria}</h4>               
         </div>   
 
-        <div class="col-md-4" >
+        <div class="col-md-6" id="produtos_desc" >
             <form name="carrinho" method="post" action="{$PAGINA_COMPRAR}">
                 <input type="hidden" name="prod_id" value="{$PRODUCT_ITEM.prod_id}">
                 <input type="hidden" name="action" value="adicionar">
             <div id=botoes_produto>   
-            <button  class="btn btn-success">Adicionar ao Carrinho</button>
+            <button  class="btn btn-success btn-block">Adicionar ao Carrinho</button>
              </form>
              </div>
                       

@@ -10,7 +10,7 @@ $smarty->assign('PAGINA_PEDIDO_FINALIZADO', Routes::pag_Pedido_Finalizado());
 
 
 
-$smarty->display('pedido_finalizado.tpl');
+$smarty->display('pedido_finalizado.html');
 } else {
     echo '<h3 class="alert alert-danger">Erro ao finalizar o seu pedido. Favor confererir todos os dados e tentar novamente</h3>';  
 }

@@ -14,7 +14,7 @@ $smarty->assign('PAGINA_PEDIDO_FINALIZADO', Routes::pag_Pedido_Finalizado());
 
 
 
-$smarty->display('finalizar_pedido.tpl');
+$smarty->display('finalizar_pedido.html');
 } else {
     echo '<h3 class="alert alert-danger"> O seu carrinho de compras está VAZIO!</h3>';  
 }

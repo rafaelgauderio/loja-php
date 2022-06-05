@@ -21,7 +21,7 @@ foreach ($produtos->getItens() as $pro) {
 }
 */
 
-$smarty->display('produtos_desc.tpl');
+$smarty->display('produtos_desc.html');
 
 //var_dump($produtos->GetItens());
 

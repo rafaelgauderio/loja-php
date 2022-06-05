@@ -2,6 +2,6 @@
 
 $smarty = new Template();
 $smarty->assign('CONTATO','Página de Contatos assign');
-$smarty->display('contato.tpl');
+$smarty->display('contato.html');
 
 ?>

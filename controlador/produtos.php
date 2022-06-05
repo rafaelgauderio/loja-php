@@ -14,7 +14,7 @@ if(isset(Routes::$pagina[1])==true) {
 $smarty->assign('PRODUCT',$produtos->GetItens());
 $smarty->assign('PRODUCT_CONTAGEM',$produtos->TotalData());
 $smarty->assign('PRODUCT_DESCRIPTION', Routes::pag_ProdutosDescricao());
-$smarty->display('produtos.tpl');
+$smarty->display('produtos.html');
 
 /*
 echo '<pre>';

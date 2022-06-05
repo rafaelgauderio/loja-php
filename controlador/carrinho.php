@@ -16,7 +16,7 @@ var_dump($carrinho->GetCarrinho());
 echo '<pre>';
 */
 
-$smarty->display('carrinho.tpl');
+$smarty->display('carrinho.html');
 } else {
     echo '<h3 class="alert alert-danger"> O seu carrinho de compras está VAZIO!</h3>';  
 }

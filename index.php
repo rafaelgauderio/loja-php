@@ -47,7 +47,7 @@
     echo 'itens: ' . $data->GetItens();
     
     */
-    $smarty->display('index.tpl');
+    $smarty->display('index.html');
 
 
 ?>
