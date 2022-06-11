@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-05 22:27:26
+/* Smarty version 3.1.45, created on 2022-06-06 23:12:19
   from 'C:\xampp\htdocs\loja\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_629d11ae7297c8_29189098',
+  'unifunc' => 'content_629e6db36cdb66_58834333',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '454e5c75209ace7d2cbaa52f516bd9e1b3cc0129' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.html',
-      1 => 1654460828,
+      1 => 1654549881,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629d11ae7297c8_29189098 (Smarty_Internal_Template $_smarty_tpl) {
+function content_629e6db36cdb66_58834333 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -114,8 +114,7 @@ function content_629d11ae7297c8_29189098 (Smarty_Internal_Template $_smarty_tpl)
 
                               <ul class="nav navbar-nav">
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_PAGINA_INICIAL']->value;?>
-"> Home </a> </li>
-                               
+"> Home </a> </li>                               
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTA']->value;?>
 ">Login</a> </li>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_EMPRESA']->value;?>

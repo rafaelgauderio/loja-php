@@ -278,5 +278,11 @@ tn-group-lg>.btn, .btn-lg {
   width: 40%;
 }
 
+text.quantidade {
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+ 
+}
 
 

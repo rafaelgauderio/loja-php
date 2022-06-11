@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-05 18:23:20
+/* Smarty version 3.1.45, created on 2022-06-11 17:43:56
   from 'C:\xampp\htdocs\loja\view\pedido_finalizado.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_629cd878d34236_68404480',
+  'unifunc' => 'content_62a4b83c0975f0_11745406',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '891916bf1682567ed79f80591598c2b7e0613f2e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\pedido_finalizado.html',
-      1 => 1654412873,
+      1 => 1654961527,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629cd878d34236_68404480 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62a4b83c0975f0_11745406 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h4 class="alert alert-success">Pedido Realizado com Sucesso.</h4>
  <h5 class="alert alert-info">Escolha uma das formas de pagamento abaixo.<br> Assim que confirmado o pagamento entraremos em contato para realizarmos atendimento.<br></h5>
 
@@ -33,7 +33,7 @@ function content_629cd878d34236_68404480 (Smarty_Internal_Template $_smarty_tpl)
 </section>
     <br>
 <section class="row ">   
-    <center>
+   
     <table class="table table-bordered" style="width: 105%">
            
         <tr class="text-danger align=center bg-info">            
@@ -64,8 +64,7 @@ $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->do_else = false;
        <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>        
-    </table>  
-    </center>            
+    </table>                
 </section>           
         <section class="row" id="total">                      
             <div class="col-md-4 text-right">           

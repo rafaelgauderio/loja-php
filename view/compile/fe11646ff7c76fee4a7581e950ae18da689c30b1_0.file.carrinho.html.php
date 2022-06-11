@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-05 18:23:04
+/* Smarty version 3.1.45, created on 2022-06-11 17:30:58
   from 'C:\xampp\htdocs\loja\view\carrinho.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_629cd868600d26_08500248',
+  'unifunc' => 'content_62a4b5320eff34_56654544',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fe11646ff7c76fee4a7581e950ae18da689c30b1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\carrinho.html',
-      1 => 1654410758,
+      1 => 1654960771,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629cd868600d26_08500248 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62a4b5320eff34_56654544 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h2>Carrinho de Compras</h2>
 
 
@@ -34,7 +34,7 @@ function content_629cd868600d26_08500248 (Smarty_Internal_Template $_smarty_tpl)
 </section>
     <br>
 <section class="row ">   
-    <center>
+    
     <table class="table table-bordered" style="width: 105%">
         <tr>            
             <td colspan="6"><a href="<?php echo $_smarty_tpl->tpl_vars['PAGINA_PRODUTOS']->value;?>
@@ -64,8 +64,8 @@ $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->do_else = false;
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_nome'];?>
  </td>
             <td><button class="btn btn-info btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
-            <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_quanti'];?>
-<button class="btn btn-info btn-sm"> <i class="glyphicon glyphicon-plus"></i> </button></td>
+            <text class="quantidade"><?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_quanti'];?>
+ </text></text><button class="btn btn-info btn-sm"> <i class="glyphicon glyphicon-plus"></i> </button></td>
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_preco'];?>
  </td>           
             <td>  <?php echo $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->value['prod_subTotal'];?>
@@ -85,7 +85,7 @@ $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->do_else = false;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>        
     </table>  
-    </center>            
+               
 </section>           
         <section class="row" id="total">                      
             <div class="col-md-4 text-right">           

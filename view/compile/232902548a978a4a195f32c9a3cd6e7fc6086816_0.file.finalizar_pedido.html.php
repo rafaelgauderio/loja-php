@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-05 18:23:18
+/* Smarty version 3.1.45, created on 2022-06-11 17:43:53
   from 'C:\xampp\htdocs\loja\view\finalizar_pedido.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_629cd8762482d2_67155132',
+  'unifunc' => 'content_62a4b839ea0309_19719505',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '232902548a978a4a195f32c9a3cd6e7fc6086816' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\finalizar_pedido.html',
-      1 => 1654412645,
+      1 => 1654961587,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629cd8762482d2_67155132 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62a4b839ea0309_19719505 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h2>Checkout do Pedido</h2>
  <h4>Confira os dados do pedido abaixo</h4>
 
@@ -35,8 +35,7 @@ function content_629cd8762482d2_67155132 (Smarty_Internal_Template $_smarty_tpl)
 </section>
     <br>
 <section class="row ">   
-    <center>
-    <table class="table table-bordered" style="width: 105%">
+     <table class="table table-bordered" style="width: 105%">
         <tr>            
             <td colspan="6"><a href="<?php echo $_smarty_tpl->tpl_vars['PAGINA_CARRINHO']->value;?>
 " class="btn btn-danger" title="">Voltar ao Carrinho de Compras</a></td> 
@@ -73,8 +72,7 @@ $_smarty_tpl->tpl_vars['PRODUTOS_ITEM']->do_else = false;
        <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>        
-    </table>  
-    </center>            
+    </table>               
 </section>           
         <section class="row" id="total">                      
             <div class="col-md-4 text-right">           
