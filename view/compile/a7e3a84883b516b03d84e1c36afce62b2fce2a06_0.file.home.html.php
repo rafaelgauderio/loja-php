@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-05 18:22:55
+/* Smarty version 3.1.45, created on 2022-06-16 23:21:41
   from 'C:\xampp\htdocs\loja\view\home.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_629cd85f7165e6_13780719',
+  'unifunc' => 'content_62ab9ee5d8a3d1_93598906',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629cd85f7165e6_13780719 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62ab9ee5d8a3d1_93598906 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div id="logo-externa">

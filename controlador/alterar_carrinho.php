@@ -8,7 +8,7 @@ if(isset($_POST['prod_id'])==false || ($_POST['prod_id']<=0)) {
 
 $id = (int)$_POST['prod_id'];
 //sanitizando a variavel;
-$id = filter_var($id,FILTER_SANITIZE_NUMBER_INT);
+//$id = filter_var($id,FILTER_SANITIZE_NUMBER_INT);
 $carrinho = new Carrinho();
 try {
     $carrinho->AdicionarAoCarrinho($id);

@@ -11,6 +11,7 @@ return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Conection' => $baseDir . '/model/Conection.class.php',
     'Constants' => $baseDir . '/model/Constants.class.php',
+    'Pedidos' => $baseDir . '/model/Pedidos.class.php',
     'Produtos' => $baseDir . '/model/Produtos.class.php',
     'Routes' => $baseDir . '/model/Routes.class.php',
     'Smarty' => $vendorDir . '/smarty/smarty/libs/Smarty.class.php',

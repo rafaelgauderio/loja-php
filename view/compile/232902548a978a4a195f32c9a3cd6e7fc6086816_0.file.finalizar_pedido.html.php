@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-11 17:43:53
+/* Smarty version 3.1.45, created on 2022-06-16 23:21:52
   from 'C:\xampp\htdocs\loja\view\finalizar_pedido.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62a4b839ea0309_19719505',
+  'unifunc' => 'content_62ab9ef0ed57a5_99536343',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62a4b839ea0309_19719505 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62ab9ef0ed57a5_99536343 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h2>Checkout do Pedido</h2>
  <h4>Confira os dados do pedido abaixo</h4>
 

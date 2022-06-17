@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-11 17:43:56
+/* Smarty version 3.1.45, created on 2022-06-16 23:21:54
   from 'C:\xampp\htdocs\loja\view\pedido_finalizado.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62a4b83c0975f0_11745406',
+  'unifunc' => 'content_62ab9ef2dccfa3_28367957',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62a4b83c0975f0_11745406 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62ab9ef2dccfa3_28367957 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h4 class="alert alert-success">Pedido Realizado com Sucesso.</h4>
  <h5 class="alert alert-info">Escolha uma das formas de pagamento abaixo.<br> Assim que confirmado o pagamento entraremos em contato para realizarmos atendimento.<br></h5>
 

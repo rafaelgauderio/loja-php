@@ -3,6 +3,11 @@
     if(isset($_SESSION)==false) {
         session_start();
     }
+
+    if(isset($_SESSION['pedido'])==false) {
+        //fazer um código único para a sessão do usuário
+        $_SESSION['pedido'] = md5(uniqid(date('Ymd:His')));
+    }
     require './biblioteca/autoload.php';
 
     //não usar phpMailer, usar a função mail() nativa do php

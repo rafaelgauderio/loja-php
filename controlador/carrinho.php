@@ -1,5 +1,7 @@
 <?php
 
+//echo $_SESSION['pedido'];
+
 if(isset($_SESSION['PRODUTOS'])==TRUE) {
 $smarty = new Template();
 $carrinho = new Carrinho();

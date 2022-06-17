@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-05 22:16:25
+/* Smarty version 3.1.45, created on 2022-06-16 23:21:48
   from 'C:\xampp\htdocs\loja\view\produtos_desc.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_629d0f192a4739_01122428',
+  'unifunc' => 'content_62ab9eec84c1c2_40454813',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_629d0f192a4739_01122428 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62ab9eec84c1c2_40454813 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
      <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRODUCT']->value, 'PRODUCT_ITEM');

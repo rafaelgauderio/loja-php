@@ -8,6 +8,7 @@ $produtos->GetProdutosId(Routes::$pagina[1]);
 $smarty->assign('PRODUCT',$produtos->GetItens());
 $smarty->assign('PAGINA_COMPRAR',Routes::pag_Alterar_Carrinho());
 
+
 /*
 $id=Routes::$pagina[1];
 foreach ($produtos->getItens() as $pro) {
