@@ -21,7 +21,8 @@ class Conection extends Constants
             }
             $this->Conect();
         } catch (Exception $erro) {
-            exit($erro->getMessage() . '<h3> Erro, não foi possível conectar ao Banco de dados</h3>');
+            exit($erro->getMessage() . '<h3> Erro, não foi possível conectar ao Banco de dados</h3>')
+                . "<br>". $erro->getTrace();
         }
     }
   
@@ -43,14 +44,14 @@ class Conection extends Constants
     //progeter essa função de sql injection
     public function ExecuteQuery($query, array $parametros=NULL) {
         $this->object = $this->Conect()->prepare($query);        
-        //$parametros=filter_var($parametros,FILTER_SANITIZE_NUMBER_INT);                
-        /*        
-        if(count($parametros)>0) {
+        $parametros=filter_var($parametros,FILTER_SANITIZE_NUMBER_INT);                
+               
+        if(is_countable($parametros) && count($parametros)>0) {
             foreach($parametros as $key=>$value) {
                 $this->object->bindvalue($key,$value);                
             }
         } 
-       */                      
+                             
         return $this->object->execute();                      
     }
     //faz um for e percorre todos os dados do objeto

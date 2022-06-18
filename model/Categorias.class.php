@@ -8,7 +8,7 @@ Class Categorias extends Conection {
         parent::__construct();
     }
 
-    function GetCategorias () {
+    public function GetCategorias () {
         $sql = "SELECT categ_id, categ_nome FROM categorias";
         $this->ExecuteQuery($sql);
         $this->GetListCategorias();

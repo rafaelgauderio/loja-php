@@ -224,7 +224,7 @@ pre {
 /*estilando o card dos produtos*/
 
 .thumbnail {
-  border: 1px solid silver;
+  border: 2px solid silver;
   box-shadow: 3px 3px 5px #adadae;
   border-radius: 10px;
     

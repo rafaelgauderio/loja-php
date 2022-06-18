@@ -7,7 +7,7 @@ class Constants
     const SITE_HOST = "https://localhost";
     const TITULO_SITE = "Loja virtual deluca tecnologia";
     const SITE_PASTA = "loja";    
-    const SITE_EMAIL_ADM = "delucaloja@gmail";
+    const SITE_EMAIL_ADM = "delucaloja@gmail.com";
     
     const EMAIL_HOST = "smtp.gmail.com";
     const EMAIL_USER = "delucaloja@gmail.com";
