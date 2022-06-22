@@ -57,7 +57,7 @@ Class Logar extends Conection {
         $_SESSION['CLIENTE']['client_cep']       =  $list['client_cep'];
         $_SESSION['CLIENTE']['client_telefone']  =  $list['client_telefone'];
         $_SESSION['CLIENTE']['client_cadastro']  =  $list['client_cadastro'];
-        //Logar::Redirecionar();    
+        
 
         }else {
            //echo 'Usuario não está logado. Usuário ou senha inválidos.';
@@ -90,16 +90,20 @@ Class Logar extends Conection {
         Routes::redirecionarPagina(1,Routes::pag_logar());
         
     }
+    //Não deve mostrar os dados do cliente se o clietne não estiver logado
+    //Senão estiver logado, joga de volta para pagina de login
+    public static function dadosCliente() {
+        if(self::ClienteLogado()==false) {
+            Routes::redirecionarPagina(1,Routes::pag_logar());
+            exit();
+        } else {
+            $smarty = new Template();
+            $smarty->assign('ISLOGADO',Logar::ClienteLogado());
+            $smarty->assign('ISLOGADO','<h5 class="alert alert-success text-center"> Seja bem-vindo ' . $_SESSION['CLIENTE']['client_email']. '</h5>');           
+            $smarty->assign('LOGOFF',Routes::pag_logoff());
+            $smarty->display('logar.html');
 
-        
-
-
-
-        
+        }
+    }
 }
-
- 
-
-
-
 ?>

@@ -1,1 +1,5 @@
-<h1>Página de Conta do Usuário</h1>
+<?php
+$smarty = new Template();
+Logar::DadosCLiente();
+$smarty->display('conta.html');
+?>

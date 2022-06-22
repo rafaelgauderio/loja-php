@@ -24,6 +24,7 @@
     $smarty->assign('GET_TEMA',Routes::get_SiteTEMA());
     $smarty->assign('GET_HOME',Routes::get_SiteHOME());
     $smarty->assign('GET_PAGINA_INICIAL',Routes::get_SiteHOME());
+    $smarty->assign('PAG_CONTA',Routes::pag_conta());
     $smarty->assign('PAG_LOGAR',Routes::pag_Logar());
     $smarty->assign('PAG_CARRINHO',Routes::pag_Carrinho());
     $smarty->assign('PAG_CONTATO',Routes::pag_Contato());
@@ -32,6 +33,7 @@
     $smarty->assign('CATEGORIAS',$categorias->GetItens());
     $smarty->assign('PAG_PRODUTOS',Routes::pag_produtos());
     $smarty->assign('ISLOGADO',Logar::ClienteLogado());
+    
 
     
    
