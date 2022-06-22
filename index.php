@@ -31,6 +31,7 @@
     $smarty->assign('PAG_CONOSCO',Routes::pag_Conosco());
     $smarty->assign('CATEGORIAS',$categorias->GetItens());
     $smarty->assign('PAG_PRODUTOS',Routes::pag_produtos());
+    $smarty->assign('ISLOGADO',Logar::ClienteLogado());
 
     
    

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-22 16:41:17
+/* Smarty version 3.1.45, created on 2022-06-22 17:51:20
   from 'C:\xampp\htdocs\loja\view\logar.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62b32a0d2745e9_21656931',
+  'unifunc' => 'content_62b33a78ec06a1_83056875',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e567fbb8adc9ed1f54f13559db88d1aa78070622' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\logar.html',
-      1 => 1655908873,
+      1 => 1655913079,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62b32a0d2745e9_21656931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b33a78ec06a1_83056875 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['ISLOGADO']->value == false) {?>
 <h4 class="alert alert-info text-center">Faça Login ou Cadastre-se</h4>
 <section class="row">
@@ -48,6 +48,10 @@ if ($_smarty_tpl->tpl_vars['ISLOGADO']->value == false) {?>
 <?php } else { ?> 
 <text><?php echo $_smarty_tpl->tpl_vars['ISLOGADO']->value;?>
 </text>
+<a href="" class="btn btn-success btn-lg">Meus Dados</a>
+<a href="" class="btn btn-warning btn-lg">Alterar Senha</a>
+<a href="<?php echo $_smarty_tpl->tpl_vars['LOGOFF']->value;?>
+" class="btn btn-danger btn-lg">Sair</a>
 <?php }?>
 
 

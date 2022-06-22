@@ -84,6 +84,13 @@ Class Logar extends Conection {
         }
     }
 
+    public static function fazerLogoff() {
+        unset($_SESSION['CLIENTE']);
+        echo '<h5 class="alert alert-warning">Logoff realizado com sucesso. Voltando pra pagina de login</h5>';
+        Routes::redirecionarPagina(1,Routes::pag_logar());
+        
+    }
+
         
 
 

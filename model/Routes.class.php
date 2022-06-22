@@ -23,6 +23,10 @@ Class Routes {
         return self::get_SiteHOME() . '/logar' ;
     }
 
+    static function pag_logoff () {
+        return self::get_SiteHOME() . '/sair' ;
+    }
+
     static function pag_Carrinho () {
         return self::get_SiteHOME() . '/carrinho' ;
     }
