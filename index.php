@@ -24,7 +24,7 @@
     $smarty->assign('GET_TEMA',Routes::get_SiteTEMA());
     $smarty->assign('GET_HOME',Routes::get_SiteHOME());
     $smarty->assign('GET_PAGINA_INICIAL',Routes::get_SiteHOME());
-    $smarty->assign('PAG_CONTA',Routes::pag_Conta());
+    $smarty->assign('PAG_LOGAR',Routes::pag_Logar());
     $smarty->assign('PAG_CARRINHO',Routes::pag_Carrinho());
     $smarty->assign('PAG_CONTATO',Routes::pag_Contato());
     $smarty->assign('PAG_EMPRESA',Routes::pag_Empresa());

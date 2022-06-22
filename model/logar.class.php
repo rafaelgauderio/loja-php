@@ -42,7 +42,8 @@ Class Logar extends Conection {
         
 
         if($this->object->rowCount()>0) {
-        echo 'Login efetuado com sucesso';
+        //echo 'Login efetuado com sucesso';
+
         $list = $this->PrintData();
         $_SESSION['CLIENTE']['client_id']        =  $list['client_id'];
         $_SESSION['CLIENTE']['client_nome']      =  $list['client_nome'];
@@ -59,7 +60,7 @@ Class Logar extends Conection {
         //Logar::Redirecionar();    
 
         }else {
-           echo 'Usuario não está logado. Usuário ou senha inválidos.';
+           //echo 'Usuario não está logado. Usuário ou senha inválidos.';
            //echo $this->GetUsuario();
            //echo $this->GetSenha();            
             
@@ -68,7 +69,7 @@ Class Logar extends Conection {
 
     public static function Redirecionar () {   
 
-        Routes::redirecionarPagina(0.5, Routes::pag_Conta());           
+        Routes::redirecionarPagina(0.5, Routes::pag_logar());           
     }   
 
     //se estiver logado, não carregar a página pedindo login e senha

@@ -19,8 +19,8 @@ Class Routes {
         return self::get_SiteHOME() . '/' .self::$pasta_view;
     }
 
-    static function pag_Conta () {
-        return self::get_SiteHOME() . '/conta' ;
+    static function pag_Logar () {
+        return self::get_SiteHOME() . '/logar' ;
     }
 
     static function pag_Carrinho () {

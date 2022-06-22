@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-19 00:17:09
+/* Smarty version 3.1.45, created on 2022-06-22 16:41:17
   from 'C:\xampp\htdocs\loja\view\logar.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62ae4ee58b0155_20498552',
+  'unifunc' => 'content_62b32a0d2745e9_21656931',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e567fbb8adc9ed1f54f13559db88d1aa78070622' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\logar.html',
-      1 => 1655590627,
+      1 => 1655908873,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62ae4ee58b0155_20498552 (Smarty_Internal_Template $_smarty_tpl) {
-?><h4 class="alert alert-info text-center">Faça Login ou Cadastre-se</h4>
-
-<text><?php echo $_smarty_tpl->tpl_vars['USUARIO']->value;?>
-</text>
-
+function content_62b32a0d2745e9_21656931 (Smarty_Internal_Template $_smarty_tpl) {
+if ($_smarty_tpl->tpl_vars['ISLOGADO']->value == false) {?>
+<h4 class="alert alert-info text-center">Faça Login ou Cadastre-se</h4>
 <section class="row">
     <form name="login_do_cliente" method="post" action="" >    
         <div class="col-md-3 text-center">        
@@ -48,6 +45,13 @@ function content_62ae4ee58b0155_20498552 (Smarty_Internal_Template $_smarty_tpl)
         </div>    
     </form>
 </section>
+<?php } else { ?> 
+<text><?php echo $_smarty_tpl->tpl_vars['ISLOGADO']->value;?>
+</text>
+<?php }?>
+
+
+
 
 
 

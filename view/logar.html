@@ -1,7 +1,5 @@
+{if $ISLOGADO==false}
 <h4 class="alert alert-info text-center">Faça Login ou Cadastre-se</h4>
-
-<text>{$USUARIO}</text>
-
 <section class="row">
     <form name="login_do_cliente" method="post" action="" >    
         <div class="col-md-3 text-center">        
@@ -24,6 +22,12 @@
         </div>    
     </form>
 </section>
+{else} 
+<text>{$ISLOGADO}</text>
+{/if}
+
+
+
 
 
 

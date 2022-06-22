@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-16 23:21:41
+/* Smarty version 3.1.45, created on 2022-06-22 15:49:35
   from 'C:\xampp\htdocs\loja\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62ab9ee5af09c6_84153125',
+  'unifunc' => 'content_62b31def180100_88753325',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '454e5c75209ace7d2cbaa52f516bd9e1b3cc0129' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.html',
-      1 => 1654549881,
+      1 => 1655905773,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62ab9ee5af09c6_84153125 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b31def180100_88753325 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -102,9 +102,7 @@ function content_62ab9ee5af09c6_84153125 (Smarty_Internal_Template $_smarty_tpl)
                         
                         </div>
                         
-                        <div class="collapse navbar-collapse" id="navbar">                          
-                                                    
-
+                        <div class="collapse navbar-collapse" id="navbar">
                             <form class="navbar-form navbar-left" role="search">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Pesquisar Produtos e Serviços..." required>
@@ -115,7 +113,7 @@ function content_62ab9ee5af09c6_84153125 (Smarty_Internal_Template $_smarty_tpl)
                               <ul class="nav navbar-nav">
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_PAGINA_INICIAL']->value;?>
 "> Home </a> </li>                               
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTA']->value;?>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_LOGAR']->value;?>
 ">Login</a> </li>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_EMPRESA']->value;?>
 ">Quem Somos</a> </li>
