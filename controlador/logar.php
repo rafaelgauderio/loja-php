@@ -14,8 +14,9 @@ if(isset($_POST['campo_email']) && isset($_POST['campo_senha'])) {
 $smarty->assign('ISLOGADO',Logar::ClienteLogado());
 
 if(Logar::ClienteLogado()==true) {
-    $smarty->assign('ISLOGADO','<h5 class="alert alert-success text-center"> Seja bem-vindo ' . $_SESSION['CLIENTE']['client_email']. '</h5>'); 
+    $smarty->assign('ISLOGADO','<h4 class="alert alert-success text-center"> Seja bem-vindo ' . $_SESSION['CLIENTE']['client_email']. '</h4>'); 
     $smarty->assign('LOGOFF',Routes::pag_logoff());
+    //Logar::dadosCliente();
 }
  //else if(Logar::ClienteLogado()==false){
     //$smarty->assign('ISLOGADO','<h5 class="alert alert-warning text-center">Usuário NÃO LOGADO<h5>');}

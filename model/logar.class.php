@@ -60,7 +60,7 @@ Class Logar extends Conection {
         
 
         }else {
-           //echo 'Usuario não está logado. Usuário ou senha inválidos.';
+           echo '<h5 class="alert alert-danger text-center">Usuario não está logado. Usuário ou senha inválidos.</h5>';
            //echo $this->GetUsuario();
            //echo $this->GetSenha();            
             
@@ -94,16 +94,23 @@ Class Logar extends Conection {
     //Senão estiver logado, joga de volta para pagina de login
     public static function dadosCliente() {
         if(self::ClienteLogado()==false) {
-            Routes::redirecionarPagina(1,Routes::pag_logar());
+            self::areaRestrita();
+            Routes::redirecionarPagina(1.8,Routes::pag_logar());
             exit();
         } else {
             $smarty = new Template();
+            $smarty->assign('PAG_CONTA',Routes::pag_conta());
             $smarty->assign('ISLOGADO',Logar::ClienteLogado());
-            $smarty->assign('ISLOGADO','<h5 class="alert alert-success text-center"> Seja bem-vindo ' . $_SESSION['CLIENTE']['client_email']. '</h5>');           
+            $smarty->assign('ISLOGADO','<h4 class="alert alert-success text-center"> Seja bem-vindo ' . $_SESSION['CLIENTE']['client_email']. '</h4>');           
             $smarty->assign('LOGOFF',Routes::pag_logoff());
             $smarty->display('logar.html');
 
         }
+    }
+
+    public static function areaRestrita() {
+        echo '<h4 class="alert alert-danger text-center">É necessário estar logado para ter acesso a aréa do cliente.<br>
+        Finalizar Pedido, alterar senha, consultar dados. <b>Faça Login!</b></h4>';
     }
 }
 ?>

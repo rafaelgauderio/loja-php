@@ -230,7 +230,7 @@ pre {
 /*estilando o card dos produtos*/
 
 .thumbnail {
-  border: 2px solid silver;
+  border: 1px solid silver;
   box-shadow: 3px 3px 5px #adadae;
   border-radius: 10px;
     
@@ -254,8 +254,8 @@ pre {
 
 .thumbnail a>img {
   object-fit: fill;
-  width: 180px;
-  height: 140px;
+  width: 170px;
+  height: 130px;
 }
 
 
@@ -290,5 +290,3 @@ text.quantidade {
   text-align: center;
  
 }
-
-

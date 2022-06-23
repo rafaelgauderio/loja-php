@@ -5,9 +5,9 @@ class Carrinho {
     private $total_preco, $quant_itens = array();
 
     public function GetCarrinho ($session=NULL) {
-        $contador =1;
+        $contador=1;
         
-        foreach($_SESSION['PRODUTOS'] as $lista ) {  
+        foreach(@$_SESSION['PRODUTOS'] as $lista ) {  
             $sub_total =($lista['PRECO_BANCO'] * $lista['QUANTI']); 
             $this->total_preco = $this->total_preco + $sub_total; 
              $this->quant_itens[$contador] = array(
