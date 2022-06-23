@@ -1,4 +1,6 @@
 ﻿
+
+
 #topo.row {
   background-color: white;
 }
@@ -54,7 +56,6 @@ color: #fff;
   align-content: center;
 
 }
-
 
 #buscar {
   align-self: center;
@@ -271,6 +272,22 @@ pre {
   
 }
 
+.text-danger-empresa {
+  color: black;
+  font-size: 16px;
+  text-indent:4em;
+  text-align: justify;
+}
+
+.ul-empresa li{
+  list-style-type: square;
+  display: inline;
+  padding: 15px;
+  font-size: 18px; 
+  font-weight: bold;
+  
+}
+
 tn-group-lg>.btn, .btn-lg {
   padding: 10px 16px;
   font-size: 18px;
@@ -290,3 +307,5 @@ text.quantidade {
   text-align: center;
  
 }
+
+

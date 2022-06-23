@@ -1,1 +1,6 @@
-<h1>Página da EMPRESA</h1>
+<?php
+$smarty = new Template();
+
+$smarty->display('empresa.html');
+?>
+

@@ -1,8 +1,4 @@
-
-
 <?php
-
-
 
 $smarty = new Template;
 $smarty->assign('LOGO',Routes::Get_Image('programacao-logo.png'));
