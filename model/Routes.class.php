@@ -13,7 +13,16 @@ Class Routes {
 
     static function get_SiteROOT () {
         return $_SERVER['DOCUMENT_ROOT'] . '/' .Constants::SITE_PASTA;
+    }   
+
+    static function pag_esqueci_senha () {
+        return self::get_SiteHOME() . '/esqueci_senha' ;
     }
+    
+    static function pag_de_cadastro () {
+        return self::get_SiteHOME() . '/cadastro' ;
+    }
+    
 
     static function get_SiteTEMA () {
         return self::get_SiteHOME() . '/' .self::$pasta_view;
@@ -45,8 +54,7 @@ Class Routes {
 
     static function pag_Pedido_Finalizado () {
         return self::get_SiteHOME()  . '/pedido_finalizado';
-    }
-   
+    }   
 
     static function pag_ProdutosDescricao () {
         return self::get_SiteHOME() . '/produtos_desc' ;
