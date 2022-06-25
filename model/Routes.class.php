@@ -40,6 +40,14 @@ Class Routes {
         return self::get_SiteHOME() . '/sair' ;
     }
 
+    static function pag_dados_do_cliente () {
+        return self::get_SiteHOME() . '/dados_cliente' ;
+    }
+
+    static function pag_trocar_senha () {
+        return self::get_SiteHOME() . '/trocar_senha' ;
+    }
+
     static function pag_Carrinho () {
         return self::get_SiteHOME() . '/carrinho' ;
     }

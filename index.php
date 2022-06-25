@@ -4,10 +4,6 @@
         session_start();
     }
 
-    if(isset($_SESSION['pedido'])==false) {
-        //fazer um código único para a sessão do usuário
-        $_SESSION['pedido'] = md5(uniqid(date('Ymd:His')));
-    }
     require './biblioteca/autoload.php';
 
     //não usar phpMailer, usar a função mail() nativa do php
@@ -32,10 +28,7 @@
     $smarty->assign('PAG_CONOSCO',Routes::pag_Conosco());
     $smarty->assign('CATEGORIAS',$categorias->GetItens());
     $smarty->assign('PAG_PRODUTOS',Routes::pag_produtos());
-    $smarty->assign('ISLOGADO',Logar::ClienteLogado());
-    
-
-    
+    $smarty->assign('ISLOGADO',Logar::ClienteLogado());    
    
     /*
     $data = new Conection();

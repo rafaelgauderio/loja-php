@@ -52,7 +52,8 @@
 
         public function LimparSessao() {
             unset($_SESSION['PRODUTOS']);
-            unset($_SESSION['pedido']);
+            unset($_SESSION['PEDIDO_GLOBAL']['pedido']);
+            unset($_SESSION['PEDIDO_GLOBAL']['referencia']);
 
         }
 

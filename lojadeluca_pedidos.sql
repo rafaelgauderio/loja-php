@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Jun-2022 às 05:48
+-- Tempo de geração: 25-Jun-2022 às 16:06
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.4
 
@@ -51,17 +51,25 @@ INSERT INTO `categorias` (`categ_id`, `categ_nome`) VALUES
 
 CREATE TABLE `clientes` (
   `client_id` int(11) NOT NULL,
-  `client_nome` varchar(100) NOT NULL,
+  `client_nome` varchar(100) DEFAULT NULL,
   `client_email` varchar(80) NOT NULL,
   `client_endereco` varchar(150) DEFAULT NULL,
   `client_numero` int(6) DEFAULT NULL,
   `client_bairro` varchar(80) DEFAULT NULL,
   `client_cidade` varchar(80) DEFAULT NULL,
-  `cliente_uf` varchar(2) DEFAULT NULL,
-  `cliente_cep` varchar(80) DEFAULT NULL,
+  `client_uf` varchar(2) DEFAULT NULL,
+  `client_cep` varchar(80) DEFAULT NULL,
   `client_telefone` varchar(12) DEFAULT NULL,
-  `cliente_cadastro` date NOT NULL
+  `client_cadastro` date NOT NULL,
+  `client_senha` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `clientes`
+--
+
+INSERT INTO `clientes` (`client_id`, `client_nome`, `client_email`, `client_endereco`, `client_numero`, `client_bairro`, `client_cidade`, `client_uf`, `client_cep`, `client_telefone`, `client_cadastro`, `client_senha`) VALUES
+(1, 'rafael', 'rafael@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0000-00-00', '123456');
 
 -- --------------------------------------------------------
 
@@ -200,7 +208,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `client_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `client_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `itens_dos_pedidos`

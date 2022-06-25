@@ -2,6 +2,9 @@
 //tem que estar logado para poder finalizar o pedido
 if (Logar::ClienteLogado() == true) {
     if (isset($_SESSION['PRODUTOS']) == TRUE) {
+
+       
+
         $smarty = new Template();
         $carrinho = new Carrinho();
 

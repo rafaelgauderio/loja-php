@@ -104,8 +104,10 @@ Class Logar extends Conection {
             $smarty->assign('PAG_CONTA',Routes::pag_conta());
             $smarty->assign('ISLOGADO',Logar::ClienteLogado());
             $smarty->assign('ISLOGADO','<h4 class="alert alert-success text-center"> Seja bem-vindo ' . $_SESSION['CLIENTE']['client_email']. '</h4>');           
+            $smarty->assign('DADOS_CLIENTE',Routes::pag_dados_do_cliente());
+            $smarty->assign('TROCAR_SENHA',Routes::pag_trocar_senha());
             $smarty->assign('LOGOFF',Routes::pag_logoff());
-            $smarty->display('logar.html');
+            $smarty->display('logar.html');       
 
         }
     }
