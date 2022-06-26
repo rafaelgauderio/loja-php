@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-25 23:12:18
+/* Smarty version 3.1.45, created on 2022-06-26 20:45:42
   from 'C:\xampp\htdocs\loja\view\carrinho.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62b77a32599a98_17627339',
+  'unifunc' => 'content_62b8a95638b3a1_16180013',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fe11646ff7c76fee4a7581e950ae18da689c30b1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\carrinho.html',
-      1 => 1656191528,
+      1 => 1656191645,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62b77a32599a98_17627339 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b8a95638b3a1_16180013 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h2>Carrinho de Compras</h2>
 
 
