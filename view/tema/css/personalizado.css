@@ -308,4 +308,19 @@ text.quantidade {
  
 }
 
+.formulario-contato {
+  color:#5CA47A
+}
+
+#botaoenviar {
+  background-color:#5CA47A;
+
+}
+
+#botaoenviar:hover {
+  background-color:#25335D;
+
+}
+
+
 

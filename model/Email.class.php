@@ -12,9 +12,9 @@ class Email extends PHPMailer {
     
     const EMAIL_PROFESSOR = "rafael.pinto@canoas.ifrs.edu.br"; 
     const EMAIL_SMTP = "smtp.gmail.com";
-    const EMAIL_USUARIO = "delucaloja@gmail.com";
+    const EMAIL_USUARIO = "deluca.melhoramentos@gmail.com";
     const EMAIL_NOME = "Contato da Loja deluca";
-    const EMAIL_SENHA = "delucaloja2530*";
+    const EMAIL_SENHA = "vdvvvleuajdcxdgx";
     const EMAIL_PORTA = 587;
     const EMAIL_SMTPAUTH = true;
     const EMAIL_SMTPSECURE = "tls";
@@ -47,9 +47,9 @@ class Email extends PHPMailer {
             if (parent::Send()) {
                 $this->ClearAllRecipients();
             } else {
-               echo "<h3>Não foi possível enviar o email " . $this->ErrorInfo . "</h3>";
+               echo '<h3 class="alert alert-danger">Não foi possível enviar o email.<br>' . $this->ErrorInfo . '</h3>';
  
-            }     
+            }                
     }    
  
     

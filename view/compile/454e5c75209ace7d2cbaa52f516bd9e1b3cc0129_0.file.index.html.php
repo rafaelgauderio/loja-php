@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-25 22:35:54
+/* Smarty version 3.1.45, created on 2022-06-27 17:05:11
   from 'C:\xampp\htdocs\loja\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62b771aa2aefd1_72318186',
+  'unifunc' => 'content_62b9c7273ab753_80934186',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '454e5c75209ace7d2cbaa52f516bd9e1b3cc0129' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.html',
-      1 => 1656189350,
+      1 => 1656342309,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62b771aa2aefd1_72318186 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b9c7273ab753_80934186 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -60,7 +60,6 @@ function content_62b771aa2aefd1_72318186 (Smarty_Internal_Template $_smarty_tpl)
 
         <div class="row" id="topo-superior">
             <div class="container">
-
                 <h4>Soluções em desenvolvimento web</h4>
             </div>
         </div>
@@ -136,10 +135,7 @@ $_smarty_tpl->tpl_vars['CATEGORIA_ITEM']->do_else = false;
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </div>
             </div>
-            <div class="col-md-9">
-                <ul class="breadcrumb">
-                    <h4 id="contratar">Contrate serviços de programação online!</h4>
-                </ul>
+            <div class="col-md-9">                
                 <?php 
                 Routes::get_pagina();
                 ?>
