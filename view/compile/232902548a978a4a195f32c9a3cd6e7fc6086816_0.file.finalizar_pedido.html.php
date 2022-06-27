@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-16 23:21:52
+/* Smarty version 3.1.45, created on 2022-06-27 00:38:19
   from 'C:\xampp\htdocs\loja\view\finalizar_pedido.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62ab9ef0ed57a5_99536343',
+  'unifunc' => 'content_62b8dfdbbb61b5_70288473',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '232902548a978a4a195f32c9a3cd6e7fc6086816' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\finalizar_pedido.html',
-      1 => 1654961587,
+      1 => 1656283086,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62ab9ef0ed57a5_99536343 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62b8dfdbbb61b5_70288473 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h2>Checkout do Pedido</h2>
  <h4>Confira os dados do pedido abaixo</h4>
 
@@ -82,6 +82,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                Total do Pedido: R$ <?php echo $_smarty_tpl->tpl_vars['TOTALCARRINHO']->value;?>
 
             </h4>
+            <h4>
+                Frete Grátis: R$ 0.00
+             </h4>
             </div>            
             
             <div class="col-md-4">              

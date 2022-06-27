@@ -13,6 +13,7 @@
     //método para buscar as categorias no menu
     $categorias->GetCategorias();
     $smarty = new Template();
+    
     //Routes::get_pagina();  
 
     $smarty->assign('Nome','Rafael de Luca');

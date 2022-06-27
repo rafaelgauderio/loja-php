@@ -23,10 +23,12 @@
 
 
         static function DataAtual () {
+            date_default_timezone_set("America/Sao_Paulo");
             return date('Y-m-d');
          }
          
         static function HoraAtual () {
+            date_default_timezone_set("America/Sao_Paulo");
             return date('H:i:s');
         }     
     

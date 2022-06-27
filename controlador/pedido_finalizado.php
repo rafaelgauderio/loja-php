@@ -11,12 +11,13 @@ if(isset($_SESSION['PRODUTOS'])==TRUE && $carrinho->GetTotalCarrinho()!=0.00){
 
 $smarty->assign('PAGINA_PEDIDO_FINALIZADO', Routes::pag_Pedido_Finalizado());
 
-if(isset($_SESSION['PEDIDO_GERAL']['pedido'])==false) {
+date_default_timezone_set("America/Sao_Paulo");
+if(isset($_SESSION['PEDIDO_GERAL']['pedido'])==true) {
     //fazer um código único para a sessão do usuário, criar um código unico do pedido com md5
     //$_SESSION['PEDIDO_GERAL']['pedido'] = md5(uniqid(date('Ymd:Hms')));
     $_SESSION['PEDIDO_GERAL']['pedido'] = $_SESSION['CLIENTE']['client_id'] . date('Ymd:Hms');
 } 
-if(isset($_SESSION['PEDIDO_GERAL']['referencia'])==false) {
+if(isset($_SESSION['PEDIDO_GERAL']['referencia'])==true) {
     //diferenciar do codido do pedido pelo ano apenas com 2 digitos
    $_SESSION['PEDIDO_GERAL']['referencia'] = $_SESSION['CLIENTE']['client_id'] . date('ymd:Hms');
 }

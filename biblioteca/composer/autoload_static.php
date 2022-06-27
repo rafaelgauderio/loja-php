@@ -6,13 +6,28 @@ namespace Composer\Autoload;
 
 class ComposerStaticInita40e2f5168dcf88b259dfc32df1f4a3c
 {
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+    );
+
     public static $classMap = array (
         'Carrinho' => __DIR__ . '/../..' . '/model/Carrinho.class.php',
         'Categorias' => __DIR__ . '/../..' . '/model/Categorias.class.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Conection' => __DIR__ . '/../..' . '/model/Conection.class.php',
         'Constants' => __DIR__ . '/../..' . '/model/Constants.class.php',
-        'Logar' => __DIR__ . '/../..' . '/model/Logar.class.php',
+        'Email' => __DIR__ . '/../..' . '/model/Email.class.php',
+        'Logar' => __DIR__ . '/../..' . '/model/logar.class.php',
         'Pedidos' => __DIR__ . '/../..' . '/model/Pedidos.class.php',
         'Produtos' => __DIR__ . '/../..' . '/model/Produtos.class.php',
         'Routes' => __DIR__ . '/../..' . '/model/Routes.class.php',
@@ -195,6 +210,8 @@ class ComposerStaticInita40e2f5168dcf88b259dfc32df1f4a3c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInita40e2f5168dcf88b259dfc32df1f4a3c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita40e2f5168dcf88b259dfc32df1f4a3c::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInita40e2f5168dcf88b259dfc32df1f4a3c::$classMap;
 
         }, null, ClassLoader::class);
