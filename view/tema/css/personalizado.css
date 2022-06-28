@@ -25,8 +25,22 @@
   color: #fff;
   text-align: left;
        
-  }
+}
 
+#texto-cabecalho div {  
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  justify-content:space-between; 
+  line-height: 120px;  
+  margin-right:auto;
+    
+}
+
+#texto-cabecalho {  
+  display:flex;
+  color:#5CA47A;
+  
+}
 
 #topo{
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-27 17:05:11
+/* Smarty version 3.1.45, created on 2022-06-28 18:18:51
   from 'C:\xampp\htdocs\loja\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62b9c7273ab753_80934186',
+  'unifunc' => 'content_62bb29eb80c331_97355914',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '454e5c75209ace7d2cbaa52f516bd9e1b3cc0129' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.html',
-      1 => 1656342309,
+      1 => 1656433130,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62b9c7273ab753_80934186 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62bb29eb80c331_97355914 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -66,12 +66,15 @@ function content_62b9c7273ab753_80934186 (Smarty_Internal_Template $_smarty_tpl)
     </div>
     <div class="row" id="topo">
         <div class="container">
-            <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/imagens/logo.jpg" alt="" align="left" height="120">
-            <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/imagens/logo2.jpg" alt="" align="right" height="120">
+            <div id="texto-cabecalho"> 
+                <div><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/imagens/logo.jpg" alt="" align="left" height="120"></div>    
+                <div>DeLuca Tecnologia</div>
+                <div><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/imagens/logo2.jpg" alt="" align="right" height="120"></div>
+         </div>
         </div>
-    </div>
+     </div>
     <div class="row" id="barra-menu">
         <nav class="navbar navbar-inverse">
             <div class="container">
