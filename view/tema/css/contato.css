@@ -8,7 +8,7 @@
 
 #formulario fieldset
 {
-    border:2px solid black;    
+    border:2px solid #5CA47A;;    
     padding:10px;
     border-radius:4px
 }
@@ -29,7 +29,7 @@
 
 #formulario fieldset legend
 {
-    background-color:black;
+    background-color:#5CA47A;;
     border-radius:8px;
     color:#ffe;
     padding:10px;    

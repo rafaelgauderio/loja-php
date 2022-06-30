@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-06-27 00:37:20
+/* Smarty version 3.1.45, created on 2022-06-29 16:52:23
   from 'C:\xampp\htdocs\loja\view\carrinho.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62b8dfa006e0c9_57792156',
+  'unifunc' => 'content_62bc6727edc400_07187989',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fe11646ff7c76fee4a7581e950ae18da689c30b1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\carrinho.html',
-      1 => 1656283027,
+      1 => 1656514319,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62b8dfa006e0c9_57792156 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62bc6727edc400_07187989 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h2>Carrinho de Compras</h2>
 
 
@@ -107,13 +107,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 ">
             <input type="hidden" name="action" value="limpar">
             <input type="hidden" name="prod_id" value="1">
-            <button class="btn btn-danger btn-block"> <i class="glyphicon glyphicon-remove-circle"></i> Limpar
+            <button class="btn btn-danger btn-block"> Limpar
                 Carrinho</button>
             <br>
         </form>
         <form name="finalizar_pedido" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGINA_CONFERIR_PEDIDO']->value;?>
 ">
-            <button class="btn btn-success btn-block" type="submit"> <i class="glyphicon glyphicon-thumbs-up"></i> Ir
+            <button class="btn btn-success btn-block" type="submit"> Ir
                 para página de checkout</button>
         </form>
     </div>
