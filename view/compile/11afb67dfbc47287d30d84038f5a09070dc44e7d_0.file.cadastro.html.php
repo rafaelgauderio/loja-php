@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-01 21:23:07
+/* Smarty version 3.1.45, created on 2022-07-02 07:03:26
   from 'C:\xampp\htdocs\loja\view\cadastro.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62bf499b36d841_07006581',
+  'unifunc' => 'content_62bfd19e5da3f9_37108683',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '11afb67dfbc47287d30d84038f5a09070dc44e7d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\cadastro.html',
-      1 => 1656618455,
+      1 => 1656738203,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62bf499b36d841_07006581 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62bfd19e5da3f9_37108683 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h4 class="alert alert-success">Favor preencher os campos abaixos.</h4>
 <h4 class="alert alert-danger">Apenas email e senha são obrigatórios. Mínimo 6 dígitos na senha.</h4>
 
@@ -29,7 +29,7 @@ function content_62bf499b36d841_07006581 (Smarty_Internal_Template $_smarty_tpl)
 <section class="row" id="cadastrar_cliente">
     <div class="col-md-6">
         <label>Email (obrigatório): </label>
-        <input type="email" name="client_email" class="form-control" required>
+        <input type="email" name="client_email" class="form-control" placeholder="usuario@dominio.com" required>
     </div>
     <div class="col-md-6">
         <label>senha (obrigatório): </label>
@@ -50,7 +50,7 @@ function content_62bf499b36d841_07006581 (Smarty_Internal_Template $_smarty_tpl)
     </div>
     <div class="col-md-6">
         <label>Cep: </label>
-        <input type="number" name="client_cep" class="form-control">
+        <input type="text" name="client_cep" id="client_cep" class="form-control cep-mask" minlength="8" maxlength="8"  placeholder="00000000"/>
     </div>
 
     <div class="col-md-6">
@@ -64,7 +64,7 @@ function content_62bf499b36d841_07006581 (Smarty_Internal_Template $_smarty_tpl)
     </div>
     <div class="col-md-6">
         <label>uf: </label>
-        <input type="text" name="client_uf" class="form-control">
+        <input type="text" name="client_uf" class="form-control" minlength="2" maxlength="2" placeholder="sigla 2 dígitos" >
     </div>
     
     <div class="col-md-6">
@@ -73,7 +73,7 @@ function content_62bf499b36d841_07006581 (Smarty_Internal_Template $_smarty_tpl)
     </div>
 </section>
 
-<br>
+<hr>
 
 <section class="row" id="salvar_cliente">
     <div class="col-md-6">
