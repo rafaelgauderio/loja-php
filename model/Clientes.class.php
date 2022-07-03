@@ -73,11 +73,16 @@ class Clientes extends Conection
         }
     }
 
+    static function CriptografarSenha($valor) {
+        return md5($valor);
+    }
+
+    
     public function setClient_senha($client_senha)
     {
         $client_senha = filter_var($client_senha, FILTER_SANITIZE_STRING);
         if (strlen($client_senha) >= 6) {
-            $this->client_senha = $client_senha;
+            $this->client_senha = Clientes::CriptografarSenha($client_senha);
         } else {
             echo '<h2 class="alert alert-danger">Senha tem que ter no mínimo 6 caracteres.<h2>';
             Routes::redirecionarPagina(2, Routes::pag_de_cadastro());
@@ -146,6 +151,9 @@ class Clientes extends Conection
             Routes::redirecionarPagina(2, Routes::pag_de_cadastro());
         }
     }
+
+
+
     //permite tudo ser nulo, menos senha e email, mas se foi passado os dados
     // validar eles antes de settar    
     public function SetarDadosValidados(

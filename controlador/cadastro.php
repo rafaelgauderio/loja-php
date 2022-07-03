@@ -22,7 +22,7 @@ if(isset($_POST['client_email']) AND isset($_POST['client_senha'])) {
     $cliente->InserirCliente();
 
     echo '<h3 class="alert alert-success">Cadastro Realizado com Sucesso!</h3>
-         <h4 class="alert alert-info">Redirecionando para página de Login<h4>';   ;
+         <h4 class="alert alert-info">Redirecionando para página de Login!<h4>';   ;
     Routes::redirecionarPagina(2.5,Routes::pag_Logar());
 
   } else {

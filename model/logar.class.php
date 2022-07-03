@@ -12,13 +12,14 @@ Class Logar extends Conection {
     }
 
     protected function setSenha($senha) {
-       // $this->senha = Logar::CriptografarSenha($senha);
-       $this->senha = $senha;
+        //$this->senha = md5($senha);
+       $this->senha = Logar::CriptografarSenha($senha);
+       //$this->senha = $senha;
     }
 
-    //criptograr a senha com sha256, sha512 ou outra função hash de criptografia
+    //criptograr a senha com sha256, sha512, md5 ou outra função hash de criptografia
     static function CriptografarSenha($valor) {
-        return hash('SHA256', $valor);
+        return md5($valor);
     }
 
     protected function GetUsuario() {
@@ -35,15 +36,14 @@ Class Logar extends Conection {
         $this->setSenha($senha);
 
         $user=$this->getUsuario();
-        $password=$this->getSenha();
+        //criptografa a senha recebida pelo usuario para comparar com a senha critpgrafada no banco
+        $password=($this->getSenha());
       
         $sql = "SELECT * FROM clientes WHERE client_email = '$user' AND client_senha = '$password'";        
-        $this->ExecuteQuery($sql);    
-        
+        $this->ExecuteQuery($sql);        
 
         if($this->object->rowCount()>0) {
-        //echo 'Login efetuado com sucesso';
-
+        
         $list = $this->PrintData();
         $_SESSION['CLIENTE']['client_id']        =  $list['client_id'];
         $_SESSION['CLIENTE']['client_nome']      =  $list['client_nome'];
