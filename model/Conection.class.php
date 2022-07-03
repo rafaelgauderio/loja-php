@@ -50,7 +50,7 @@ class Conection extends Constants
             foreach($parametros as $key=>$value) {
                 $this->object->bindvalue($key,$value);                
             }
-        } 
+        }
                              
         return $this->object->execute();                      
     }
