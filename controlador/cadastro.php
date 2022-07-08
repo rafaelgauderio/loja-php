@@ -1,5 +1,5 @@
 <?php
-$smarty = new Template();
+//$smarty = new Template();
 $cliente = new Clientes();
 
 //verficiar se o campo email e senha foram preenchidos no formulário de cadastro
@@ -22,12 +22,20 @@ if(isset($_POST['client_email']) AND isset($_POST['client_senha'])) {
     $cliente->InserirCliente();
 
     echo '<h3 class="alert alert-success">Cadastro Realizado com Sucesso!</h3>
-         <h4 class="alert alert-info">Redirecionando para página de Login!<h4>';   ;
+         <h4 class="alert alert-info">Redirecionando para página de Login!<h4>';   
     Routes::redirecionarPagina(2.5,Routes::pag_Logar());
 
   } else {
-    $smarty->display('cadastro.html');
+    //$smarty->display('cadastro.html');
+    include_once (Routes::get_view() . '/cadastro.html');
   }
+
+
+
+  
+
+
+
 
 
 ?>

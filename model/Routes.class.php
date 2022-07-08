@@ -5,6 +5,7 @@ Class Routes {
     public static $pagina;
     private static $pasta_controlador = 'controlador';
     private static $pasta_produtos ='produtos';
+    private static $pasta_model ='model';
    
 
     static function get_SiteHOME () {
@@ -105,6 +106,14 @@ Class Routes {
     
     static function get_controlador() {
         return self::$pasta_controlador;
+    }
+
+    static function get_model() {
+        return self::$pasta_model;
+    }
+
+    static function get_view() {
+        return self::$pasta_view;
     }
 
     static function redirecionarPagina($time, $pagina) {
