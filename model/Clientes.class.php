@@ -73,11 +73,12 @@ class Clientes extends Conection
         }
     }
 
-    static function CriptografarSenha($valor) {
+    static function CriptografarSenha($valor)
+    {
         return md5($valor);
     }
 
-    
+
     public function setClient_senha($client_senha)
     {
         $client_senha = filter_var($client_senha, FILTER_SANITIZE_STRING);
@@ -122,7 +123,7 @@ class Clientes extends Conection
     public function setClient_uf($client_uf)
     {
         $client_uf = filter_var($client_uf, FILTER_SANITIZE_STRING);
-        if (strlen($client_uf) == 2 || $client_uf==null) {
+        if (strlen($client_uf) == 2 || $client_uf == null) {
             $this->client_uf = $client_uf;
         } else {
             echo '<h2 class="alert alert-danger">UF tem que ter apenas 2 dígitos.<h2>';
@@ -133,7 +134,7 @@ class Clientes extends Conection
     public function setClient_cep($client_cep)
     {
         $client_cep = filter_var($client_cep, FILTER_SANITIZE_NUMBER_INT);
-        if (strlen($client_cep) == 8 || $client_cep==null) {
+        if (strlen($client_cep) == 8 || $client_cep == null) {
             return $this->client_cep = $client_cep;
         } else {
             echo '<h2 class="alert alert-danger">CEP é formado por 8 dígitos inteiros.<h2>';
@@ -144,12 +145,44 @@ class Clientes extends Conection
     public function setClient_telefone($client_telefone)
     {
         $client_telefone = filter_var($client_telefone, FILTER_SANITIZE_STRING);
-        if (strlen($client_telefone) <= 13 || $client_telefone==null) {
+        if (strlen($client_telefone) <= 13 || $client_telefone == null) {
             $this->client_telefone = $client_telefone;
         } else {
             echo '<h2 "class=alert alert-danger">Informe o telefone e o DDD apenas com números.<h2>';
             Routes::redirecionarPagina(2, Routes::pag_de_cadastro());
         }
+    }
+
+    public function geradorDeSenha()
+    {
+        $combinacao = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+        $senha = array();
+        $combinacaoSize = strlen($combinacao) - 1;
+        for ($i = 0; $i < 6; $i++) {
+            $numero = rand(0, $combinacaoSize);
+            $senha[] = $combinacao[$numero];
+        }
+        return (implode($senha));
+    }
+
+    public function trocarSenha($senhaGerada,$email_cadastrado) {
+        /* Não funciona com array
+        $parametros = array (':email' => $this->getClient_email(),
+                            ':senha' => $this->getClient_senha());
+        $sql = "UPDATE clientes SET client_senha = ':senha' WHERE client_email = ':email'";
+        $this->setClient_email($email_cadastrado);
+        $this->setClient_senha($senhaGerada);
+        $this->ExecuteQuery($sql,$parametros);
+        */
+        //primeiro seta a nova senha pra criptogravas e depois atualiza no banco
+        $this->setClient_email($email_cadastrado);
+        $this->setClient_senha($senhaGerada);
+        $email = $this->getClient_email();
+        $novaSenha = $this->getClient_senha();
+       
+        $sql = "UPDATE clientes SET client_senha = '$novaSenha' WHERE client_email = '$email'";
+        $this->ExecuteQuery($sql);       
+
     }
 
 
@@ -192,7 +225,7 @@ class Clientes extends Conection
     public function InserirCliente()
     {
 
-        if ($this->VerificaEmailJaCadastrado($this->getClient_email()) >0 ) {
+        if ($this->VerificaEmailJaCadastrado($this->getClient_email()) > 0) {
             echo '<h3 class="alert alert-danger">Esse email já foi cadastrado. Informe outro.<h3>';
             Routes::redirecionarPagina(2.5, Routes::pag_de_cadastro());
             exit();
