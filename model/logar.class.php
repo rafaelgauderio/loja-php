@@ -92,18 +92,18 @@ Class Logar extends Conection {
         Routes::redirecionarPagina(1,Routes::pag_logar());
         
     }
-    //Não deve mostrar os dados do cliente se o clietne não estiver logado
+    //Não deve mostrar os dados do cliente se o cliente não estiver logado
     //Senão estiver logado, joga de volta para pagina de login
     public static function dadosCliente() {
         if(self::ClienteLogado()==false) {
             self::areaRestrita();
-            Routes::redirecionarPagina(1.8,Routes::pag_logar());
+            Routes::redirecionarPagina(2.5,Routes::pag_logar());
             exit();
         } else {
             $smarty = new Template();
             $smarty->assign('PAG_CONTA',Routes::pag_conta());
             $smarty->assign('ISLOGADO',Logar::ClienteLogado());
-            $smarty->assign('ISLOGADO','<h4 class="alert alert-success text-center"> Seja bem-vindo ' . $_SESSION['CLIENTE']['client_email']. '</h4>');           
+            $smarty->assign('ISLOGADO','<h4 class="alert alert-success text-center"> Seja bem-vindo <b>' . $_SESSION['CLIENTE']['client_email']. '</b></h4>');           
             $smarty->assign('DADOS_CLIENTE',Routes::pag_dados_do_cliente());
             $smarty->assign('TROCAR_SENHA',Routes::pag_trocar_senha());
             $smarty->assign('LOGOFF',Routes::pag_logoff());
@@ -114,7 +114,7 @@ Class Logar extends Conection {
 
     public static function areaRestrita() {
         echo '<h4 class="alert alert-danger text-center">É necessário estar logado para ter acesso a aréa do cliente.<br>
-        Finalizar Pedido, alterar senha, consultar dados. <b>Faça Login!</b></h4>';
+        Finalizar Pedido, alterar senha, consultar dados. <br><b>Faça Login!</b></h4>';
     }
 }
 ?>

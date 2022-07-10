@@ -23,7 +23,7 @@ if(isset($_POST['client_email'])==true) {
         $destinatario = array($cliente->getClient_email());
         $emailSenha->EnviarEmail('Solicitacação de nova senha do site DeLuca tecnologia',$mensagem,$destinatario); 
 
-        echo '<h4 class="alert alert-success text-center">Foi enviado para o email
+        echo '<h4 class="alert alert-info text-center">Foi enviado para o email
              cadastrado uma nova senha. Tente Logar com essa nova senha.</h4>';
         
     }   else {
