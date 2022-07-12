@@ -7,8 +7,8 @@ Class Template extends SmartyBC {
         parent::__construct();
         //setando as pastas do smarty
         $this->setTemplateDir('view/');
-        $this->setCacheDir('view/cache/');
-        $this->setCompileDir('view/compile/');
+        $this->setCacheDir('cache/');
+        $this->setCompileDir('compilar/');
     }
 }
 

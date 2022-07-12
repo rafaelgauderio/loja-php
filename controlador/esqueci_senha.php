@@ -11,7 +11,7 @@ if(isset($_POST['client_email'])==true) {
     //$cliente->VerificaEmailJaCadastrado($email_do_cliente);        
     if($cliente->VerificaEmailJaCadastrado($email_cadastrado) != 0) {
         echo '<h4 class="alert alert-success text-center">Email encontrado no sistema.</h4>';
-        //gerar um nova senha de 6 digitos par ao cliente
+        //gerar um nova senha de 6 digitos para o cliente
         $senhaGerada = $cliente->geradorDeSenha();
         //echo $senhaGerada;
         $cliente->trocarSenha($senhaGerada,$email_cadastrado);
