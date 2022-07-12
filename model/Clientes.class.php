@@ -242,7 +242,6 @@ class Clientes extends Conection
             $client_cep = $this->getClient_cep();
             $client_telefone = $this->getClient_telefone();
 
-
             $sql = "INSERT INTO clientes (client_email, client_senha, client_nome, client_endereco,";
             $sql .= " client_numero, client_bairro, client_cidade, client_uf, client_cep, client_telefone)";
             $sql .= " VALUES ('$client_email', '$client_senha', '$client_nome', '$client_endereco',";
@@ -262,7 +261,7 @@ class Clientes extends Conection
         ); 
         */
             //echo $sql;
-            //VerIficar porque não funciona com array
+            //Verificar porque não funciona com array
             //$this->ExecuteQuery($sql,$paramentros);
             $this->ExecuteQuery($sql);
         }

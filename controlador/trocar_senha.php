@@ -38,8 +38,9 @@ if ((isset($_POST['senha_atual']) == true) and (isset($_POST['nova_senha']) == t
     // dae altera a senha e redireciona para a página da conta 
     $email_cliente = $_SESSION['CLIENTE']['client_email'];
     $cliente->trocarSenha($nova_senha, $email_cliente);
-    echo '<h4 class="alert alert-success text-center">Senha altera com sucesso. Redirecionando para Conta </h4>';
-    Routes::redirecionarPagina(2.5, Routes::pag_conta());
+    echo '<h4 class="alert alert-success text-center">Senha alterada com sucesso.<br>
+     Necessário fazer login. </h4>';
+    Routes::redirecionarPagina(2.5, Routes::pag_logoff());
 } else {
     $smarty->display('trocar_senha.html');
 }

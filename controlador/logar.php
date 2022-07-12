@@ -4,8 +4,9 @@ $smarty = new Template();
 $logar = new Logar();
 
 if(isset($_POST['campo_email']) && isset($_POST['campo_senha'])) {
-    $usuario= $_POST['campo_email'];
-    $senha = $_POST['campo_senha'];
+    //sanitizar variáveis
+    $usuario= filter_var($_POST['campo_email'],FILTER_SANITIZE_STRING);
+    $senha = filter_var($_POST['campo_senha'],FILTER_SANITIZE_STRING);
     $logar->GetLogar($usuario,$senha); 
 
 }

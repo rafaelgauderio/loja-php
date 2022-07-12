@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-12 17:34:24
+/* Smarty version 3.1.45, created on 2022-07-12 23:08:35
   from 'C:\xampp\htdocs\loja\view\dados_do_cliente.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62cd948080dd24_05332160',
+  'unifunc' => 'content_62cde2d33a7b19_43623334',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7fc3935c930e621707c7667ddc065b13507547d2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\dados_do_cliente.html',
-      1 => 1657640061,
+      1 => 1657660113,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62cd948080dd24_05332160 (Smarty_Internal_Template $_smarty_tpl) {
-?><h3 class="alert alert-info text-center">Dados cliente</h3>
+function content_62cde2d33a7b19_43623334 (Smarty_Internal_Template $_smarty_tpl) {
+?><h3 class="alert alert-info text-center">Dados do cliente</h3>
 <h4 class="alert alert-warning text-center">Não é possível editar o campo email.</h4>
 
 <form name="dados_cliente" id="dados_cliente" method="post">
@@ -72,7 +72,7 @@ function content_62cd948080dd24_05332160 (Smarty_Internal_Template $_smarty_tpl)
     
     <div class="col-md-6">
         <label>Telefone: </label>
-        <input type="number" name="client_telefone" value ="<?php echo $_smarty_tpl->tpl_vars['client_telefone']->value;?>
+        <input type="text" name="client_telefone" value ="<?php echo $_smarty_tpl->tpl_vars['client_telefone']->value;?>
 " class="form-control" maxlenght="15">
     </div>
 </section>
