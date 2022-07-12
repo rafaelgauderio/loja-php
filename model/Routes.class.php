@@ -93,11 +93,12 @@ Class Routes {
         return self::get_SiteHOME() . '/' . self::get_ImagesFolder();
     }
 
-
+    /*
     static function ImageResize($img, $width, $height) {
         $image = self::get_ImageURL() . "thumb.php?src={$img}&w={$width}&h={$height}&zc=1";
         return $image;
-    } 
+    }
+    */ 
 
     static function Get_Image($name) {
         $image = self::get_ImageURL() . "/" .$name;
