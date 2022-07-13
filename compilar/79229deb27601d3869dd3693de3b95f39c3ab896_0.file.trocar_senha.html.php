@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-12 23:40:19
+/* Smarty version 3.1.45, created on 2022-07-13 18:35:55
   from 'C:\xampp\htdocs\loja\view\trocar_senha.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62cdea435ccb44_87933870',
+  'unifunc' => 'content_62cef46bda7d88_45360719',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79229deb27601d3869dd3693de3b95f39c3ab896' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\trocar_senha.html',
-      1 => 1657662017,
+      1 => 1657730154,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62cdea435ccb44_87933870 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62cef46bda7d88_45360719 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <h4 class="alert alert-info text-center">Informe a senha anterior e a nova senha. Mínimo de 6 caracteres, máximo de 10 caracteres.<br>
 Se esqueceu a senha anterior, clique em <b>Sair</b> depois e vá na opção <b>Esqueci minha senha</b>
@@ -37,7 +37,7 @@ em Login.</h4>
         <label>Confirme a nova senha</label>
         <input type="text" class=form-control name="confirma_nova_senha" id="confirma_nova_senha" placeholder="nova senha" minlength="6" maxlength="10" required>
         <br>        
-        <button type="submit" class="btn btn-danger btn-block btn-lg">Alterar senha</button>
+        <button type="submit" class="btn btn-danger btn-block btn-lg">Confirma Alterar senha</button>
         <br>
     </div>
     <br>

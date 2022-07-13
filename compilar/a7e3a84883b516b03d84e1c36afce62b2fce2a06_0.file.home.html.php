@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-12 16:32:27
+/* Smarty version 3.1.45, created on 2022-07-13 18:30:30
   from 'C:\xampp\htdocs\loja\view\home.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62cd85fb3270e7_49070600',
+  'unifunc' => 'content_62cef326ee2f51_52202216',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62cd85fb3270e7_49070600 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62cef326ee2f51_52202216 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="logo-externa">
 <img src="<?php echo $_smarty_tpl->tpl_vars['LOGO']->value;?>
 " alt="logo-deluca-tecnologia" class="img img-responsive img-rounded">

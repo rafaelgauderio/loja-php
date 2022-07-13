@@ -1,10 +1,15 @@
 <h3 class="alert alert-info text-center">Dados do cliente</h3>
-<h4 class="alert alert-warning text-center">Não é possível editar o campo email.</h4>
+<h4 class="alert alert-warning text-center">Tem que confirmar a senha atual para poder editar dados.
+    <br>Não é possível editar o campo email.</h4>
 
 <form name="dados_cliente" id="dados_cliente" method="post">
 <section class="row" id="dados_cliente">
+    <div class="col-md-12">
+        <label><b>senha (Obrigatório): </b></label>
+        <input type="password" name="client_senha" class="form-control" minlength="6" maxlenght="10">
+    </div>
     <div class="col-md-6">
-        <label>Email (obrigatório): </label>
+        <label>Email: </label>
         <input type="email" name="client_email" value="{$client_email}" class="form-control" placeholder="usuario@dominio.com" readonly required >
     </div>   
     <div class="col-md-6">

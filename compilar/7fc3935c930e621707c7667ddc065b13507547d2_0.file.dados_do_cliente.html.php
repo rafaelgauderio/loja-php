@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-13 01:23:11
+/* Smarty version 3.1.45, created on 2022-07-13 18:01:18
   from 'C:\xampp\htdocs\loja\view\dados_do_cliente.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62ce025f7ca7f6_30244128',
+  'unifunc' => 'content_62ceec4e04b460_81126291',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7fc3935c930e621707c7667ddc065b13507547d2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\dados_do_cliente.html',
-      1 => 1657668190,
+      1 => 1657727986,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62ce025f7ca7f6_30244128 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62ceec4e04b460_81126291 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3 class="alert alert-info text-center">Dados do cliente</h3>
-<h4 class="alert alert-warning text-center">Não é possível editar o campo email.</h4>
+<h4 class="alert alert-warning text-center">Tem que confirmar a senha atual para poder editar dados.
+    <br>Não é possível editar o campo email.</h4>
 
 <form name="dados_cliente" id="dados_cliente" method="post">
 <section class="row" id="dados_cliente">
+    <div class="col-md-12">
+        <label><b>senha (Obrigatório): </b></label>
+        <input type="password" name="client_senha" class="form-control" minlength="6" maxlenght="10">
+    </div>
     <div class="col-md-6">
-        <label>Email (obrigatório): </label>
+        <label>Email: </label>
         <input type="email" name="client_email" value="<?php echo $_smarty_tpl->tpl_vars['client_email']->value;?>
 " class="form-control" placeholder="usuario@dominio.com" readonly required >
     </div>   
