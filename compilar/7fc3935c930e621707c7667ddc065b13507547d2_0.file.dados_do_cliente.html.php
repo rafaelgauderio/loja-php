@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-12 23:08:35
+/* Smarty version 3.1.45, created on 2022-07-13 01:23:11
   from 'C:\xampp\htdocs\loja\view\dados_do_cliente.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62cde2d33a7b19_43623334',
+  'unifunc' => 'content_62ce025f7ca7f6_30244128',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7fc3935c930e621707c7667ddc065b13507547d2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\dados_do_cliente.html',
-      1 => 1657660113,
+      1 => 1657668190,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62cde2d33a7b19_43623334 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62ce025f7ca7f6_30244128 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3 class="alert alert-info text-center">Dados do cliente</h3>
 <h4 class="alert alert-warning text-center">Não é possível editar o campo email.</h4>
 
@@ -80,10 +80,12 @@ function content_62cde2d33a7b19_43623334 (Smarty_Internal_Template $_smarty_tpl)
 <section class="row" id="salvar_dados_cliente">
     <div class="col-md-6">
         <button type="submit" class="btn btn-warning btn-lg btn-block"> Salvar dados Alterados </button>
+        
+        <br>
     </div>
     <br>
     <br>
-    <br>  
+      
 </section>
 </form><?php }
 }

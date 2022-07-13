@@ -192,14 +192,14 @@ class Clientes extends Conection
     public function SetarDadosValidados(
         $client_email,
         $client_senha,
-        $client_nome = null,
-        $client_endereco = null,
-        $client_numero = null,
-        $client_bairro = null,
-        $client_cidade = null,
-        $client_uf = null,
-        $client_cep = null,
-        $client_telefone = null
+        $client_nome ,
+        $client_endereco,
+        $client_numero ,
+        $client_bairro ,
+        $client_cidade ,
+        $client_uf ,
+        $client_cep,
+        $client_telefone 
     ) {
         $this->setClient_email($client_email);
         $this->setClient_senha($client_senha);
@@ -266,4 +266,39 @@ class Clientes extends Conection
             $this->ExecuteQuery($sql);
         }
     }
+
+    public function AtualizarDadosCliente ($id_cliente) {
+        //verificar se já tem aquele email no banco e se não está logado na sessao com um email diferente do cadastrado no banco
+        if(($this->getClient_email() == $_SESSION['CLIENTE']['client_email']) && ($this->VerificaEmailJaCadastrado($this->getClient_email()) ==1)) {
+            //atualiza cadastro           
+           
+            $client_nome = $this->getClient_nome();
+            $client_endereco = $this->getClient_endereco();
+            $client_numero = $this->getClient_numero();
+            $client_bairro = $this->getClient_bairro();
+            $client_cidade = $this->getClient_cidade();
+            $client_uf = $this->getClient_uf();
+            $client_cep = $this->getClient_cep();
+            $client_telefone = $this->getClient_telefone();
+
+            $sql = "UPDATE clientes ";
+            $sql .= " SET client_nome = '$client_nome' , client_endereco = '$client_endereco', client_numero = '$client_numero', client_bairro = '$client_bairro', ";
+            $sql .= " client_cidade = '$client_cidade', client_uf ='$client_uf' , client_cep ='$client_cep' , client_telefone= '$client_telefone' ";
+            $sql .= " WHERE client_id = '$id_cliente'";
+            $flag = $this->ExecuteQuery($sql);
+           if($flag==true) {
+            return $flag;
+           } else {
+                return $flag;
+           }
+
+
+
+        } else {
+            echo '<h3 class="alert alert-danger">Não foi possível atualizar os dados. Verifique o email de cadastro.</h3>';
+            Routes::redirecionarPagina(2.5, Routes::pag_dados_do_cliente());
+            exit();
+        }
+
+    } 
 }

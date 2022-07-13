@@ -58,7 +58,7 @@ Class Logar extends Conection {
         $_SESSION['CLIENTE']['client_telefone']  =  $list['client_telefone'];
         $_SESSION['CLIENTE']['client_cadastro']  =  $list['client_cadastro'];
         //redirecionar para pagina de conta do cliente ao logar
-        Routes::redirecionarPagina(0,Routes::pag_conta());
+        Routes::redirecionarPagina(10,Routes::pag_dados_do_cliente());
         
 
         }else {
