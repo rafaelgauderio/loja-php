@@ -26,7 +26,7 @@ class Carrinho {
         if(count($this->quant_itens) >0) {
             return $this->quant_itens;
         } else {
-            echo '<h3 class="alert alert-warning">Seu carrinho está vazio!</h3>';
+            echo '<h3 class="alert alert-warning text-center">Seu carrinho está vazio!</h3>';
         }
     
     }
@@ -64,15 +64,15 @@ class Carrinho {
                 //caso o produto já existe na sessao, apenas incrementa
                 $_SESSION['PRODUTOS'][$id]['QUANTI'] = $_SESSION['PRODUTOS'][$id]['QUANTI'] + $QUANTI;
             }            
-            echo '<h3 class="alert alert-success">Produto adicionado ao carrinho com sucesso.</h3>';
+            echo '<h3 class="alert alert-success text-center">Produto adicionado ao carrinho com sucesso.</h3>';
 
         } else if ($ACTION=='deletar') {
             $this->DeleterCarrinhoId($id);
-            echo '<h3 class="alert alert-success">Produto(s) removido(s) do carrinho.</h3>';
+            echo '<h3 class="alert alert-success text-center">Produto(s) removido(s) do carrinho.</h3>';
 
         } else if ($ACTION=='limpar') {
             $this->LimparCarrinho();
-            echo '<h3 class="alert alert-success">Todos os itens foram excluídos do carrinho.</h3>';
+            echo '<h3 class="alert alert-warning text-center">Todos os itens foram excluídos do carrinho.</h3>';
 
         }
     }

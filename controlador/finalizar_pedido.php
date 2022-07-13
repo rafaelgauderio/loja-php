@@ -16,7 +16,7 @@ if (Logar::ClienteLogado() == true) {
         $smarty->display('finalizar_pedido.html');
         
     } else {
-        echo '<h3 class="alert alert-danger"> O seu carrinho de compras está VAZIO!</h3>';
+        echo '<h3 class="alert alert-warning text-center">O seu carrinho de compras está VAZIO!</h3>';
     }
 } else {
     Logar::areaRestrita();

@@ -34,7 +34,6 @@ $mensagem = "Obrigado por comprar conosco. Segue abaixo os dados da sua compra.<
 $vetorDestinatarios = array($_SESSION['CLIENTE']['client_email'],Constants::SITE_EMAIL);
 $email->EnviarEmail('Pedido do site Loja DeLuca - IFRS', $mensagem, $vetorDestinatarios);
 
-
 //se conseguir salvar um pedido, dae limpa a sessao
 //limpa os pedidos do carrinho e muda o código de login da sessao
 if($pedido->SalvarPedido($cliente,$codigo,$referencia)==true) {

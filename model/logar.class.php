@@ -62,10 +62,10 @@ Class Logar extends Conection {
         
 
         }else {
-           echo '<h5 class="alert alert-danger text-center">Usuario não está logado. Usuário ou senha inválidos.</h5>';
+           echo '<h4 class="alert alert-danger text-center">Usuário ou senha inválidos.</h4>';
+           echo '<script>alert("Email ou senha inválidos")</script>';
            //echo $this->GetUsuario();
-           //echo $this->GetSenha();            
-            
+           //echo $this->GetSenha(); 
         }           
     }
 
@@ -88,7 +88,7 @@ Class Logar extends Conection {
 
     public static function fazerLogoff() {
         unset($_SESSION['CLIENTE']);
-        echo '<h4 class="alert alert-warning text-center">Logoff realizado com sucesso. Voltando pra pagina de login</h4>';
+        echo '<h4 class="alert alert-warning text-center">Logoff realizado com sucesso. Voltando pra pagina de login.</h4>';
         Routes::redirecionarPagina(2.8,Routes::pag_logar());
         
     }
