@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-13 18:47:22
+/* Smarty version 3.1.45, created on 2022-07-14 19:18:05
   from 'C:\xampp\htdocs\loja\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62cef71a1212f6_77228818',
+  'unifunc' => 'content_62d04fcd61e4c5_26643368',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '454e5c75209ace7d2cbaa52f516bd9e1b3cc0129' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\index.html',
-      1 => 1657730832,
+      1 => 1657819083,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62cef71a1212f6_77228818 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d04fcd61e4c5_26643368 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -66,15 +66,15 @@ function content_62cef71a1212f6_77228818 (Smarty_Internal_Template $_smarty_tpl)
     </div>
     <div class="row" id="topo">
         <div class="container">
-            <div id="texto-cabecalho"> 
+            <div id="texto-cabecalho">
                 <div><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/imagens/logo.jpg" alt="" align="left" height="120"></div>    
+/imagens/logo.jpg" alt="" align="left" height="120"></div>
                 <div>DeLuca Tecnologia</div>
                 <div><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /imagens/logo2.jpg" alt="" align="right" height="120"></div>
-         </div>
+            </div>
         </div>
-     </div>
+    </div>
     <div class="row" id="barra-menu">
         <nav class="navbar navbar-inverse">
             <div class="container">
@@ -138,10 +138,33 @@ $_smarty_tpl->tpl_vars['CATEGORIA_ITEM']->do_else = false;
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </div>
             </div>
-            <div class="col-md-9">                
+            <div class="col-md-9">
                 <?php 
                 Routes::get_pagina();
                 ?>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="rodapeSuperior">
+        <div class="container">
+            <div class="col-md-6"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/imagens/pagamento.png" alt="" align="center" height="120"></div>
+            <div class="col-md-6"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/imagens/seguranca.png" alt="" align="center" height="120"></div>
+
+        </div>
+    </div>
+    <div class="row" id="rodapeContato">
+        <div class="container">
+            <div class="col-md-12 text-left">
+             <ul>                
+                <li class="glyphicon glyphicon-phone"> Telefone: (51) 3333-3333 </li>
+                <br>
+                <li class="glyphicon glyphicon-envelope"> email: delucatecnologia@gmail.com </li>
+                <br>
+                <li class="glyphicon glyphicon-map-marker"> Endereço: Rua Assis Brasil 35 - Centro - Canoas - RS </li>
+                <br>
+            </ul>  
             </div>
         </div>
     </div>
@@ -149,7 +172,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <h4>Desenvolvido por Rafael de Luca</h4>
         <h5>Política de privacidade</br>Todos os direitos reservados.</h5>
     </div>
+
+
     </div>
 </body>
+
 </html><?php }
 }
