@@ -3,7 +3,7 @@
 //echo $_SESSION['pedido'];
 
 if(isset($_SESSION['PRODUTOS'])==TRUE) {
-$smarty = new Template();
+$smarty = new Modelo();
 $carrinho = new Carrinho();
 
 $smarty->assign('PRODUTOS',$carrinho->GetCarrinho());

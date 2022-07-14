@@ -14,6 +14,7 @@ return array(
     'Constants' => $baseDir . '/model/Constants.class.php',
     'Email' => $baseDir . '/model/Email.class.php',
     'Logar' => $baseDir . '/model/logar.class.php',
+    'Modelo' => $baseDir . '/model/Modelo.class.php',
     'Pedidos' => $baseDir . '/model/Pedidos.class.php',
     'Produtos' => $baseDir . '/model/Produtos.class.php',
     'Routes' => $baseDir . '/model/Routes.class.php',
@@ -190,5 +191,4 @@ return array(
     'Smarty_Variable' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_variable.php',
     'TPC_yyStackEntry' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_internal_configfileparser.php',
     'TP_yyStackEntry' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php',
-    'Template' => $baseDir . '/model/Template.class.php',
 );

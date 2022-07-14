@@ -1,6 +1,6 @@
 <?php
 
-$smarty = new Template();
+$smarty = new Modelo();
 
 $produtos = new Produtos();
 $produtos->GetProdutosId(Routes::$pagina[1]);

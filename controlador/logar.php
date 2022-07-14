@@ -1,6 +1,6 @@
 <?php
 
-$smarty = new Template();
+$smarty = new Modelo();
 $logar = new Logar();
 
 if(isset($_POST['campo_email']) && isset($_POST['campo_senha'])) {

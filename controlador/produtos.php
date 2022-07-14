@@ -2,7 +2,7 @@
 <?php
 //<h1>Páginas de <b>PRODUTOS</b></h1>
 
-$smarty = new Template();
+$smarty = new Modelo();
 $produtos = new Produtos();
 if(isset(Routes::$pagina[1])==true) {
     $produtos->GetProdutosCategoriaId(Routes::$pagina[1]);

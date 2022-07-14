@@ -29,6 +29,7 @@ class ComposerStaticInita40e2f5168dcf88b259dfc32df1f4a3c
         'Constants' => __DIR__ . '/../..' . '/model/Constants.class.php',
         'Email' => __DIR__ . '/../..' . '/model/Email.class.php',
         'Logar' => __DIR__ . '/../..' . '/model/logar.class.php',
+        'Modelo' => __DIR__ . '/../..' . '/model/Modelo.class.php',
         'Pedidos' => __DIR__ . '/../..' . '/model/Pedidos.class.php',
         'Produtos' => __DIR__ . '/../..' . '/model/Produtos.class.php',
         'Routes' => __DIR__ . '/../..' . '/model/Routes.class.php',
@@ -205,7 +206,6 @@ class ComposerStaticInita40e2f5168dcf88b259dfc32df1f4a3c
         'Smarty_Variable' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_variable.php',
         'TPC_yyStackEntry' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_internal_configfileparser.php',
         'TP_yyStackEntry' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php',
-        'Template' => __DIR__ . '/../..' . '/model/Template.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

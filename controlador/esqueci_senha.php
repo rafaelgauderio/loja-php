@@ -1,6 +1,5 @@
 <?php
-$smarty = new Template();
-
+$smarty = new Modelo();
 
 //verificar se o email existe no bando antes de recuperar a senha
 
@@ -23,12 +22,15 @@ if(isset($_POST['client_email'])==true) {
         $destinatario = array($cliente->getClient_email());
         $emailSenha->EnviarEmail('Solicitacação de nova senha do site DeLuca tecnologia',$mensagem,$destinatario); 
 
-        echo '<h4 class="alert alert-info text-center">Foi enviado para o email
-             cadastrado uma nova senha. Tente Logar com essa nova senha.</h4>';
+        echo '<h4 class="alert alert-info text-center">Foi enviado para o email cadastrado uma nova senha.
+             <br>Aguarde. Redirecionando para <b>Esqueci minha senha</b></h4>';
+             Routes::redirecionarPagina(3.5,Routes::pag_Logar());
         
     }   else {
         echo '<h4 class="alert alert-danger text-center">Email não encontrado no sistema.
-        <br>Realize um novo cadastro.</h4>';
+        <br>Realize um novo cadastro.
+        <br>Aguarde. Redirecionando para Login.</h4>';
+        Routes::redirecionarPagina(4.5,Routes::pag_esqueci_senha());
  }
 
 } else {

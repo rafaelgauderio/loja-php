@@ -1,6 +1,6 @@
 <?php
 
-$smarty = new Template();
+$smarty = new Modelo();
 $smarty->assign('LOGOFF', Routes::pag_logoff());
 
 if (Logar::ClienteLogado() == false) {

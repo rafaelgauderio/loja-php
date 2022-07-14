@@ -100,7 +100,7 @@ Class Logar extends Conection {
             Routes::redirecionarPagina(2.5,Routes::pag_logar());
             exit();
         } else {
-            $smarty = new Template();
+            $smarty = new Modelo();
             $smarty->assign('PAG_CONTA',Routes::pag_conta());
             $smarty->assign('ISLOGADO',Logar::ClienteLogado());
             $smarty->assign('ISLOGADO','<h4 class="alert alert-success text-center"> Seja bem-vindo <b>' . $_SESSION['CLIENTE']['client_email']. '</b></h4>');           
@@ -115,6 +115,8 @@ Class Logar extends Conection {
     public static function areaRestrita() {
         echo '<h4 class="alert alert-danger text-center">É necessário estar logado para ter acesso a aréa do cliente.<br>
         Finalizar Pedido, alterar senha, consultar dados. <br><b>Faça Login!</b></h4>';
+        Routes::redirecionarPagina(3.5,Routes::pag_logar());
+
     }
 }
 ?>

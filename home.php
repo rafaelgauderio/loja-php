@@ -1,6 +1,6 @@
 <?php
 
-$smarty = new Template;
+$smarty = new Modelo;
 $smarty->assign('LOGO',Routes::Get_Image('programacao-logo.png'));
 $smarty->display('home.html');
 

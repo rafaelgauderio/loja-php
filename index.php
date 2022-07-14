@@ -12,7 +12,7 @@
     $categorias = new Categorias();
     //método para buscar as categorias no menu
     $categorias->GetCategorias();
-    $smarty = new Template();
+    $smarty = new Modelo();
     
     //Routes::get_pagina();  
 

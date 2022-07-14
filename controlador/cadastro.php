@@ -1,5 +1,5 @@
 <?php
-//$smarty = new Template();
+//$smarty = new Modelo();
 $cliente = new Clientes();
 
 //verficiar se o campo email e senha foram preenchidos no formulário de cadastro

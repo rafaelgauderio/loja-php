@@ -1,5 +1,5 @@
 <?php
-Class Template extends SmartyBC {
+Class Modelo extends SmartyBC {
 
     function __construct()
     {

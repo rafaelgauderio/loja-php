@@ -14,7 +14,7 @@ class Email extends PHPMailer {
     const EMAIL_SMTP = "smtp.gmail.com";
     const EMAIL_USUARIO = "deluca.melhoramentos@gmail.com";
     const EMAIL_NOME = "Loja deluca Tecnologia";
-    const EMAIL_SENHA = "vdvvvleuajdcxdgx";
+    const EMAIL_SENHA = "jurvmbjndlakipet";
     const EMAIL_PORTA = 587;
     const EMAIL_SMTPAUTH = true;
     const EMAIL_SMTPSECURE = "tls";

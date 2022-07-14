@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-13 18:01:18
+/* Smarty version 3.1.45, created on 2022-07-14 17:36:42
   from 'C:\xampp\htdocs\loja\view\dados_do_cliente.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62ceec4e04b460_81126291',
+  'unifunc' => 'content_62d0380a7707f3_15433534',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7fc3935c930e621707c7667ddc065b13507547d2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja\\view\\dados_do_cliente.html',
-      1 => 1657727986,
+      1 => 1657812499,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62ceec4e04b460_81126291 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d0380a7707f3_15433534 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3 class="alert alert-info text-center">Dados do cliente</h3>
 <h4 class="alert alert-warning text-center">Tem que confirmar a senha atual para poder editar dados.
     <br>Não é possível editar o campo email.</h4>
@@ -72,7 +72,7 @@ function content_62ceec4e04b460_81126291 (Smarty_Internal_Template $_smarty_tpl)
     <div class="col-md-6">
         <label>uf: </label>
         <input type="text" name="client_uf" value ="<?php echo $_smarty_tpl->tpl_vars['client_uf']->value;?>
-" class="form-control" minlength="2" maxlength="2" placeholder="sigla 2 dígitos" >
+" class="form-control" minlength="2" maxlength="2" placeholder="Estado. Exemplo: RS" >
     </div>
     
     <div class="col-md-6">

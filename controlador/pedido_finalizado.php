@@ -1,7 +1,7 @@
 <?php
 
 $carrinho = new Carrinho();
-$smarty = new Template();
+$smarty = new Modelo();
 
 $smarty->assign('PRODUTOS',$carrinho->GetCarrinho());
 $smarty->assign('TOTALCARRINHO',Carrinho::MoedaBrazil($carrinho->GetTotalCarrinho()));

@@ -1,6 +1,6 @@
 <?php
 
-$smarty = new Template();
+$smarty = new Modelo();
 $cliente = new Clientes();
 Logar::dadosCliente();
 
