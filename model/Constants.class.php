@@ -6,8 +6,8 @@ class Constants
 
     const SITE_HOST = "https://localhost";
     const TITULO_SITE = "Loja virtual deluca tecnologia";
-    const SITE_PASTA = "loja";    
-    const SITE_EMAIL = "rafael.melhoramentos@gmail.com";
+    const SITE_PASTA = "site";    
+    const SITE_EMAIL = "deluca.melhoramentos@gmail.com";
 
     /*
     colocar esses valores direto na class email
