@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-16 02:00:49
+/* Smarty version 3.1.45, created on 2022-07-16 03:15:46
   from 'C:\xampp\htdocs\site\view\contato.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62d1ffb12ddb22_04146386',
+  'unifunc' => 'content_62d21142833926_09751746',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f78e6c76d6bd46b625c0dfd7cc8c9fe8c21473db' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\contato.html',
-      1 => 1657929645,
+      1 => 1657934143,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d1ffb12ddb22_04146386 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d21142833926_09751746 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
   <div class="row">
 
-    <form class="form-horizontal" id="formulario" action="email">
+    <form class="form-horizontal" id="formulario" onsubmit="return enviado()" action="email" >
       <fieldset>
 
         <legend>Formulário de contato</legend>
@@ -76,5 +76,7 @@ function content_62d1ffb12ddb22_04146386 (Smarty_Internal_Template $_smarty_tpl)
     </form>
 
   </div>
-</div><?php }
+</div>
+
+<?php }
 }

@@ -35,8 +35,9 @@ $mensagem = "Nome " . filter_var($_GET['inputnome'],FILTER_SANITIZE_STRING) . "<
             "Deseja Receber emails? " . filter_var($_GET['inputpromo'],FILTER_SANITIZE_STRING) . "<br>\r\n"; 
 $vetorDestinatarios = array(Constants::SITE_EMAIL);
 $email->EnviarEmail('Formulario de Contato - DeLuca Tecnologia', $mensagem, $vetorDestinatarios);
-echo "<script>alert('Email enviado com sucesso');</script>";
+
 
 ?>
+  
 <meta http-equiv="refresh" content="0; url='contato'"/>
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-16 01:58:23
+/* Smarty version 3.1.45, created on 2022-07-16 03:33:59
   from 'C:\xampp\htdocs\site\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62d1ff1f6cd5f7_77206464',
+  'unifunc' => 'content_62d21587102ac2_55412292',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10a7fab7eab54d1715aa1aef8d679543137987d3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\index.html',
-      1 => 1657929501,
+      1 => 1657935236,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d1ff1f6cd5f7_77206464 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d21587102ac2_55412292 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -37,7 +37,6 @@ function content_62d1ff1f6cd5f7_77206464 (Smarty_Internal_Template $_smarty_tpl)
 /tema/css/contato.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/css/personalizado.css" rel="stylesheet" type="text/css" />
-
     <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/jquery-2.2.1.min.js" type="text/javascript"><?php echo '</script'; ?>
@@ -47,12 +46,36 @@ function content_62d1ff1f6cd5f7_77206464 (Smarty_Internal_Template $_smarty_tpl)
 /tema/js/bootstrap.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/js/bootstrap-notify.js" type="text/javascript"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
  src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
  src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"><?php echo '</script'; ?>
 >
-
+    <?php echo '<script'; ?>
+ type="text/javascript">
+        $(document).ready(function() {
+            
+        })
+        function enviado() {
+        
+          $.notify({   
+            message: 'Formulário enviado com sucesso!'
+            },{
+            type: 'success',
+            showProgressbar: true,
+            placement: {
+                from: "top",
+                align:"center"
+            }   
+          });
+          return true
+        }
+        <?php echo '</script'; ?>
+>
 </head>
 
 <body>
