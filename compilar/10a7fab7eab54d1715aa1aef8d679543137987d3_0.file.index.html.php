@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-16 03:33:59
+/* Smarty version 3.1.45, created on 2022-07-26 19:08:02
   from 'C:\xampp\htdocs\site\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62d21587102ac2_55412292',
+  'unifunc' => 'content_62e01f726db2d2_66139881',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10a7fab7eab54d1715aa1aef8d679543137987d3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\index.html',
-      1 => 1657935236,
+      1 => 1658855274,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d21587102ac2_55412292 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e01f726db2d2_66139881 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -28,8 +28,8 @@ function content_62d21587102ac2_55412292 (Smarty_Internal_Template $_smarty_tpl)
 <head>
     <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
 </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
 
     <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -80,13 +80,13 @@ function content_62d21587102ac2_55412292 (Smarty_Internal_Template $_smarty_tpl)
 
 <body>
     <div class="container-fluid">
-
         <div class="row" id="topo-superior">
             <div class="container">
                 <h4>Soluções em desenvolvimento web</h4>
             </div>
         </div>
-    </div>
+    </div> 
+    
     <div class="row" id="topo">
         <div class="container">
             <div id="texto-cabecalho">
@@ -103,17 +103,15 @@ function content_62d21587102ac2_55412292 (Smarty_Internal_Template $_smarty_tpl)
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>                        
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>                        
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar">
-                    <form class="navbar-form navbar-left" role="search">
+                    <form method="GET" class="navbar-form navbar-left" role="search" >
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Pesquisar Produtos e Serviços..."
+                            <input id="busca-produtos" name= "buscar-produtos" type="text" class="form-control" placeholder="Pesquisar Produtos e Serviços..."
                                 required>
                         </div>
                         <button type="submit" class="btn btn-primary"><i

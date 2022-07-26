@@ -4,8 +4,8 @@
 
 <head>
     <title>{$TITULO_SITE}</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
 
     <link href="{$GET_TEMA}/tema/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="{$GET_TEMA}/tema/css/contato.css" rel="stylesheet" type="text/css" />
@@ -38,13 +38,13 @@
 
 <body>
     <div class="container-fluid">
-
         <div class="row" id="topo-superior">
             <div class="container">
                 <h4>Soluções em desenvolvimento web</h4>
             </div>
         </div>
-    </div>
+    </div> 
+    
     <div class="row" id="topo">
         <div class="container">
             <div id="texto-cabecalho">
@@ -59,17 +59,15 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>                        
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>                        
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar">
-                    <form class="navbar-form navbar-left" role="search">
+                    <form method="GET" class="navbar-form navbar-left" role="search" >
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Pesquisar Produtos e Serviços..."
+                            <input id="busca-produtos" name= "buscar-produtos" type="text" class="form-control" placeholder="Pesquisar Produtos e Serviços..."
                                 required>
                         </div>
                         <button type="submit" class="btn btn-primary"><i

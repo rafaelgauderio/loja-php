@@ -1,8 +1,8 @@
 ﻿
 
-
 #topo.row {
   background-color: white;
+  
 }
 
 #topo.row img{
@@ -42,26 +42,19 @@
   
 }
 
-#topo{
 
-min-height: 100px;
-background-color: black;
-color: #fff;
-
-    
-}
 
 #topo img{
   
   border-radius:10px;
   border: 2px solid black;
-  }
+}
 
 #logo-externa{
   
   display: flex;
-  justify-content: center;
   align-items: center;
+  align-content:flex-start ;
   margin-top:5px;
   
 }
@@ -69,7 +62,7 @@ color: #fff;
 .img-rounded {
   width:100%;
   align-items: center;
-  align-content: center;
+  align-content: flex-start;
 
 }
 
@@ -363,6 +356,14 @@ text.quantidade {
   list-style-type: none; 
   display: block;
 }
+
+@media only screen and (max-width:380px) {
+  #topo{ 
+    display: none !important; 
+  } 
+
+}
+
 
 
 
