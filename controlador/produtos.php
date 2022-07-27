@@ -34,6 +34,4 @@ echo '<pre>';
 var_dump($produtos->GetItens());
 echo '<pre>';
 */
-
-
 ?>
