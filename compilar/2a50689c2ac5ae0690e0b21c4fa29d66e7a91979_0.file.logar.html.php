@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-16 01:48:31
+/* Smarty version 3.1.45, created on 2022-07-28 22:35:37
   from 'C:\xampp\htdocs\site\view\logar.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62d1fccf1bf1a3_93953015',
+  'unifunc' => 'content_62e2f3190c26b8_08448481',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d1fccf1bf1a3_93953015 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e2f3190c26b8_08448481 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['ISLOGADO']->value == false) {?>
 <h4 class="alert alert-info text-center">Faça Login ou Cadastre-se</h4>
 <section class="row">

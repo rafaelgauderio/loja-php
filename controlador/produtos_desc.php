@@ -3,6 +3,7 @@
 $smarty = new Modelo();
 
 $produtos = new Produtos();
+$categorias = new Categorias();
 $produtos->GetProdutosId(Routes::$pagina[1]);
 
 $smarty->assign('PRODUCT',$produtos->GetItens());

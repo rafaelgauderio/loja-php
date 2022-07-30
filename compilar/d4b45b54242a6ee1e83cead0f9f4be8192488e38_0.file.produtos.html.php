@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-27 14:46:38
+/* Smarty version 3.1.45, created on 2022-07-30 05:27:27
   from 'C:\xampp\htdocs\site\view\produtos.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62e133ae6effe5_81332371',
+  'unifunc' => 'content_62e4a51f98ac34_62904511',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd4b45b54242a6ee1e83cead0f9f4be8192488e38' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\produtos.html',
-      1 => 1658925996,
+      1 => 1659151642,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62e133ae6effe5_81332371 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e4a51f98ac34_62904511 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
-	<div class="container"><h3 class="alert alert-info text-center">Conheça nossos produtos e serviços</h3></div>
+	<h2 class="alert alert-info text-center">Conheça nossos produtos e serviços</h2>
  </div>
 <?php if (($_smarty_tpl->tpl_vars['PRODUCT_CONTAGEM']->value <= 0)) {?>
 <h4 class="alert alert-warning text-center">Não foram encontrados produtos com a especificação informada.</h4>

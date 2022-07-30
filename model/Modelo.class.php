@@ -7,7 +7,7 @@ Class Modelo extends SmartyBC {
         parent::__construct();
         //setando as pastas do smarty
         $this->setTemplateDir('view/');
-        $this->setCacheDir('cache/');
+        $this->setCacheDir('temp/');
         $this->setCompileDir('compilar/');
     }
 }

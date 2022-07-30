@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-13 20:43:36
-  from 'C:\xampp\htdocs\loja\view\finalizar_pedido.html' */
+/* Smarty version 3.1.45, created on 2022-07-31 00:11:24
+  from 'C:\xampp\htdocs\site\view\finalizar_pedido.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62cf12588cd9d0_45908032',
+  'unifunc' => 'content_62e5ac8c89b110_45926726',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '232902548a978a4a195f32c9a3cd6e7fc6086816' => 
+    '12f2a234d91a86d8b3c4139a030d429ea9f07ada' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\loja\\view\\finalizar_pedido.html',
-      1 => 1657736997,
+      0 => 'C:\\xampp\\htdocs\\site\\view\\finalizar_pedido.html',
+      1 => 1657928339,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62cf12588cd9d0_45908032 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e5ac8c89b110_45926726 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h2>Checkout do Pedido</h2>
  <h4>Confira os dados do pedido abaixo</h4>
 

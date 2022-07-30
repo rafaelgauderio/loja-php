@@ -21,7 +21,7 @@
 #topo-superior{
 
   min-height: 30px;
-  background-color: black;
+  background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D);
   color: #fff;
   text-align: left;
        
@@ -356,6 +356,7 @@ text.quantidade {
   list-style-type: none; 
   display: block;
 }
+
 
 @media only screen and (max-width:380px) {
   #topo{ 

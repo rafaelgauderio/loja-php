@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-16 03:15:46
+/* Smarty version 3.1.45, created on 2022-07-28 22:35:30
   from 'C:\xampp\htdocs\site\view\contato.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62d21142833926_09751746',
+  'unifunc' => 'content_62e2f312811781_14937460',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f78e6c76d6bd46b625c0dfd7cc8c9fe8c21473db' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\contato.html',
-      1 => 1657934143,
+      1 => 1658005461,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d21142833926_09751746 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e2f312811781_14937460 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
   <div class="row">
 
-    <form class="form-horizontal" id="formulario" onsubmit="return enviado()" action="email" >
+    <form class="form-horizontal" id="formulario" onsubmit="return enviado()" action="email">
       <fieldset>
 
         <legend>Formulário de contato</legend>
@@ -32,22 +32,22 @@ function content_62d21142833926_09751746 (Smarty_Internal_Template $_smarty_tpl)
         <div class="formulario-contato">
           <label class="col-md-5 control-label" for="inputnome">Nome</label>
           <div class="col-md-7">
-            <input id="inputnome" name="inputnome" placeholder="Nome Completo (opcional)" class="form-control input-md"
-              type="text" />
+            <input id="inputnome" name="inputnome" placeholder="Nome Completo (opcional)" maxlength="40"
+              class="form-control input-md" type="text" />
           </div>
         </div>
         <div class="formulario-contato">
           <label class="col-md-5 control-label" for="inputtelefone">Telefone</label>
           <div class="col-md-7">
-            <input id="inputtelefone" name="inputtelefone" placeholder="Telefone (opcional)"
+            <input id="inputtelefone" name="inputtelefone" placeholder="Telefone (opcional)" maxlength="15"
               class="form-control input-md" type="cel" />
           </div>
         </div>
         <div class="formulario-contato">
           <label class="col-md-5 control-label" for="inputemail">Email</label>
           <div class="col-md-7">
-            <input id="inputemail" name="inputemail" placeholder="Email (obrigatório)" class="form-control input-md"
-              required="required" type="email" />
+            <input id="inputemail" name="inputemail" placeholder="Email (obrigatório)" maxlength="40"
+              class="form-control input-md" required="required" type="email" />
           </div>
         </div>
         <div class="formulario-contato">
@@ -55,14 +55,14 @@ function content_62d21142833926_09751746 (Smarty_Internal_Template $_smarty_tpl)
           <div class="col-md-7">
             <textarea class="form-control" id="inputarea" rows="8" name="inputarea"
               placeholder="Informe aqui sua dúvida, crítica ou sugestão que entratemos em contato. (obrigatório)"
-              required="required"></textarea>
+              maxlength="40" required="required"></textarea>
           </div>
         </div>
         <div class="formulario-contato">
           <label class="col-md-5 control-label" for="receberpromo">Deseja receber promoções e novidades por email e/ou
             sms?</label>
           <div class="col-md-3">
-            <input id="inputpromo" name="inputpromo" type="checkbox" value="sim" class="form-control input-sm"
+            <input id="inputpromo" name="inputpromo" type="checkbox" value="sim" class="form-control input-sm" maxlength="150"
               checked />
           </div>
         </div>
@@ -76,7 +76,5 @@ function content_62d21142833926_09751746 (Smarty_Internal_Template $_smarty_tpl)
     </form>
 
   </div>
-</div>
-
-<?php }
+</div><?php }
 }

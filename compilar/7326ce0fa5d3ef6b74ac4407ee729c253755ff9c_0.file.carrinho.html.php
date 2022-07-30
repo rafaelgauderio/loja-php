@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-16 01:46:53
+/* Smarty version 3.1.45, created on 2022-07-28 22:35:44
   from 'C:\xampp\htdocs\site\view\carrinho.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62d1fc6d694467_21940309',
+  'unifunc' => 'content_62e2f3207cf502_31032239',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d1fc6d694467_21940309 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e2f3207cf502_31032239 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h2>Carrinho de Compras</h2>
 
 

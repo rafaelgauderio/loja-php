@@ -13,7 +13,7 @@ class Constants
     colocar esses valores direto na class email
     const EMAIL_PROFESSOR = "rafael.pinto@canoas.ifrs.edu.br"; 
     const EMAIL_SMTP = "smtp.gmail.com";
-    const EMAIL_USUARIO = "rafael.melhoramentos@gmail.com";
+    const EMAIL_USUARIO = "deluca.melhoramentos@gmail.com";
     const EMAIL_NOME = "Contato da Loja deluca";
     const EMAIL_SENHA = "vdvvvleuajdcxdgx";
     const EMAIL_PORTA = 587;

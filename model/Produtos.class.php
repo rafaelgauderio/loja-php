@@ -49,7 +49,8 @@ class Produtos extends Conection
                 'prod_preco_banco' => ($list['prod_preco']),
                 'prod_img' => Routes::get_ImageURL() . $list['prod_img'],
                 'prod_categoria' => $list['prod_categoria'],
-                'prod_destaque' => $list['prod_destaque']
+                'prod_destaque' => $list['prod_destaque'],
+                'categ_nome' =>$list['categ_nome']
             );
             $i++;
         }

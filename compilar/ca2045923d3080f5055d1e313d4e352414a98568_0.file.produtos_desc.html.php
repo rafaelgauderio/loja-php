@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-16 01:46:50
+/* Smarty version 3.1.45, created on 2022-07-30 23:41:14
   from 'C:\xampp\htdocs\site\view\produtos_desc.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62d1fc6ac5a393_92100717',
+  'unifunc' => 'content_62e5a57add9616_80615267',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ca2045923d3080f5055d1e313d4e352414a98568' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\produtos_desc.html',
-      1 => 1657928340,
+      1 => 1659217272,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d1fc6ac5a393_92100717 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e5a57add9616_80615267 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
      <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRODUCT']->value, 'PRODUCT_ITEM');
@@ -43,13 +43,13 @@ $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->do_else = false;
     </div>  
         
         <div class="col-md-5">
-           <h4 class="text-left preco"><b>Referência: </b> <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_id'];?>
+           <h4 class="text-left"><b>Código/Referência: </b> <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_id'];?>
 </h4> 
-           <h4 class="text-left preco"><b>Preço: </b>R$ <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_preco'];?>
+           <h4 class="text-left text-secondary"><b>Preço: </b>R$ <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_preco'];?>
 </h4>
-           <h4 class="text-left preco"><b>Produto em Destaque: </b> <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_destaque'];?>
+           <h4 class="text-left text-info"><b>Produto em Destaque: </b> <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_destaque'];?>
 </h4>  
-           <h4 class="text-left preco"><b>Código da Categoria: </b> <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['prod_categoria'];?>
+           <h4 class="text-left"><b>Categoria: </b> <?php echo $_smarty_tpl->tpl_vars['PRODUCT_ITEM']->value['categ_nome'];?>
 </h4>               
         </div>   
 

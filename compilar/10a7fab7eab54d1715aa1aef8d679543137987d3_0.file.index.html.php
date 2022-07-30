@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-26 19:08:02
+/* Smarty version 3.1.45, created on 2022-07-30 06:17:10
   from 'C:\xampp\htdocs\site\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62e01f726db2d2_66139881',
+  'unifunc' => 'content_62e4b0c63f79e8_72896390',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10a7fab7eab54d1715aa1aef8d679543137987d3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\index.html',
-      1 => 1658855274,
+      1 => 1659154620,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62e01f726db2d2_66139881 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e4b0c63f79e8_72896390 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -82,7 +82,7 @@ function content_62e01f726db2d2_66139881 (Smarty_Internal_Template $_smarty_tpl)
     <div class="container-fluid">
         <div class="row" id="topo-superior">
             <div class="container">
-                <h4>Soluções em desenvolvimento web</h4>
+                <h4 class="text-center">Soluções em desenvolvimento web</h4>
             </div>
         </div>
     </div> 
