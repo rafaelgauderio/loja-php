@@ -1,9 +1,6 @@
 <h2>Carrinho de Compras</h2>
-
-
 <section class="row">
     <div class="col-md-4">
-
     </div>
     <div class="col-md-4 text-right">
     </div>
@@ -24,22 +21,30 @@
             <td>SubTotal R$</td>
             <td>Excluir Item</td>
         </tr>
-
         {foreach from=$PRODUTOS item=PRODUTOS_ITEM}
-
         <tr>
-
             <td> <img src="{$PRODUTOS_ITEM.prod_img}" widht="60" height="60" alt="{$PRODUTOS_ITEM.prod_nome}"> </td>
             <td> {$PRODUTOS_ITEM.prod_nome} </td>
-            <td><button class="btn btn-info btn-sm"> <i class="glyphicon glyphicon-minus"></i> </button>
-                <text class="quantidade">{$PRODUTOS_ITEM.prod_quanti} </text></text><button class="btn btn-info btn-sm">
-                    <i class="glyphicon glyphicon-plus"></i> </button>
+            <td>
+                <form name="diminuir_quantidade" method="POST" action="{$PAGINA_ALTERAR_CARRINHO}" style="display:inline">
+                    <input type="hidden" name="prod_id" value="{$PRODUTOS_ITEM.prod_id}">
+                    <input type="hidden" name="action" value="diminuir">
+                    <button class="btn btn-warning btn-sm"><i class="glyphicon glyphicon-minus"
+                            onclick="diminuir_qtd()"></i></button>
+                </form>
+                <button id="quantidade" value={$PRODUTOS_ITEM.prod_quanti}> {$PRODUTOS_ITEM.prod_quanti} </button>
+                <form name="aumentar_quantidade" method="POST" action="{$PAGINA_ALTERAR_CARRINHO}" style="display:inline">
+                    <input type="hidden" name="prod_id" value="{$PRODUTOS_ITEM.prod_id}">
+                    <input type="hidden" name="action" value="aumentar">
+                    <button class="btn btn-warning btn-sm" onclick="aumentar_qtd()"><i class="glyphicon glyphicon-plus">
+                        </i></button>
+                </form>
             </td>
+
             <td> {$PRODUTOS_ITEM.prod_preco} </td>
             <td> {$PRODUTOS_ITEM.prod_subTotal} </td>
             <td>
                 <form name="carrinho_deletar" method="post" action="{$PAGINA_ALTERAR_CARRINHO}">
-
                     <input type="hidden" name="prod_id" value="{$PRODUTOS_ITEM.prod_id}">
                     <input type="hidden" name="action" value="deletar">
                     <button class="btn btn-danger btn-sm"> <i class="glyphicon glyphicon-remove"></i> </button>
@@ -77,6 +82,30 @@
     </div>
 </section>
 
+<br>
+<br>
 
-<br>
-<br>
+<script>
+    //aumentar quantidade do item no carrinho
+    function aumentar_qtd() {
+        var qtd = document.getElementById('quantidade').value;
+        qtd = parseInt(qtd) + 1;
+        qtd.innerHTML = qtd;
+        console.log(qtd);
+    }
+
+    //siminuir a quantidade do item no carrinho
+    function diminuir_qtd() {
+
+        var qtd = document.getElementById('quantidade').value;
+        if (parseInt(qtd) >= 0) {
+            qtd = parseInt(qtd) - 1;
+            qtd.innerHTML = qtd;
+            console.log(qtd);
+            console.log(document.getElementById('quantidade'));
+            console.log({ $PRODUTOS_ITEM.prod_quanti });
+        }
+
+    }
+
+</script>

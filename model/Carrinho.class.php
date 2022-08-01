@@ -74,6 +74,16 @@ class Carrinho {
             $this->LimparCarrinho();
             echo '<h3 class="alert alert-warning text-center">Todos os itens foram excluídos do carrinho.</h3>';
 
+        } else if ($ACTION=='aumentar') {
+            $_SESSION['PRODUTOS'][$id]['QUANTI'] = $_SESSION['PRODUTOS'][$id]['QUANTI'] + 1;
+            echo '<h3 class="alert alert-info text-center">Aguarde...Incrementando quantidade ao carrinho.</h3>';
+        } else if ($ACTION=='diminuir') {
+            if($_SESSION['PRODUTOS'][$id]['QUANTI'] >=2) {
+                $_SESSION['PRODUTOS'][$id]['QUANTI'] = $_SESSION['PRODUTOS'][$id]['QUANTI'] - 1;
+                echo '<h3 class="alert alert-info text-center">Aguarde...Decrementando quantidade do carrinho.</h3>';
+            } else {
+                echo '<h3 class="alert alert-danger text-center">Quantidade não pode ser menor que um. Clique em excluir item.</h3>';
+            }            
         }
     }
 
@@ -84,6 +94,10 @@ class Carrinho {
     protected function LimparCarrinho () {
         //destroi todo as sessoes idependetes do id
         unset($_SESSION['PRODUTOS']);
+    }
+
+    public function aumentarQuantidade () {
+        
     }
 
 }

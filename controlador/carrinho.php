@@ -15,7 +15,7 @@ if (isset($_GET["buscar-produtos"]) == true) {
         $smarty->assign('TOTALCARRINHO',Carrinho::MoedaBrazil($carrinho->GetTotalCarrinho()));
         $smarty->assign('PAGINA_ALTERAR_CARRINHO', Routes::pag_Alterar_Carrinho());
         $smarty->assign('PAGINA_PRODUTOS',Routes::pag_Produtos());
-        $smarty->assign('PAGINA_CONFERIR_PEDIDO', Routes::pag_Finalizar_Pedido());
+        $smarty->assign('PAGINA_CONFERIR_PEDIDO', Routes::pag_Finalizar_Pedido());        
         
         /*
         echo '<pre>';
