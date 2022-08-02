@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-08-01 21:06:29
+/* Smarty version 3.1.45, created on 2022-08-03 01:09:58
   from 'C:\xampp\htdocs\site\view\dados_do_cliente.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62e824356080b4_60020496',
+  'unifunc' => 'content_62e9aec6dee317_47620887',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '084442c0cef54668b9d241de0ef13ca5903d7ade' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\dados_do_cliente.html',
-      1 => 1658840161,
+      1 => 1659480519,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62e824356080b4_60020496 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e9aec6dee317_47620887 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3 class="alert alert-info text-center">Dados do cliente</h3>
 <h4 class="alert alert-warning text-center">Tem que confirmar a senha atual para poder editar dados.
     <br>Não é possível editar o campo email.</h4>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-08-01 17:59:15
+/* Smarty version 3.1.45, created on 2022-08-03 01:03:53
   from 'C:\xampp\htdocs\site\view\trocar_senha.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62e7f853706f16_64562748',
+  'unifunc' => 'content_62e9ad59732858_42325188',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f619adc7e17a051b101160037a1e215fdd6b2b02' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\trocar_senha.html',
-      1 => 1658840161,
+      1 => 1659480519,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62e7f853706f16_64562748 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e9ad59732858_42325188 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <h4 class="alert alert-info text-center">Informe a senha anterior e a nova senha. Mínimo de 6 caracteres, máximo de 10 caracteres.<br>
 Se esqueceu a senha anterior, clique em <b>Sair</b> depois e vá na opção <b>Esqueci minha senha</b>

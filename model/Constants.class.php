@@ -24,8 +24,8 @@ class Constants
     const BD_HOST = "localhost",
     BD_USER = "root",
     BD_PASSWORD = "",
-    BD_DATABASE = "lojadeluca",
-    BD_PREFIX = "security_";
+    BD_DATABASE = "lojadeluca";
+    
 
     
 }

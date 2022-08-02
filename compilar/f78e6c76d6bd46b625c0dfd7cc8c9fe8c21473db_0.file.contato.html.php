@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.45, created on 2022-07-28 22:35:30
+/* Smarty version 3.1.45, created on 2022-08-03 01:15:07
   from 'C:\xampp\htdocs\site\view\contato.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.45',
-  'unifunc' => 'content_62e2f312811781_14937460',
+  'unifunc' => 'content_62e9affba64227_70839748',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f78e6c76d6bd46b625c0dfd7cc8c9fe8c21473db' => 
     array (
       0 => 'C:\\xampp\\htdocs\\site\\view\\contato.html',
-      1 => 1658005461,
+      1 => 1659482105,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62e2f312811781_14937460 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62e9affba64227_70839748 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
   <div class="row">
 
@@ -62,8 +62,7 @@ function content_62e2f312811781_14937460 (Smarty_Internal_Template $_smarty_tpl)
           <label class="col-md-5 control-label" for="receberpromo">Deseja receber promoções e novidades por email e/ou
             sms?</label>
           <div class="col-md-3">
-            <input id="inputpromo" name="inputpromo" type="checkbox" value="sim" class="form-control input-sm" maxlength="150"
-              checked />
+            <input id="inputpromo" name="inputpromo" type="checkbox" value="sim" class="form-control input-sm" checked />
           </div>
         </div>
         <div class="formulario-contato">
