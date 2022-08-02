@@ -75,7 +75,9 @@ class Clientes extends Conection
 
     static function CriptografarSenha($valor)
     {
-        return md5($valor);
+        //return md5($valor);
+        $hash = password_hash($valor,PASSWORD_DEFAULT);
+        return $hash;
     }
 
 

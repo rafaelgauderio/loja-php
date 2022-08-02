@@ -11,7 +11,7 @@ if ((isset($_POST['senha_atual']) == true) and (isset($_POST['nova_senha']) == t
     $email_cliente = $_SESSION['CLIENTE']['client_email'];
     $senha_atual = $_POST['senha_atual'];
     $senha_atual = filter_var($senha_atual, FILTER_SANITIZE_STRING);
-    $senha_atual = Logar::CriptografarSenha($senha_atual);
+    //$senha_atual = Logar::CriptografarSenha($senha_atual);
     //echo $senha_atual . "<br>";
     //echo $_SESSION['CLIENTE']['client_senha'] . "<br>";
     $nova_senha = $_POST['nova_senha'];
@@ -23,12 +23,11 @@ if ((isset($_POST['senha_atual']) == true) and (isset($_POST['nova_senha']) == t
 
     if ($nova_senha != $confirma_nova_senha) {
 
-
         echo "<script>alert('As senhas novas não correspodem.');</script>";
         echo '<h4 class="alert alert-warning text-center">A nova senha informada não coincide com o campo de confirmação. </h3>';
         Routes::redirecionarPagina(2.5, Routes::pag_trocar_senha());
         exit();
-    } else if (($senha_atual) != ($_SESSION['CLIENTE']['client_senha'])) {
+    } else if (password_verify($senha_atual,$_SESSION['CLIENTE']['client_senha'])==false) {
         echo "<script>alert('A senha atual está incorreta');</script>";
         echo '<h4 class="alert alert-warning text-center">A senha informada não correspone a senha atual. </h4>';
         Routes::redirecionarPagina(2.5, Routes::pag_trocar_senha());

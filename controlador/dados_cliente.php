@@ -31,9 +31,9 @@ if (Logar::ClienteLogado() == false) {
         //verificar se a senha informada é igual a senha do banco e dae 
         //atualizar dados
         $senha_do_cliente = $_SESSION['CLIENTE']['client_senha'];
-        $senha_informada_post = Logar::CriptografarSenha($client_senha);
-    
-        if ($senha_do_cliente == $senha_informada_post) {
+        $senha_informada_post = $client_senha;        
+        //if ($senha_do_cliente == $senha_informada_post)
+        if (password_verify($senha_informada_post,$_SESSION['CLIENTE']['client_senha'])==true) {
             //setando os dados recebidos via post e depois inserindo na tabela cliente
             $cliente->SetarDadosValidados(
                 $client_email,

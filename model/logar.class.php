@@ -19,7 +19,9 @@ Class Logar extends Conection {
 
     //criptograr a senha com sha256, sha512, md5 ou outra função hash de criptografia
     static function CriptografarSenha($valor) {
-        return md5($valor);
+        //return md5($valor);
+        $hash = password_hash($valor,PASSWORD_DEFAULT);
+        return $hash;
     }
 
     protected function GetUsuario() {
@@ -31,42 +33,44 @@ Class Logar extends Conection {
     }
    
 
-    public function GetLogar($usuario, $senha) {
-        $this->setUsuario($usuario);
-        $this->setSenha($senha);
+    public function GetLogar($user, $password) {
+        $conection = mysqli_connect('localhost','root','','lojadeluca');
+        $this->setUsuario($user);
+        //$this->setSenha($senha);        
+        $user=$this->GetUsuario();     
+        $sql = "SELECT * FROM clientes WHERE client_email = '$user'";        
+        $this->ExecuteQuery($sql);  
+        $resultado= mysqli_query($conection,$sql); 
+        //print_r($resultado= mysqli_query($conection,$sql)); 
+        if(mysqli_num_rows($resultado)==1) {
+            //echo "Entrou aqui. Significa que validou o usuário";
+            $linha = mysqli_fetch_assoc($resultado);
+            if(password_verify($password,$linha['client_senha'])) {
+                //echo "Entrou aqui. Significa que validou a senha;
+                $list = $this->PrintData();
+                $_SESSION['CLIENTE']['client_id']        =  $list['client_id'];
+                $_SESSION['CLIENTE']['client_nome']      =  $list['client_nome'];
+                $_SESSION['CLIENTE']['client_senha']     =  $list['client_senha'];
+                $_SESSION['CLIENTE']['client_email']     =  $list['client_email'];
+                $_SESSION['CLIENTE']['client_endereco']  =  $list['client_endereco'];
+                $_SESSION['CLIENTE']['client_numero']    =  $list['client_numero'];
+                $_SESSION['CLIENTE']['client_bairro']    =  $list['client_bairro'];
+                $_SESSION['CLIENTE']['client_cidade']    =  $list['client_cidade'];
+                $_SESSION['CLIENTE']['client_uf']        =  $list['client_uf'];
+                $_SESSION['CLIENTE']['client_cep']       =  $list['client_cep'];
+                $_SESSION['CLIENTE']['client_telefone']  =  $list['client_telefone'];
+                //$_SESSION['CLIENTE']['client_cadastro']  =  $list['client_cadastro'];
+                //redirecionar para pagina de conta do cliente ao logar
+                Routes::redirecionarPagina(0.5,Routes::pag_conta());
+            }   
 
-        $user=$this->getUsuario();
-        //criptografa a senha recebida pelo usuario para comparar com a senha critpgrafada no banco
-        $password=($this->getSenha());
-      
-        $sql = "SELECT * FROM clientes WHERE client_email = '$user' AND client_senha = '$password'";        
-        $this->ExecuteQuery($sql);        
-
-        if($this->object->rowCount()>0) {
-        
-        $list = $this->PrintData();
-        $_SESSION['CLIENTE']['client_id']        =  $list['client_id'];
-        $_SESSION['CLIENTE']['client_nome']      =  $list['client_nome'];
-        $_SESSION['CLIENTE']['client_senha']     =  $list['client_senha'];
-        $_SESSION['CLIENTE']['client_email']     =  $list['client_email'];
-        $_SESSION['CLIENTE']['client_endereco']  =  $list['client_endereco'];
-        $_SESSION['CLIENTE']['client_numero']    =  $list['client_numero'];
-        $_SESSION['CLIENTE']['client_bairro']    =  $list['client_bairro'];
-        $_SESSION['CLIENTE']['client_cidade']    =  $list['client_cidade'];
-        $_SESSION['CLIENTE']['client_uf']        =  $list['client_uf'];
-        $_SESSION['CLIENTE']['client_cep']       =  $list['client_cep'];
-        $_SESSION['CLIENTE']['client_telefone']  =  $list['client_telefone'];
-        //$_SESSION['CLIENTE']['client_cadastro']  =  $list['client_cadastro'];
-        //redirecionar para pagina de conta do cliente ao logar
-        Routes::redirecionarPagina(0.5,Routes::pag_conta());
-        
-
-        }else {
+       else {
            echo '<h4 class="alert alert-danger text-center">Usuário ou senha inválidos.</h4>';
            echo '<script>alert("Email ou senha inválidos")</script>';
            //echo $this->GetUsuario();
            //echo $this->GetSenha(); 
-        }           
+        } 
+    }          
     }
 
     public static function Redirecionar () {   
