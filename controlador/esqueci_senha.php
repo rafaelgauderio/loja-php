@@ -15,6 +15,18 @@ if(isset($_POST['client_email'])==true) {
         //echo $senhaGerada;
         $cliente->trocarSenha($senhaGerada,$email_cadastrado);
         
+        /*só vai funcinar hospedado
+        $emails = ''. $email_cadastrado . ", deluca1712@gmail.com'"; 
+        $to =$emails;        
+        $subject = "Solicitação de alteração de senha DeLuca Tecnologia";
+        $message = "Segue sua nova senha criada: " . $senhaGerada;
+        $headers = "From: " . EMAIL_ADMIN . "\r\n" .
+        "Reply-To: ". EMAIL_ADMIN . "\r\n" .
+        "X-Mailer: PHP/" . phpversion();
+        mail($to, $subject, $message, $headers);
+        */
+
+        // phpmailer funciona em localhost
         //enviar email para o cliente com a senha gerada;
         $emailSenha = new Email();
         $mensagem = "Você solicitou um nova senha na opção esqueci minha senha do site De Luca tecnologia.

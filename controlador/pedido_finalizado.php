@@ -31,6 +31,21 @@ $email=$_SESSION['CLIENTE']['client_email'];
 $smarty->assign('EMAIL_CLIENTE',$email);
 $smarty->assign('CODIGO_PEDIDO',$codigo);
 
+/*só vai funcionar hospedado
+$email_cliente = $_SESSION['CLIENTE']['client_email'];
+$emails = ''. $email_cliente . ", deluca1712@gmail.com' , deluca.tecnologia@gmail.com'"; 
+$to =$emails;
+$subject = "Pedido do site deluca tecnologia";
+
+$message = $smarty->fetch('dados_do_pedido.html');
+$headers = "From: " . EMAIL_ADMIN . "\r\n" .
+    "Reply-To: ". EMAIL_ADMIN . "\r\n" .
+    "Content-type: text/html; charset=iso-8859-1" . "\r\n" . 
+    "X-Mailer: PHP/" . phpversion();
+mail($to, $subject, $message, $headers);
+*/
+
+//no phpmailer vai funcinar em locahost, mas não funcionou hospedado
 //enviar para o cliente com os dados do pedido antes de limpar a sessão
 $email = new Email();
 $pedidoFinalizado = $smarty->fetch('dados_do_pedido.html');

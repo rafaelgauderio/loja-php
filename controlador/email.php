@@ -12,18 +12,20 @@
     const EMAIL_SMTPSECURE = "tls";
    
 
-//só vai funcionar hospedado
-$to =EMAIL_ADMIN;
+/*só vai funcionar hospedado
+$to ='deluca1712@gmail.com, deluca.tecnologia@gmail.com';
 $subject = "Email via formulário deluca tecnologia";
-$message = "Email de " . $_GET['inputnome'] . "\r\n". 
-"Mensagem: " . $_GET['inputarea'];
-$headers = "From: " . $_GET['inputemail'] . "\r\n" .
+$message = "Email via formulário de contato deluca tecnologia\r\n".
+"Email de " . filter_var($_GET['inputnome'],FILTER_SANITIZE_STRING) . "\r\n".
+"Telefone: " . filter_var($_GET['inputtelefone'],FILTER_SANITIZE_STRING) . "\r\n".
+"Email: " . filter_var($_GET['inputemail'],FILTER_SANITIZE_STRING) . "\r\n".
+"Deseja Receber emails? " . filter_var($_GET['inputpromo'],FILTER_SANITIZE_STRING) . "\r\n" .
+"Mensagem: " . filter_var($_GET['inputarea'],FILTER_SANITIZE_STRING);
+$headers = "From: " . filter_var($_GET['inputemail'],FILTER_SANITIZE_STRING) . "\r\n" .
     "Reply-To: ". EMAIL_ADMIN . "\r\n" .
     "X-Mailer: PHP/" . phpversion();
-
-
-//mail($to, $subject, $message, $headers);
-
+mail($to, $subject, $message, $headers);
+*/
 
 //enviando email com classe que extende de phpmailer (funciona em localhost) 
 $email = new Email();
@@ -36,6 +38,7 @@ $mensagem = "Nome " . filter_var($_GET['inputnome'],FILTER_SANITIZE_STRING) . "<
 $vetorDestinatarios = array(Constants::SITE_EMAIL);
 $email->EnviarEmail('Formulario de Contato - DeLuca Tecnologia', $mensagem, $vetorDestinatarios);
 
+echo '<h4 class="alert alert-success text-center">Email enviado com sucesso<h4>';
 
 ?>
   
