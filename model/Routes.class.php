@@ -8,88 +8,88 @@ Class Routes {
     private static $pasta_model ='model';
    
 
-    static function get_SiteHOME () {
+    public static function get_SiteHOME () {
         return Constants::SITE_HOST . '/' .Constants::SITE_PASTA;
     }
 
-    static function get_SiteROOT () {
+    public static function get_SiteROOT () {
         return $_SERVER['DOCUMENT_ROOT'] . '/' .Constants::SITE_PASTA;
     }   
 
-    static function pag_esqueci_senha () {
+    public static function pag_esqueci_senha () {
         return self::get_SiteHOME() . '/esqueci_senha' ;
     }
     
-    static function pag_de_cadastro () {
+    public static function pag_de_cadastro () {
         return self::get_SiteHOME() . '/cadastro' ;
     }
     
 
-    static function get_SiteTEMA () {
+    public static function get_SiteTEMA () {
         return self::get_SiteHOME() . '/' .self::$pasta_view;
     }
 
-    static function pag_conta () {
+    public static function pag_conta () {
         return self::get_SiteHOME() . '/conta' ;
     }
 
-    static function pag_Logar () {
+    public static function pag_Logar () {
         return self::get_SiteHOME() . '/logar' ;
     }
 
-    static function pag_logoff () {
+    public static function pag_logoff () {
         return self::get_SiteHOME() . '/sair' ;
     }
 
-    static function pag_dados_do_cliente () {
+    public static function pag_dados_do_cliente () {
         return self::get_SiteHOME() . '/dados_cliente' ;
     }
 
-    static function pag_trocar_senha () {
+    public static function pag_trocar_senha () {
         return self::get_SiteHOME() . '/trocar_senha' ;
     }
 
-    static function pag_Carrinho () {
+    public static function pag_Carrinho () {
         return self::get_SiteHOME() . '/carrinho' ;
     }
 
-    static function pag_Alterar_Carrinho () {
+    public static function pag_Alterar_Carrinho () {
         return self::get_SiteHOME()  . '/alterar_carrinho';
     }
   
-    static function pag_Finalizar_Pedido () {
+    public static function pag_Finalizar_Pedido () {
         return self::get_SiteHOME()  . '/finalizar_pedido';
     }
 
-    static function pag_Pedido_Finalizado () {
+    public static function pag_Pedido_Finalizado () {
         return self::get_SiteHOME()  . '/pedido_finalizado';
     }   
 
-    static function pag_ProdutosDescricao () {
+    public static function pag_ProdutosDescricao () {
         return self::get_SiteHOME() . '/produtos_desc' ;
     }
 
-    static function pag_Produtos () {
+    public static function pag_Produtos () {
         return self::get_SiteHOME() . '/produtos' ;
     }
 
-    static function pag_Contato () {
+    public static function pag_Contato () {
         return self::get_SiteHOME() . '/contato' ;
     }
     
-    static function pag_Conosco () {
+    public static function pag_Conosco () {
         return self::get_SiteHOME() . '/conosco' ;
     }
 
-    static function pag_Empresa () {
+    public static function pag_Empresa () {
         return self::get_SiteHOME() . '/empresa' ;
     }
 
-    static function get_ImagesFolder() {
+    public static function get_ImagesFolder() {
         return 'imagens/';
     }
 
-    static function get_ImageURL () {
+    public static function get_ImageURL () {
         return self::get_SiteHOME() . '/' . self::get_ImagesFolder();
     }
 
@@ -100,31 +100,31 @@ Class Routes {
     }
     */ 
 
-    static function Get_Image($name) {
+    public static function Get_Image($name) {
         $image = self::get_ImageURL() . "/" .$name;
         return $image;
     } 
     
-    static function get_controlador() {
+    public static function get_controlador() {
         return self::$pasta_controlador;
     }
 
-    static function get_model() {
+    public static function get_model() {
         return self::$pasta_model;
     }
 
-    static function get_view() {
+    public static function get_view() {
         return self::$pasta_view;
     }
 
-    static function redirecionarPagina($time, $pagina) {
+    public static function redirecionarPagina($time, $pagina) {
         $link = '<meta http-equiv="refresh" content="' .$time.';url='.$pagina. '">';
         echo $link;
     }
     
 
 
-    static function get_pagina() {
+    public static function get_pagina() {
         if(isset($_GET['pagina'])) {
 
             $pagina = $_GET['pagina'];

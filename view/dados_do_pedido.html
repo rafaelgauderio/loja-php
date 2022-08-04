@@ -1,30 +1,29 @@
- <html>
- <h4 class="alert alert-success">Pedido Realizado com Sucesso.</h4>
- <h5 class="alert alert-info">Escolha uma das formas de pagamento abaixo.<br> Assim que confirmado o pagamento entraremos em contato para realizarmos atendimento.<br></h5>
- <h5 class="alert alert-info">Os dados do pedido foram enviados para seu email.</h5>
 
+ 
+ <body>  
+ <h3 class="alert alert-success">Confirmação de Pedido Loja deluca Tecnologia</h3>
+ <h4 class="alert alert-success">Obrigado por comprar conosco {$EMAIL_CLIENTE}</h4>
+ <h4 class="alert alert-info">Segue abaixo os dados do seu pedido.<br>
+    Assim que confirmado o pagamento, entraremos em contato para realizar o atendimento.</h4>
+ <hr>    
+ <h4>Código do pedido: {$CODIGO_PEDIDO}</h5>   
 <section class="row">    
-    <div class="col-md-4">
-        
+    <div class="col-md-4">        
     </div>
     <div class="col-md-4 text-right">         
     </div>    
 </section>
     <section class="row ">   
-   
-    <table class="table table-bordered" style="width: 105%">
-           
-        <tr class="text-danger align=center bg-info">            
+    <table id="tabela_pedido" style="width:80%; border:1px solid black;">
+          
+        <tr style="color:blue; text-align:center; ">            
             <td>Descrição</td>             
             <td>Quantidade</td>
             <td>Valor R$</td> 
             <td>SubTotal R$</td>                     
-        </tr>    
-        
-       {foreach from=$PRODUTOS item=PRODUTOS_ITEM}
-        
-        <tr>           
-            
+        </tr>         
+       {foreach from=$PRODUTOS item=PRODUTOS_ITEM}        
+        <tr style="text-align:center;">          
             <td>  {$PRODUTOS_ITEM.prod_nome} </td>            
             <td>  {$PRODUTOS_ITEM.prod_quanti}</td>
             <td>  {$PRODUTOS_ITEM.prod_preco} </td>           
@@ -38,17 +37,21 @@
             </div>            
             <div class="col-md-4 text-right text-danger bg-info">
             <h4>
-               Total do Pedido: <b>R$ {$TOTALCARRINHO}</b>
+                Frete Grátis: R$ 0,00
             </h4>
             <h4>
-                Frete Grátis: R$ 0,00
-             </h4>
+               Total do Pedido: <b>R$ {$TOTALCARRINHO}</b>
+            </h4>
+            <hr>          
             </div>   
         </section>             
        </div>            
   </section>
        <br>
-       </html>       
+   <h4>Dúvidas. Acesse o site.</h4>    
+   <a href="https://ifrs-canoas.delucahigiene.com.br">ifrs-canoas.delucahigiene.com.br</a>    
+</body>
+       
        
 
 

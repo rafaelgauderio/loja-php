@@ -26,13 +26,17 @@ $pedido = new Pedidos();
 $cliente=$_SESSION['CLIENTE']['client_id'];
 $codigo=$_SESSION['PEDIDO_GERAL']['pedido'];
 $referencia=$_SESSION['PEDIDO_GERAL']['referencia'];
+$email=$_SESSION['CLIENTE']['client_email'];
+
+$smarty->assign('EMAIL_CLIENTE',$email);
+$smarty->assign('CODIGO_PEDIDO',$codigo);
 
 //enviar para o cliente com os dados do pedido antes de limpar a sessão
 $email = new Email();
-$pedidoFinalizado = $smarty->fetch('pedido_finalizado.html');
-$mensagem = "Obrigado por comprar conosco. Segue abaixo os dados da sua compra.<br>" .$pedidoFinalizado;
+$pedidoFinalizado = $smarty->fetch('dados_do_pedido.html');
+$mensagem = $pedidoFinalizado;
 $vetorDestinatarios = array($_SESSION['CLIENTE']['client_email'],Constants::SITE_EMAIL);
-$email->EnviarEmail('Pedido do site Loja DeLuca - IFRS', $mensagem, $vetorDestinatarios);
+$email->EnviarEmail('Pedido do site Loja DeLuca Tecnologia - IFRS', $mensagem, $vetorDestinatarios);
 
 //se conseguir salvar um pedido, dae limpa a sessao
 //limpa os pedidos do carrinho e muda o código de login da sessao
